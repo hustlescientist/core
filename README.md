@@ -1,12 +1,12 @@
 # CORE website workspace
 
-Private source-of-truth workspace for CORE's public HTML/CSS/JavaScript SPA, public media, and GoHighLevel deployment handoff.
+Source-of-truth workspace for CORE's public HTML/CSS/JavaScript SPA, public media, and GoHighLevel deployment handoff.
 
-**Status:** development foundation, not the finished website and not deployed to GHL. The member experience stays in GHL's native portal; this repository does not implement authentication or contain private CRM/member data.
+**Status: development foundation, not the finished website and not deployed to GHL.** The member experience stays in GHL's native portal. This repository does not implement authentication or contain private CRM/member data.
 
 ## Start locally
 
-Use Node.js 22 or later. The starter uses Node built-ins and browser-native JavaScript: no package installation is required.
+Use Node.js 22 or later. No package installation is required; the starter uses Node built-ins and browser-native JavaScript.
 
 ```sh
 git clone https://github.com/hustlescientist/core.git
@@ -14,31 +14,56 @@ cd core
 npm run dev
 ```
 
-Open `http://127.0.0.1:4173`. Edit `src/`, then refresh the browser. Use `npm test` for checks and `npm run build` to generate the GHL handoff.
+Open `http://127.0.0.1:4173`. Edit `src/`, then refresh. Open `core.code-workspace` in VS Code or Cursor for the shared workspace and tasks.
+
+```sh
+npm run check   # Syntax, bilingual configuration, media, and file-size checks
+npm test        # 13 automated foundation tests
+npm run build   # Local preview and paste-ready development embed
+```
+
+Output: `dist/index.html`, `dist/ghl-embed.html`, and `dist/build-manifest.json`. `dist/` is generated and Git-ignored. `npm run build:release` deliberately fails until production routing and launch reviews are implemented; changing config flags alone is insufficient.
 
 ## Workspace map
 
-- `src/`: HTML shell, scoped CSS, vanilla JavaScript, bilingual copy, and public integration configuration.
-- `media/`: approved web assets, a media register, and asset-handling instructions. Large originals are excluded by default; private documents and consent records never belong here.
-- `docs/`: project brief, brand direction, content inventory, architecture, backlog, QA, and deployment instructions.
-- `scripts/`: dependency-free preview, validation, and build tools.
-- `tests/`: automated foundation checks.
-- `.github/`: issue/PR templates and build-check workflow.
-- `dist/`: generated local preview and paste-ready GHL embed; ignored by Git.
-- `core.code-workspace`: VS Code/Cursor workspace settings.
-- `AGENTS.md`: implementation boundaries and instructions for coding agents.
+| Location | Edit or track here |
+|---|---|
+| `src/shell.html` | The scoped application mount and semantic HTML shell |
+| `src/css/` | CORE brand tokens and responsive component styles |
+| `src/js/app.js` | Public navigation, language switching, focus, and initialization |
+| `src/content/en.json`, `es.json` | Matching English/Spanish content, currently draft |
+| `src/config/site.json` | Public contact details, integration destinations, review flags |
+| `media/` | Approved web assets and the acquisition/approval register |
+| `docs/` | Scope, architecture, brand, legacy inventory, backlog, QA, deployment |
+| `scripts/`, `tests/` | Preview/build/check tools and automated tests |
+| `.github/` | Issue and pull-request templates; CI validation workflow |
+| `AGENTS.md` | Boundaries for Codex and other coding agents |
 
-## Daily workflow
+## What works now
 
-Create a branch such as `feat/homepage`, `content/spanish-review`, or `media/program-photos`. Keep source, translations, and media-register changes together. Run `npm test && npm run build`, review desktop/mobile behavior, then open a pull request into `main`.
+The starter has 11 public views, English/Spanish switching that preserves the current view, responsive navigation, keyboard focus handling, safe fallback behavior for unconfigured integration buttons, and a self-contained development embed. The three program cards have distinct destinations. GHL hydration hooks are included but require testing in the real GHL environment.
 
-`main` is the reviewed source, not an automatic production deployment. Publish to GHL only after staging review. Tag approved releases and record the commit and GHL page in `docs/DEPLOYMENT.md`. Never edit generated `dist/` output as the source of truth.
+**Not built yet:** final site content, real logo/photo imports, resource search, events, live forms/payments, portal configuration, production routing/SEO, or a full accessibility audit. No font files are bundled. Hash routing is preview-only, and the standalone preview is marked noindex.
 
-## First build priorities
+## Work tracking and Git flow
 
-1. Approve copy, brand details, translations, source logo, and public-media permissions.
-2. Build the homepage and audience/program views using the inventory in `docs/CONTENT-INVENTORY.md`.
-3. Configure and test GHL forms, the native portal link, payment destination, and published media URLs.
-4. Validate routing/SEO in GHL; finish accessibility, language, device, and integration checks before launch.
+Start with [the issue backlog](https://github.com/hustlescientist/core/issues) and [docs/BACKLOG.md](docs/BACKLOG.md). Six initial workstreams have acceptance checklists; assignees remain open.
 
-See `docs/BACKLOG.md` for the work register and `docs/PROJECT-BRIEF.md` for the approved architecture and source references.
+```sh
+git switch main
+git pull --ff-only
+git switch -c feat/homepage
+# Edit source, translations, and media register together.
+npm run check && npm test && npm run build
+git add src docs media
+git commit -m "feat: build CORE homepage sections"
+git push -u origin feat/homepage
+```
+
+Open a pull request into `main`. Include the linked issue, screenshots, test results, content/media approvals, and GHL impact. `main` is the reviewed source, **not an automatic production deployment**. Branch protection and a GitHub Projects board are not configured by this scaffold.
+
+## Media and privacy
+
+Add optimized, approved public assets to `media/logos`, `media/images`, `media/icons`, or `media/documents`; update `media/manifest.json`. Source originals, videos, credentials, private records, and CRM exports stay outside ordinary Git. No actual logo/photo/document binaries have been imported yet. See [media/README.md](media/README.md).
+
+Before any GHL publish, follow [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md). Preserve the previous embed for rollback and record the source commit and build hash.

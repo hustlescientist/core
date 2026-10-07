@@ -1,0 +1,25 @@
+/* Brand source: docs/BRAND.md. Proposed interface additions need approval. */
+#core-app {
+  --core-orange: #ff4c00;
+  --core-gray: #6d6e71;
+  --core-pink: #eb4c97;
+  --core-blue: #5fa7e5;
+  --core-lime: #bcd738;
+  --core-coral: #ff7448;
+  --core-ink: #1f1f1f;
+  --core-white: #ffffff;
+  --core-surface: #f7f7f5;
+  --core-action: #b93600;
+  --core-action-hover: #932b00;
+  --core-border: #767676;
+  --core-font: "Montserrat", Arial, sans-serif;
+  --core-width: 75rem;
+  --core-radius: .75rem;
+  --core-control-radius: .375rem;
+  color: var(--core-ink);
+  background: var(--core-white);
+  font-family: var(--core-font);
+  font-size: 1rem;
+  line-height: 1.6;
+  isolation: isolate;
+}

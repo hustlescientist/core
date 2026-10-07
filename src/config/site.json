@@ -1,0 +1,42 @@
+{
+  "name": "CORE",
+  "stage": "development",
+  "releaseReady": false,
+  "routingApproved": false,
+  "contentApproved": false,
+  "translationsApproved": false,
+  "defaultLanguage": "en",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "routing": "hash-preview",
+  "contact": {
+    "email": "info@corewecan.org",
+    "phoneLabel": "(702) 657-3264",
+    "phoneHref": "tel:+17026573264",
+    "address": "701 S. 9th Street, Las Vegas, NV 89101"
+  },
+  "integrations": {
+    "portalUrl": "",
+    "donationUrl": "",
+    "forms": {
+      "family": {
+        "en": "",
+        "es": ""
+      },
+      "volunteer": {
+        "en": "",
+        "es": ""
+      },
+      "partner": {
+        "en": "",
+        "es": ""
+      },
+      "newsletter": {
+        "en": "",
+        "es": ""
+      }
+    }
+  }
+}

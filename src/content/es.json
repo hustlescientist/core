@@ -1,0 +1,93 @@
+{
+  "preview": "Vista previa de desarrollo. Contenido preliminar; formularios, donaciones y acceso de miembros sin conectar.",
+  "workspace": "Espacio de trabajo del sitio - logotipo pendiente",
+  "menu": "Men\u00fa",
+  "navLabel": "Navegaci\u00f3n principal",
+  "login": "Iniciar sesi\u00f3n",
+  "donate": "Donar",
+  "contactLabel": "Contactar a CORE",
+  "integrationPending": "Este servicio no est\u00e1 conectado en la vista previa de desarrollo. Comun\u00edquese con CORE para recibir ayuda.",
+  "pageChanged": "P\u00e1gina cargada:",
+  "notFoundTitle": "P\u00e1gina no encontrada",
+  "notFoundIntro": "Esta p\u00e1gina de vista previa no existe. Regrese al inicio o comun\u00edquese con CORE.",
+  "homeLink": "Volver al inicio",
+  "draftNote": "Esta es la base del espacio de trabajo, no el sitio terminado. Los detalles de los programas y las traducciones requieren revisi\u00f3n del equipo.",
+  "footerNote": "Los recursos p\u00fablicos seguir\u00e1n siendo p\u00fablicos. El acceso de miembros usar\u00e1 el portal nativo de GHL.",
+  "nav": {
+    "programs": "Programas",
+    "families": "Estudiantes y familias",
+    "partners": "Escuelas y aliados",
+    "get-involved": "Participar",
+    "resources": "Recursos",
+    "about": "Acerca de CORE e impacto"
+  },
+  "home": {
+    "eyebrow": "CORE / Base del sitio p\u00fablico",
+    "title": "Cada estudiante tiene potencial.",
+    "intro": "CORE le ayuda a descubrirlo.",
+    "support": "Junto con las familias y la comunidad, ayudamos a los estudiantes a fortalecer su confianza, explorar posibilidades y desarrollar habilidades para la vida.",
+    "primary": "Explorar programas",
+    "secondary": "Para estudiantes y familias",
+    "programTitle": "Tres caminos. Un prop\u00f3sito.",
+    "programIntro": "Conozca los tres pilares que forman la experiencia de CORE.",
+    "nextTitle": "Las personas, primero.",
+    "nextIntro": "Informaci\u00f3n clara para las familias, maneras pr\u00e1cticas de colaborar y oportunidades para apoyar a los estudiantes."
+  },
+  "programs": [
+    {
+      "id": "character-development",
+      "title": "Desarrollo del car\u00e1cter",
+      "intro": "Confianza, relaciones, resiliencia y crecimiento personal.",
+      "action": "Explorar el desarrollo del car\u00e1cter"
+    },
+    {
+      "id": "career-awareness",
+      "title": "Conocimiento y exploraci\u00f3n de carreras",
+      "intro": "Descubrir intereses, explorar posibilidades y conectar el aprendizaje con el futuro.",
+      "action": "Explorar oportunidades profesionales"
+    },
+    {
+      "id": "financial-literacy",
+      "title": "Educaci\u00f3n financiera",
+      "intro": "Desarrollar habilidades pr\u00e1cticas y confianza para tomar decisiones financieras cotidianas.",
+      "action": "Explorar la educaci\u00f3n financiera"
+    }
+  ],
+  "pages": {
+    "programs": {
+      "title": "Programas",
+      "intro": "Explore el desarrollo del car\u00e1cter, las carreras profesionales y la educaci\u00f3n financiera.",
+      "detail": "Las p\u00e1ginas de cada programa incluir\u00e1n descripciones, informaci\u00f3n de participaci\u00f3n, im\u00e1genes y opciones de consulta aprobadas."
+    },
+    "families": {
+      "title": "Estudiantes y familias",
+      "intro": "Conozca c\u00f3mo CORE puede apoyar a su estudiante y conectar a su familia con recursos \u00fatiles.",
+      "detail": "Los requisitos, la inscripci\u00f3n, las escuelas, el transporte, los horarios y la asistencia ling\u00fc\u00edstica requieren confirmaci\u00f3n del equipo. Consulte sobre c\u00f3mo participar; esta vista previa no anuncia inscripciones abiertas."
+    },
+    "partners": {
+      "title": "Escuelas y aliados",
+      "intro": "Conecte a los estudiantes con oportunidades a trav\u00e9s de alianzas escolares, empresariales y comunitarias.",
+      "detail": "Aqu\u00ed se agregar\u00e1n instrucciones de derivaci\u00f3n, requisitos y formularios aprobados. No env\u00ede expedientes privados de estudiantes mediante consultas p\u00fablicas."
+    },
+    "get-involved": {
+      "title": "Participar",
+      "intro": "Apoye oportunidades para que los estudiantes aprendan, exploren y crezcan.",
+      "detail": "Las opciones de voluntariado, patrocinio, eventos p\u00fablicos y donaciones se conectar\u00e1n cuando se confirmen los destinos y procesos correspondientes."
+    },
+    "resources": {
+      "title": "Recursos",
+      "intro": "Encuentre informaci\u00f3n y apoyo pr\u00e1ctico sin iniciar sesi\u00f3n.",
+      "detail": "Se prev\u00e9 un directorio biling\u00fce con b\u00fasqueda. Los requisitos, contactos, versiones y fechas de verificaci\u00f3n deben revisarse antes de publicarse."
+    },
+    "about": {
+      "title": "Acerca de CORE e impacto",
+      "intro": "Conozca a CORE y a las personas que hacen posible su trabajo.",
+      "detail": "Aqu\u00ed se agregar\u00e1n la misi\u00f3n, historia, perfiles, aliados, documentos financieros y resultados aprobados. Esta versi\u00f3n inicial no publica cifras sin verificar."
+    },
+    "contact": {
+      "title": "Contactar a CORE",
+      "intro": "\u00bfTiene preguntas sobre programas, participaci\u00f3n, alianzas o acceso?",
+      "detail": "La informaci\u00f3n de contacto proviene del inventario anterior del sitio y debe confirmarse antes del lanzamiento. Los formularios p\u00fablicos de GHL a\u00fan no est\u00e1n configurados."
+    }
+  }
+}

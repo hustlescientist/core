@@ -1,0 +1,18 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import vm from 'node:vm';
+import {loadProject,validate,keyShape,jsonForHTML,https,read} from '../scripts/lib.mjs';
+import {build} from '../scripts/build.mjs';
+test('starter configuration validates',async () => { await validate(await loadProject()); });
+test('English and Spanish have identical key structures',async () => { const {locales}=await loadProject(); assert.deepEqual(keyShape(locales.en),keyShape(locales.es)); });
+test('every navigation item has a public page',async () => { const {locales}=await loadProject(); for(const locale of Object.values(locales)) for(const id of Object.keys(locale.nav)) assert.ok(locale.pages[id],id); });
+test('each program has its own stable route in both languages',async () => { const {locales}=await loadProject(); assert.deepEqual(locales.en.programs.map(p=>p.id),locales.es.programs.map(p=>p.id)); assert.equal(new Set(locales.en.programs.map(p=>p.id)).size,3); });
+test('script payload cannot terminate its data element',() => { const out=jsonForHTML({value:'</script><script>alert(1)</script>'}); assert.equal(out.includes('<'),false); assert.equal(JSON.parse(out).value,'</script><script>alert(1)</script>'); });
+test('integration URLs reject dangerous schemes and embedded credentials',() => { assert.equal(https('javascript:alert(1)'),false); assert.equal(https('https://user:pass@example.org'),false); assert.equal(https('https://example.org/member'),true); });
+test('unsafe configuration is rejected',async () => { const data=await loadProject(); data.site.integrations.portalUrl='javascript:alert(1)'; await assert.rejects(()=>validate(data),/HTTPS/); });
+test('unapproved starter cannot produce a release build',async () => { const data=await loadProject(); await assert.rejects(()=>validate(data,true),/Release approval missing/); });
+test('approved media requires evidence and alternatives',async () => { const data=await loadProject(); data.media.assets[0].status='approved'; await assert.rejects(()=>validate(data),/Approved media lacks/); });
+test('duplicate media IDs fail validation',async () => { const data=await loadProject(); data.media.assets.push({...data.media.assets[0]}); await assert.rejects(()=>validate(data),/Duplicate media/); });
+test('media traversal cannot enter the build',async () => { const data=await loadProject(); data.media.assets[0].localPath='media/images/../../private/records.json'; await assert.rejects(()=>validate(data),/Unsafe media path/); });
+test('browser application parses as a classic script',async () => { new vm.Script(await read('src/js/app.js')); });
+test('build generates a self-contained GHL code element and noindex preview',async () => { const {embed,html}=await build(); assert.match(embed,/id="core-app"/); assert.match(embed,/hydrationDone/); assert.doesNotMatch(embed,/__CORE_DATA__/); assert.doesNotMatch(embed,/<html|<body|type="module"|src="\/src\//); assert.match(html,/noindex,nofollow/); const payload=embed.match(/data-core-payload>([\s\S]*?)<\/script>/)[1]; assert.equal(JSON.parse(payload).site.name,'CORE'); });

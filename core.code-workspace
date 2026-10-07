@@ -1,0 +1,47 @@
+{
+  "folders": [
+    {
+      "name": "CORE website",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "editor.tabSize": 2,
+    "files.eol": "\n",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.exclude": {
+      "**/.DS_Store": true
+    },
+    "search.exclude": {
+      "dist": true,
+      "node_modules": true
+    }
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "CORE: preview",
+        "type": "shell",
+        "command": "npm run dev",
+        "isBackground": true,
+        "problemMatcher": []
+      },
+      {
+        "label": "CORE: test",
+        "type": "shell",
+        "command": "npm test",
+        "group": "test",
+        "problemMatcher": []
+      },
+      {
+        "label": "CORE: build GHL embed",
+        "type": "shell",
+        "command": "npm run build",
+        "group": "build",
+        "problemMatcher": []
+      }
+    ]
+  }
+}

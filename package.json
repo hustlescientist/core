@@ -1,0 +1,15 @@
+{
+  "name": "core-website-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "CORE public SPA, media register, and GHL handoff workspace",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "test": "node --test tests/workspace.test.mjs",
+    "check": "node scripts/check.mjs",
+    "build": "node scripts/build.mjs",
+    "build:release": "node scripts/build.mjs --release"
+  }
+}

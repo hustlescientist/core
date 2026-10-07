@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "note": "No source logo, photos, or documents have been imported. Entries are acquisition tasks, not approved assets. Store consent evidence outside Git; approvalRef is only an internal non-sensitive reference.",
+  "assets": [
+    {
+      "id": "core-logo-primary",
+      "kind": "logo",
+      "status": "needed",
+      "localPath": "",
+      "publishedUrl": "",
+      "sourceUrl": "https://corewecan.org/",
+      "alt": {
+        "en": "CORE, powered by The Rogers Foundation",
+        "es": "CORE, con el apoyo de The Rogers Foundation"
+      },
+      "approvalRef": "",
+      "owner": "unassigned"
+    },
+    {
+      "id": "home-hero-photo",
+      "kind": "image",
+      "status": "needed",
+      "localPath": "",
+      "publishedUrl": "",
+      "sourceUrl": "",
+      "alt": {
+        "en": "",
+        "es": ""
+      },
+      "approvalRef": "",
+      "owner": "unassigned"
+    },
+    {
+      "id": "character-development-photo",
+      "kind": "image",
+      "status": "needed",
+      "localPath": "",
+      "publishedUrl": "",
+      "sourceUrl": "",
+      "alt": {
+        "en": "",
+        "es": ""
+      },
+      "approvalRef": "",
+      "owner": "unassigned"
+    },
+    {
+      "id": "career-exploration-photo",
+      "kind": "image",
+      "status": "needed",
+      "localPath": "",
+      "publishedUrl": "",
+      "sourceUrl": "",
+      "alt": {
+        "en": "",
+        "es": ""
+      },
+      "approvalRef": "",
+      "owner": "unassigned"
+    },
+    {
+      "id": "financial-literacy-photo",
+      "kind": "image",
+      "status": "needed",
+      "localPath": "",
+      "publishedUrl": "",
+      "sourceUrl": "",
+      "alt": {
+        "en": "",
+        "es": ""
+      },
+      "approvalRef": "",
+      "owner": "unassigned"
+    },
+    {
+      "id": "family-resource-guide-en",
+      "kind": "document",
+      "status": "needed",
+      "localPath": "",
+      "publishedUrl": "",
+      "sourceUrl": "",
+      "alt": {
+        "en": "",
+        "es": ""
+      },
+      "approvalRef": "",
+      "owner": "unassigned"
+    },
+    {
+      "id": "family-resource-guide-es",
+      "kind": "document",
+      "status": "needed",
+      "localPath": "",
+      "publishedUrl": "",
+      "sourceUrl": "",
+      "alt": {
+        "en": "",
+        "es": ""
+      },
+      "approvalRef": "",
+      "owner": "unassigned"
+    }
+  ]
+}
