@@ -20,3 +20,7 @@ Source/config/content separation; shared editor workspace; scoped brand tokens; 
 Take an issue -> create a focused branch -> update code/content/media register -> run checks -> attach review evidence -> open PR -> review/merge -> test GHL staging -> publish only after approval. Use branch names such as `feat/homepage`, `content/spanish-review`, `media/program-photos`, `fix/mobile-nav`.
 
 Split each workstream into smaller issues as work starts. Record blockers in the issue rather than silently substituting guessed content or URLs. A GitHub Projects board, branch-protection rules, automatic deployments, and scheduled monitoring are not configured by this starter.
+
+## Media enrichment progress - October 7, 2026
+
+Issue #1: original full logo and 15 additional assets are now mapped into the public SPA using hosted originals. All 534 archive labels are preserved; stable IDs, bilingual alternatives, responsive variants, optional GHL URLs, and provider fallback are implemented. The source raster library has not been bulk-uploaded to GitHub/GHL. Production permission/translation approvals, a compact-logo variant, and the outstanding financial-literacy photo/resource-guide acquisition items remain open. See `MEDIA-QA.md`.

@@ -2,7 +2,7 @@
 
 ## Public build
 
-`src/shell.html` + `src/css/*.css` + `src/js/app.js` + public JSON -> `scripts/build.mjs` -> `dist/ghl-embed.html` and `dist/index.html`.
+`src/shell.html` + `src/css/*.css` + `src/js/media.js` + `src/js/app.js` + public JSON -> `scripts/build.mjs` -> `dist/ghl-embed.html` and `dist/index.html`.
 
 The embed inlines CSS, JSON, and a classic script. It needs no module imports or runtime package CDN. JSON is escaped before it enters a script-data element; UI text is escaped before HTML rendering. Public integration URLs must use HTTPS and cannot include embedded credentials. This is not a complete security audit.
 
@@ -24,9 +24,13 @@ No backend, API key, contact fetch, custom auth, account state, or payment proce
 
 ## Media and build boundary
 
-The build copies only local assets marked `approved` in `media/manifest.json`. It does not automatically upload them to GHL, rewrite page image URLs, or download remote originals. In the GHL embed, use verified public CDN/media URLs, not private GitHub raw URLs or local `/media/` paths.
+`media/manifest.json` is the selected-asset registry. `src/js/media.js` resolves original-host versus optional GHL URLs from `site.mediaProvider`. Layouts use stable IDs, not image URLs. Labels, filenames, original URLs, and responsive variant provenance are validated against the lossless 534-record source catalog; the catalog stays out of the browser payload.
 
-Keep large masters outside normal Git. Store only a non-sensitive approval reference; consent records remain in the authorized operational system. Inspect/remove unnecessary identifying metadata before importing approved youth photography.
+The current build uses 16 selected hosted assets. Review-status assets are permitted in development but rejected for production until approved. There are no local raster or font binaries in this revision. Approved local files can still be copied by the build when deliberately registered, but the runtime resolver remains public-HTTPS-only.
+
+Changing the provider is gradual and reversible while the original host remains available. Missing GHL overrides fall back to originals; original srcsets never override a configured GHL image. The app retries a failed hosted image once against its original URL, then shows a readable fallback. This does not guarantee live availability or preserve old WordPress URLs after a domain move.
+
+No automatic GHL upload, private GitHub media serving, or DNS change is implemented. See `../media/README.md` and `MEDIA-QA.md`.
 
 ## Authoritative references
 

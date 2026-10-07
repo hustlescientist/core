@@ -1,18 +1,18 @@
 {
   "preview": "Vista previa de desarrollo. Contenido preliminar; formularios, donaciones y acceso de miembros sin conectar.",
-  "workspace": "Espacio de trabajo del sitio - logotipo pendiente",
-  "menu": "Men\u00fa",
-  "navLabel": "Navegaci\u00f3n principal",
-  "login": "Iniciar sesi\u00f3n",
+  "workspace": "Vista previa del sitio de CORE",
+  "menu": "Menú",
+  "navLabel": "Navegación principal",
+  "login": "Iniciar sesión",
   "donate": "Donar",
   "contactLabel": "Contactar a CORE",
-  "integrationPending": "Este servicio no est\u00e1 conectado en la vista previa de desarrollo. Comun\u00edquese con CORE para recibir ayuda.",
-  "pageChanged": "P\u00e1gina cargada:",
-  "notFoundTitle": "P\u00e1gina no encontrada",
-  "notFoundIntro": "Esta p\u00e1gina de vista previa no existe. Regrese al inicio o comun\u00edquese con CORE.",
+  "integrationPending": "Este servicio no está conectado en la vista previa de desarrollo. Comuníquese con CORE para recibir ayuda.",
+  "pageChanged": "Página cargada:",
+  "notFoundTitle": "Página no encontrada",
+  "notFoundIntro": "Esta página de vista previa no existe. Regrese al inicio o comuníquese con CORE.",
   "homeLink": "Volver al inicio",
-  "draftNote": "Esta es la base del espacio de trabajo, no el sitio terminado. Los detalles de los programas y las traducciones requieren revisi\u00f3n del equipo.",
-  "footerNote": "Los recursos p\u00fablicos seguir\u00e1n siendo p\u00fablicos. El acceso de miembros usar\u00e1 el portal nativo de GHL.",
+  "draftNote": "Esta es la base del espacio de trabajo, no el sitio terminado. Los detalles de los programas y las traducciones requieren revisión del equipo.",
+  "footerNote": "Los recursos públicos seguirán siendo públicos. El acceso de miembros usará el portal nativo de GHL.",
   "nav": {
     "programs": "Programas",
     "families": "Estudiantes y familias",
@@ -22,72 +22,102 @@
     "about": "Acerca de CORE e impacto"
   },
   "home": {
-    "eyebrow": "CORE / Base del sitio p\u00fablico",
+    "eyebrow": "Estudiantes. Familias. Posibilidades.",
     "title": "Cada estudiante tiene potencial.",
     "intro": "CORE le ayuda a descubrirlo.",
     "support": "Junto con las familias y la comunidad, ayudamos a los estudiantes a fortalecer su confianza, explorar posibilidades y desarrollar habilidades para la vida.",
     "primary": "Explorar programas",
     "secondary": "Para estudiantes y familias",
-    "programTitle": "Tres caminos. Un prop\u00f3sito.",
+    "programTitle": "Tres caminos. Un propósito.",
     "programIntro": "Conozca los tres pilares que forman la experiencia de CORE.",
-    "nextTitle": "Las personas, primero.",
-    "nextIntro": "Informaci\u00f3n clara para las familias, maneras pr\u00e1cticas de colaborar y oportunidades para apoyar a los estudiantes."
+    "nextTitle": "Hay un lugar para usted en CORE.",
+    "nextIntro": "Información clara para las familias, maneras prácticas de colaborar y oportunidades para apoyar a los estudiantes.",
+    "programEyebrow": "La experiencia CORE",
+    "galleryTitle": "Se aprende en todas partes.",
+    "galleryIntro": "Una mirada al servicio comunitario, las actividades creativas y la exploración profesional del archivo fotográfico de CORE."
   },
   "programs": [
     {
       "id": "character-development",
-      "title": "Desarrollo del car\u00e1cter",
+      "title": "Desarrollo del carácter",
       "intro": "Confianza, relaciones, resiliencia y crecimiento personal.",
-      "action": "Explorar el desarrollo del car\u00e1cter"
+      "action": "Explorar el desarrollo del carácter"
     },
     {
       "id": "career-awareness",
-      "title": "Conocimiento y exploraci\u00f3n de carreras",
+      "title": "Conocimiento y exploración de carreras",
       "intro": "Descubrir intereses, explorar posibilidades y conectar el aprendizaje con el futuro.",
       "action": "Explorar oportunidades profesionales"
     },
     {
       "id": "financial-literacy",
-      "title": "Educaci\u00f3n financiera",
-      "intro": "Desarrollar habilidades pr\u00e1cticas y confianza para tomar decisiones financieras cotidianas.",
-      "action": "Explorar la educaci\u00f3n financiera"
+      "title": "Educación financiera",
+      "intro": "Desarrollar habilidades prácticas y confianza para tomar decisiones financieras cotidianas.",
+      "action": "Explorar la educación financiera"
     }
   ],
   "pages": {
     "programs": {
       "title": "Programas",
-      "intro": "Explore el desarrollo del car\u00e1cter, las carreras profesionales y la educaci\u00f3n financiera.",
-      "detail": "Las p\u00e1ginas de cada programa incluir\u00e1n descripciones, informaci\u00f3n de participaci\u00f3n, im\u00e1genes y opciones de consulta aprobadas."
+      "intro": "Explore el desarrollo del carácter, las carreras profesionales y la educación financiera.",
+      "detail": "Las páginas de cada programa incluirán descripciones, información de participación, imágenes y opciones de consulta aprobadas."
     },
     "families": {
       "title": "Estudiantes y familias",
-      "intro": "Conozca c\u00f3mo CORE puede apoyar a su estudiante y conectar a su familia con recursos \u00fatiles.",
-      "detail": "Los requisitos, la inscripci\u00f3n, las escuelas, el transporte, los horarios y la asistencia ling\u00fc\u00edstica requieren confirmaci\u00f3n del equipo. Consulte sobre c\u00f3mo participar; esta vista previa no anuncia inscripciones abiertas."
+      "intro": "Conozca cómo CORE puede apoyar a su estudiante y conectar a su familia con recursos útiles.",
+      "detail": "Los requisitos, la inscripción, las escuelas, el transporte, los horarios y la asistencia lingüística requieren confirmación del equipo. Consulte sobre cómo participar; esta vista previa no anuncia inscripciones abiertas."
     },
     "partners": {
       "title": "Escuelas y aliados",
-      "intro": "Conecte a los estudiantes con oportunidades a trav\u00e9s de alianzas escolares, empresariales y comunitarias.",
-      "detail": "Aqu\u00ed se agregar\u00e1n instrucciones de derivaci\u00f3n, requisitos y formularios aprobados. No env\u00ede expedientes privados de estudiantes mediante consultas p\u00fablicas."
+      "intro": "Conecte a los estudiantes con oportunidades a través de alianzas escolares, empresariales y comunitarias.",
+      "detail": "Aquí se agregarán instrucciones de derivación, requisitos y formularios aprobados. No envíe expedientes privados de estudiantes mediante consultas públicas."
     },
     "get-involved": {
       "title": "Participar",
       "intro": "Apoye oportunidades para que los estudiantes aprendan, exploren y crezcan.",
-      "detail": "Las opciones de voluntariado, patrocinio, eventos p\u00fablicos y donaciones se conectar\u00e1n cuando se confirmen los destinos y procesos correspondientes."
+      "detail": "Las opciones de voluntariado, patrocinio, eventos públicos y donaciones se conectarán cuando se confirmen los destinos y procesos correspondientes."
     },
     "resources": {
       "title": "Recursos",
-      "intro": "Encuentre informaci\u00f3n y apoyo pr\u00e1ctico sin iniciar sesi\u00f3n.",
-      "detail": "Se prev\u00e9 un directorio biling\u00fce con b\u00fasqueda. Los requisitos, contactos, versiones y fechas de verificaci\u00f3n deben revisarse antes de publicarse."
+      "intro": "Encuentre información y apoyo práctico sin iniciar sesión.",
+      "detail": "Se prevé un directorio bilingüe con búsqueda. Los requisitos, contactos, versiones y fechas de verificación deben revisarse antes de publicarse."
     },
     "about": {
       "title": "Acerca de CORE e impacto",
       "intro": "Conozca a CORE y a las personas que hacen posible su trabajo.",
-      "detail": "Aqu\u00ed se agregar\u00e1n la misi\u00f3n, historia, perfiles, aliados, documentos financieros y resultados aprobados. Esta versi\u00f3n inicial no publica cifras sin verificar."
+      "detail": "Aquí se agregarán la misión, historia, perfiles, aliados, documentos financieros y resultados aprobados. Esta versión inicial no publica cifras sin verificar."
     },
     "contact": {
       "title": "Contactar a CORE",
-      "intro": "\u00bfTiene preguntas sobre programas, participaci\u00f3n, alianzas o acceso?",
-      "detail": "La informaci\u00f3n de contacto proviene del inventario anterior del sitio y debe confirmarse antes del lanzamiento. Los formularios p\u00fablicos de GHL a\u00fan no est\u00e1n configurados."
+      "intro": "¿Tiene preguntas sobre programas, participación, alianzas o acceso?",
+      "detail": "La información de contacto proviene del inventario anterior del sitio y debe confirmarse antes del lanzamiento. Los formularios públicos de GHL aún no están configurados."
     }
+  },
+  "mediaUnavailable": "Imagen no disponible.",
+  "archiveNote": "Fotografías del archivo de CORE; no representan necesariamente un programa o evento actual específico.",
+  "schoolsTitle": "En conexión con nuestras escuelas.",
+  "schoolYearNote": "Escuelas asociadas que figuran en el sitio de CORE para el año escolar 2026-2027.",
+  "schoolNames": [
+    "Swainston Middle School",
+    "Findlay Middle School"
+  ],
+  "reportTitle": "Conozca el impacto de CORE.",
+  "reportIntro": "El archivo incluye la portada del Informe de Impacto de CORE de 2025. Visite la biblioteca actual de recursos para consultar el informe publicado y otros recursos.",
+  "currentResources": "Visitar la biblioteca actual de recursos (inglés)",
+  "audienceActions": {
+    "families": "Encuentre su próximo paso",
+    "partners": "Explore formas de colaborar",
+    "get-involved": "Apoye nuevas posibilidades"
+  },
+  "mediaCaptions": {
+    "home-hero-photo": "Creciendo juntos. Descubriendo posibilidades.",
+    "community-service-photo": "Servicio comunitario en acción.",
+    "creative-learning-photo": "Un espacio para la creatividad.",
+    "career-exploration-photo": "Una mirada a las posibilidades del futuro.",
+    "character-development-photo": "Creando algo juntos.",
+    "family-support-photo": "Conexiones más allá del aula.",
+    "partner-visit-photo": "Experiencias más allá del aula.",
+    "core-history-photo": "Un momento de la historia de CORE.",
+    "impact-report-cover": "Informe de Impacto de CORE de 2025: portada del archivo original."
   }
 }

@@ -1,104 +1,720 @@
 {
-  "version": 1,
-  "note": "No source logo, photos, or documents have been imported. Entries are acquisition tasks, not approved assets. Store consent evidence outside Git; approvalRef is only an internal non-sensitive reference.",
+  "version": 2,
+  "note": "Selected media is loaded from original CORE-hosted HTTPS URLs by default. Labels and filenames are preserved exactly from the supplied archive, even when its heuristic role/page labels were misleading. These review-status assets are enabled for development only; no organizational consent approval is inferred. No image or font binaries are republished by this repository.",
+  "archive": {
+    "filename": "corewecan_site_assets_labeled.zip",
+    "catalog": "media/archive/asset-labels.json.br",
+    "catalogSha256": "2475d2673a9c36b42ed5c99a3bee9329e1fc86c23462e931089f2a7d037b662f",
+    "entries": 534,
+    "rasterImages": 502,
+    "htmlResponsesExcluded": 18,
+    "svgEntriesNotImported": 14,
+    "indexConvention": "zero-based position in the original asset_labels.json"
+  },
+  "bindings": {
+    "logo": "core-logo-primary",
+    "homeHero": "home-hero-photo",
+    "decoration": "core-book-illustration",
+    "homeGallery": [
+      "community-service-photo",
+      "creative-learning-photo",
+      "career-exploration-photo"
+    ],
+    "programs": {
+      "character-development": {
+        "icon": "character-development-icon",
+        "hero": "character-development-photo"
+      },
+      "career-awareness": {
+        "icon": "career-exploration-icon",
+        "hero": "career-exploration-photo"
+      },
+      "financial-literacy": {
+        "icon": "financial-literacy-icon",
+        "hero": "financial-literacy-icon"
+      }
+    },
+    "pages": {
+      "programs": "home-hero-photo",
+      "families": "family-support-photo",
+      "partners": "partner-visit-photo",
+      "get-involved": "community-service-photo",
+      "resources": "core-book-illustration",
+      "about": "core-history-photo",
+      "contact": "core-book-illustration"
+    },
+    "schools": [
+      "school-swainston-photo",
+      "school-findlay-photo"
+    ],
+    "reportCover": "impact-report-cover"
+  },
   "assets": [
     {
       "id": "core-logo-primary",
       "kind": "logo",
-      "status": "needed",
-      "localPath": "",
-      "publishedUrl": "",
-      "sourceUrl": "https://corewecan.org/",
+      "status": "review",
+      "archiveIndex": 70,
+      "label": "CORE - February Equity Speaks - Logo - Core 2019 website logo - 800x242",
+      "filename": "CORE - February Equity Speaks - Logo - Core 2019 website logo - 800x242.png",
+      "sourceUrl": "https://corewecan.org/wp-content/uploads/2023/05/Core_2019_website_logo.png",
+      "ghlUrl": "",
+      "sourceVariants": [
+        {
+          "archiveIndex": 68,
+          "width": 300,
+          "height": 91,
+          "url": "https://corewecan.org/wp-content/uploads/2023/05/Core_2019_website_logo-300x91.png"
+        },
+        {
+          "archiveIndex": 69,
+          "width": 768,
+          "height": 232,
+          "url": "https://corewecan.org/wp-content/uploads/2023/05/Core_2019_website_logo-768x232.png"
+        }
+      ],
+      "ghlVariants": [],
+      "width": 800,
+      "height": 242,
       "alt": {
         "en": "CORE, powered by The Rogers Foundation",
         "es": "CORE, con el apoyo de The Rogers Foundation"
       },
+      "sourceSha256": "7c924a0c79eba88686af9187ef28786abbae5e2e79eb25b377a210a41dd08729",
+      "localPath": "",
       "approvalRef": "",
-      "owner": "unassigned"
+      "owner": "unassigned",
+      "useAuthorization": "development-request",
+      "sourcePage": "https://corewecan.org/february-equity-speaks/"
     },
     {
       "id": "home-hero-photo",
       "kind": "image",
-      "status": "needed",
-      "localPath": "",
-      "publishedUrl": "",
-      "sourceUrl": "",
+      "status": "review",
+      "archiveIndex": 85,
+      "label": "CORE - Example 1 - Photo or Graphic - PortalLoginImg 0002 2023 CORE Web Brinley 1 - 1920x1080",
+      "filename": "CORE - Example 1 - Photo or Graphic - PortalLoginImg 0002 2023 CORE Web Brinley 1 - 1920x1080.jpg",
+      "sourceUrl": "https://corewecan.org/wp-content/uploads/2023/06/PortalLoginImg_0002_2023-CORE-Web-Brinley-1.jpg",
+      "ghlUrl": "",
+      "sourceVariants": [
+        {
+          "archiveIndex": 83,
+          "width": 300,
+          "height": 169,
+          "url": "https://corewecan.org/wp-content/uploads/2023/06/PortalLoginImg_0002_2023-CORE-Web-Brinley-1-300x169.jpg"
+        },
+        {
+          "archiveIndex": 84,
+          "width": 768,
+          "height": 432,
+          "url": "https://corewecan.org/wp-content/uploads/2023/06/PortalLoginImg_0002_2023-CORE-Web-Brinley-1-768x432.jpg"
+        },
+        {
+          "archiveIndex": 81,
+          "width": 1024,
+          "height": 576,
+          "url": "https://corewecan.org/wp-content/uploads/2023/06/PortalLoginImg_0002_2023-CORE-Web-Brinley-1-1024x576.jpg"
+        },
+        {
+          "archiveIndex": 82,
+          "width": 1536,
+          "height": 864,
+          "url": "https://corewecan.org/wp-content/uploads/2023/06/PortalLoginImg_0002_2023-CORE-Web-Brinley-1-1536x864.jpg"
+        }
+      ],
+      "ghlVariants": [],
+      "width": 1920,
+      "height": 1080,
       "alt": {
-        "en": "",
-        "es": ""
+        "en": "Students and adults celebrate together beneath orange and white balloons.",
+        "es": "Estudiantes y adultos celebran juntos bajo globos naranjas y blancos."
       },
+      "sourceSha256": "f2289a32684a03bfc9f40ea0f442831b8710e9a3b2cc04a93ef5c6b789857330",
+      "localPath": "",
       "approvalRef": "",
-      "owner": "unassigned"
+      "owner": "unassigned",
+      "useAuthorization": "development-request",
+      "sourcePage": "https://corewecan.org/example-1/"
     },
     {
       "id": "character-development-photo",
       "kind": "image",
-      "status": "needed",
-      "localPath": "",
-      "publishedUrl": "",
-      "sourceUrl": "",
+      "status": "review",
+      "archiveIndex": 145,
+      "label": "CORE - Community Service Service Learning - Photo or Graphic - 1080x1080 0001 2023 CORE Web Comm Svc 5 - 1080x1080",
+      "filename": "CORE - Community Service Service Learning - Photo or Graphic - 1080x1080 0001 2023 CORE Web Comm Svc 5 - 1080x1080.jpg",
+      "sourceUrl": "https://corewecan.org/wp-content/uploads/2023/08/1080x1080_0001_2023-CORE-Web-Comm-Svc-5.jpg",
+      "ghlUrl": "",
+      "sourceVariants": [
+        {
+          "archiveIndex": 143,
+          "width": 300,
+          "height": 300,
+          "url": "https://corewecan.org/wp-content/uploads/2023/08/1080x1080_0001_2023-CORE-Web-Comm-Svc-5-300x300.jpg"
+        },
+        {
+          "archiveIndex": 144,
+          "width": 768,
+          "height": 768,
+          "url": "https://corewecan.org/wp-content/uploads/2023/08/1080x1080_0001_2023-CORE-Web-Comm-Svc-5-768x768.jpg"
+        },
+        {
+          "archiveIndex": 141,
+          "width": 1024,
+          "height": 1024,
+          "url": "https://corewecan.org/wp-content/uploads/2023/08/1080x1080_0001_2023-CORE-Web-Comm-Svc-5-1024x1024.jpg"
+        }
+      ],
+      "ghlVariants": [],
+      "width": 1080,
+      "height": 1080,
       "alt": {
-        "en": "",
-        "es": ""
+        "en": "Participants paint a colorful community mural together.",
+        "es": "Participantes pintan juntos un mural comunitario de colores."
       },
+      "sourceSha256": "a203fed0dae0efc4a45949b7e1880d94d1aaa320a504ade23405bed230b6b993",
+      "localPath": "",
       "approvalRef": "",
-      "owner": "unassigned"
+      "owner": "unassigned",
+      "useAuthorization": "development-request",
+      "sourcePage": "https://corewecan.org/community-service-service-learning/"
     },
     {
       "id": "career-exploration-photo",
       "kind": "image",
-      "status": "needed",
-      "localPath": "",
-      "publishedUrl": "",
-      "sourceUrl": "",
+      "status": "review",
+      "archiveIndex": 511,
+      "label": "CORE - What Are Nevada s Challenges to Equity In Education - Photo or Graphic - Careerfair - scaled - 2560x1920",
+      "filename": "CORE - What Are Nevada s Challenges to Equity In Education - Photo or Graphic - Careerfair - scaled - 2560x1920.jpg",
+      "sourceUrl": "https://corewecan.org/wp-content/uploads/2025/09/Careerfair-scaled.jpg",
+      "ghlUrl": "",
+      "sourceVariants": [
+        {
+          "archiveIndex": 509,
+          "width": 300,
+          "height": 225,
+          "url": "https://corewecan.org/wp-content/uploads/2025/09/Careerfair-300x225.jpg"
+        },
+        {
+          "archiveIndex": 510,
+          "width": 768,
+          "height": 576,
+          "url": "https://corewecan.org/wp-content/uploads/2025/09/Careerfair-768x576.jpg"
+        },
+        {
+          "archiveIndex": 506,
+          "width": 1024,
+          "height": 768,
+          "url": "https://corewecan.org/wp-content/uploads/2025/09/Careerfair-1024x768.jpg"
+        },
+        {
+          "archiveIndex": 507,
+          "width": 1536,
+          "height": 1152,
+          "url": "https://corewecan.org/wp-content/uploads/2025/09/Careerfair-1536x1152.jpg"
+        }
+      ],
+      "ghlVariants": [],
+      "width": 2560,
+      "height": 1920,
       "alt": {
-        "en": "",
-        "es": ""
+        "en": "Students visit career information tables set up in a school gym.",
+        "es": "Estudiantes visitan mesas de información profesional en un gimnasio escolar."
       },
+      "sourceSha256": "2f8cf22d02035d50382a31d5b75589363707cd1e4bb5e80e1db7305173bde913",
+      "localPath": "",
       "approvalRef": "",
-      "owner": "unassigned"
+      "owner": "unassigned",
+      "useAuthorization": "development-request",
+      "sourcePage": "https://corewecan.org/what-are-nevadas-challenges-to-equity-in-education/"
+    },
+    {
+      "id": "family-support-photo",
+      "kind": "image",
+      "status": "review",
+      "archiveIndex": 280,
+      "label": "CORE - Two Generational - Site Asset - 2023 CORE Web two gen 3 1920 - 1920x1074",
+      "filename": "CORE - Two Generational - Site Asset - 2023 CORE Web two gen 3 1920 - 1920x1074.jpg",
+      "sourceUrl": "https://corewecan.org/wp-content/uploads/2023/08/2023-CORE-Web-two-gen-3_1920.jpg",
+      "ghlUrl": "",
+      "sourceVariants": [
+        {
+          "archiveIndex": 278,
+          "width": 300,
+          "height": 168,
+          "url": "https://corewecan.org/wp-content/uploads/2023/08/2023-CORE-Web-two-gen-3_1920-300x168.jpg"
+        },
+        {
+          "archiveIndex": 279,
+          "width": 768,
+          "height": 430,
+          "url": "https://corewecan.org/wp-content/uploads/2023/08/2023-CORE-Web-two-gen-3_1920-768x430.jpg"
+        },
+        {
+          "archiveIndex": 276,
+          "width": 1024,
+          "height": 573,
+          "url": "https://corewecan.org/wp-content/uploads/2023/08/2023-CORE-Web-two-gen-3_1920-1024x573.jpg"
+        },
+        {
+          "archiveIndex": 277,
+          "width": 1536,
+          "height": 859,
+          "url": "https://corewecan.org/wp-content/uploads/2023/08/2023-CORE-Web-two-gen-3_1920-1536x859.jpg"
+        }
+      ],
+      "ghlVariants": [],
+      "width": 1920,
+      "height": 1074,
+      "alt": {
+        "en": "Participants work together at a desktop computer.",
+        "es": "Participantes trabajan juntos en una computadora."
+      },
+      "sourceSha256": "1a96302123a2cc0c816ab22e7d7ffed1157fc9028f95f89f34af6a2b2ffd50b6",
+      "localPath": "",
+      "approvalRef": "",
+      "owner": "unassigned",
+      "useAuthorization": "development-request",
+      "sourcePage": "https://corewecan.org/two-generational/"
+    },
+    {
+      "id": "community-service-photo",
+      "kind": "image",
+      "status": "review",
+      "archiveIndex": 90,
+      "label": "CORE - Example 1 - Photo or Graphic - Untitled 1 - 1920x1080",
+      "filename": "CORE - Example 1 - Photo or Graphic - Untitled 1 - 1920x1080.jpg",
+      "sourceUrl": "https://corewecan.org/wp-content/uploads/2023/06/Untitled-1.jpg",
+      "ghlUrl": "",
+      "sourceVariants": [
+        {
+          "archiveIndex": 88,
+          "width": 300,
+          "height": 169,
+          "url": "https://corewecan.org/wp-content/uploads/2023/06/Untitled-1-300x169.jpg"
+        },
+        {
+          "archiveIndex": 89,
+          "width": 768,
+          "height": 432,
+          "url": "https://corewecan.org/wp-content/uploads/2023/06/Untitled-1-768x432.jpg"
+        },
+        {
+          "archiveIndex": 86,
+          "width": 1024,
+          "height": 576,
+          "url": "https://corewecan.org/wp-content/uploads/2023/06/Untitled-1-1024x576.jpg"
+        },
+        {
+          "archiveIndex": 87,
+          "width": 1536,
+          "height": 864,
+          "url": "https://corewecan.org/wp-content/uploads/2023/06/Untitled-1-1536x864.jpg"
+        }
+      ],
+      "ghlVariants": [],
+      "width": 1920,
+      "height": 1080,
+      "alt": {
+        "en": "Participants work together on a raised garden bed outdoors.",
+        "es": "Participantes trabajan juntos en un huerto elevado al aire libre."
+      },
+      "sourceSha256": "3c35e849c5ff8504c62e89e687e271400c7f3ccf025eb76f19c4fe4a195504c5",
+      "localPath": "",
+      "approvalRef": "",
+      "owner": "unassigned",
+      "useAuthorization": "development-request",
+      "sourcePage": "https://corewecan.org/example-1/"
+    },
+    {
+      "id": "creative-learning-photo",
+      "kind": "image",
+      "status": "review",
+      "archiveIndex": 135,
+      "label": "CORE - House of Straus - Photo or Graphic - 1080x1080 0000 Sprat3 - 1080x1080",
+      "filename": "CORE - House of Straus - Photo or Graphic - 1080x1080 0000 Sprat3 - 1080x1080.jpg",
+      "sourceUrl": "https://corewecan.org/wp-content/uploads/2023/08/1080x1080_0000_Sprat3.jpg",
+      "ghlUrl": "",
+      "sourceVariants": [
+        {
+          "archiveIndex": 133,
+          "width": 300,
+          "height": 300,
+          "url": "https://corewecan.org/wp-content/uploads/2023/08/1080x1080_0000_Sprat3-300x300.jpg"
+        },
+        {
+          "archiveIndex": 134,
+          "width": 768,
+          "height": 768,
+          "url": "https://corewecan.org/wp-content/uploads/2023/08/1080x1080_0000_Sprat3-768x768.jpg"
+        },
+        {
+          "archiveIndex": 131,
+          "width": 1024,
+          "height": 1024,
+          "url": "https://corewecan.org/wp-content/uploads/2023/08/1080x1080_0000_Sprat3-1024x1024.jpg"
+        }
+      ],
+      "ghlVariants": [],
+      "width": 1080,
+      "height": 1080,
+      "alt": {
+        "en": "Students and adults work around a table during a creative activity.",
+        "es": "Estudiantes y adultos trabajan alrededor de una mesa en una actividad creativa."
+      },
+      "sourceSha256": "6baf56123d1f9630cc64a794ed57e228396efd86d90af8aa5257f66445983f1e",
+      "localPath": "",
+      "approvalRef": "",
+      "owner": "unassigned",
+      "useAuthorization": "development-request",
+      "sourcePage": "https://corewecan.org/house-of-straus/"
+    },
+    {
+      "id": "core-history-photo",
+      "kind": "image",
+      "status": "review",
+      "archiveIndex": 140,
+      "label": "CORE - Our History - Photo or Graphic - 1080x1080 0000 Timeline Photo 9 - 1080x1080",
+      "filename": "CORE - Our History - Photo or Graphic - 1080x1080 0000 Timeline Photo 9 - 1080x1080.jpeg",
+      "sourceUrl": "https://corewecan.org/wp-content/uploads/2023/08/1080x1080_0000_Timeline-Photo-9.jpeg",
+      "ghlUrl": "",
+      "sourceVariants": [
+        {
+          "archiveIndex": 138,
+          "width": 300,
+          "height": 300,
+          "url": "https://corewecan.org/wp-content/uploads/2023/08/1080x1080_0000_Timeline-Photo-9-300x300.jpeg"
+        },
+        {
+          "archiveIndex": 139,
+          "width": 768,
+          "height": 768,
+          "url": "https://corewecan.org/wp-content/uploads/2023/08/1080x1080_0000_Timeline-Photo-9-768x768.jpeg"
+        },
+        {
+          "archiveIndex": 136,
+          "width": 1024,
+          "height": 1024,
+          "url": "https://corewecan.org/wp-content/uploads/2023/08/1080x1080_0000_Timeline-Photo-9-1024x1024.jpeg"
+        }
+      ],
+      "ghlVariants": [],
+      "width": 1080,
+      "height": 1080,
+      "alt": {
+        "en": "A group gathers outdoors with graduates wearing caps and gowns.",
+        "es": "Un grupo se reúne al aire libre con graduados vestidos con togas y birretes."
+      },
+      "sourceSha256": "45e43f311ca231e9018cb3babc1d949f6e39beac646cbad8466ff4e2c2341489",
+      "localPath": "",
+      "approvalRef": "",
+      "owner": "unassigned",
+      "useAuthorization": "development-request",
+      "sourcePage": "https://corewecan.org/our-history/"
+    },
+    {
+      "id": "partner-visit-photo",
+      "kind": "image",
+      "status": "review",
+      "archiveIndex": 381,
+      "label": "CORE - Volunteer - Site Asset - pic faq 4 - 942x628",
+      "filename": "CORE - Volunteer - Site Asset - pic faq 4 - 942x628.jpg",
+      "sourceUrl": "https://corewecan.org/wp-content/uploads/2023/08/pic_faq_4.jpg",
+      "ghlUrl": "",
+      "sourceVariants": [
+        {
+          "archiveIndex": 379,
+          "width": 300,
+          "height": 200,
+          "url": "https://corewecan.org/wp-content/uploads/2023/08/pic_faq_4-300x200.jpg"
+        },
+        {
+          "archiveIndex": 380,
+          "width": 768,
+          "height": 512,
+          "url": "https://corewecan.org/wp-content/uploads/2023/08/pic_faq_4-768x512.jpg"
+        }
+      ],
+      "ghlVariants": [],
+      "width": 942,
+      "height": 628,
+      "alt": {
+        "en": "A group wearing safety vests and hard hats visits a construction site.",
+        "es": "Un grupo con chalecos y cascos de seguridad visita una obra."
+      },
+      "sourceSha256": "da265d2dc15ead59b390331f45f7fb28745648305bff748375d0bb3b2ad3aa04",
+      "localPath": "",
+      "approvalRef": "",
+      "owner": "unassigned",
+      "useAuthorization": "development-request",
+      "sourcePage": "https://corewecan.org/volunteer/"
+    },
+    {
+      "id": "core-book-illustration",
+      "kind": "illustration",
+      "status": "review",
+      "archiveIndex": 72,
+      "label": "CORE - Sitewide - Site Asset - BookGraphic Vertical - 733x1080",
+      "filename": "CORE - Sitewide - Site Asset - BookGraphic Vertical - 733x1080.png",
+      "sourceUrl": "https://corewecan.org/wp-content/uploads/2023/06/BookGraphic_Vertical.png",
+      "ghlUrl": "",
+      "sourceVariants": [],
+      "ghlVariants": [],
+      "width": 733,
+      "height": 1080,
+      "alt": {
+        "en": "Colorful lines rise from an open book.",
+        "es": "Líneas de colores surgen de un libro abierto."
+      },
+      "sourceSha256": "059ba2bb9ef21f6cf75e8577847d7e3c339965f88542d70a03ca1e0ddd72ddb5",
+      "localPath": "",
+      "approvalRef": "",
+      "owner": "unassigned",
+      "useAuthorization": "development-request",
+      "sourcePage": "https://corewecan.org/"
+    },
+    {
+      "id": "character-development-icon",
+      "kind": "icon",
+      "status": "review",
+      "archiveIndex": 348,
+      "label": "CORE - Student Parent Portal - Site Asset - Idea 256px - 176x240",
+      "filename": "CORE - Student Parent Portal - Site Asset - Idea 256px - 176x240.png",
+      "sourceUrl": "https://corewecan.org/wp-content/uploads/2023/08/Idea_256px.png",
+      "ghlUrl": "",
+      "sourceVariants": [],
+      "ghlVariants": [],
+      "width": 176,
+      "height": 240,
+      "alt": {
+        "en": "Light bulb illustration",
+        "es": "Ilustración de una bombilla"
+      },
+      "sourceSha256": "15c57713d13af7c79000680d62ae908ca548d1443bf9041cb8da2409c8258862",
+      "localPath": "",
+      "approvalRef": "",
+      "owner": "unassigned",
+      "useAuthorization": "development-request",
+      "sourcePage": "https://corewecan.org/student-parent-portal/"
+    },
+    {
+      "id": "career-exploration-icon",
+      "kind": "icon",
+      "status": "review",
+      "archiveIndex": 372,
+      "label": "CORE - Student Parent Portal - Site Asset - Trophy 256px - 208x240",
+      "filename": "CORE - Student Parent Portal - Site Asset - Trophy 256px - 208x240.png",
+      "sourceUrl": "https://corewecan.org/wp-content/uploads/2023/08/Trophy_256px.png",
+      "ghlUrl": "",
+      "sourceVariants": [],
+      "ghlVariants": [],
+      "width": 208,
+      "height": 240,
+      "alt": {
+        "en": "Trophy illustration",
+        "es": "Ilustración de un trofeo"
+      },
+      "sourceSha256": "929216e6ddd8aa64d4a24e2e27207e52ee937530e30eec7f4a75690025e01eb7",
+      "localPath": "",
+      "approvalRef": "",
+      "owner": "unassigned",
+      "useAuthorization": "development-request",
+      "sourcePage": "https://corewecan.org/student-parent-portal/"
+    },
+    {
+      "id": "financial-literacy-icon",
+      "kind": "icon",
+      "status": "review",
+      "archiveIndex": 305,
+      "label": "CORE - FAQ - Site Asset - Book 3 256px - 240x241",
+      "filename": "CORE - FAQ - Site Asset - Book 3 256px - 240x241.png",
+      "sourceUrl": "https://corewecan.org/wp-content/uploads/2023/08/Book-3_256px.png",
+      "ghlUrl": "",
+      "sourceVariants": [],
+      "ghlVariants": [],
+      "width": 240,
+      "height": 241,
+      "alt": {
+        "en": "Open book illustration",
+        "es": "Ilustración de un libro abierto"
+      },
+      "sourceSha256": "938cc4e4ee0efa41745a5b3239da101b667bf69028328fd49089b46f5d19073e",
+      "localPath": "",
+      "approvalRef": "",
+      "owner": "unassigned",
+      "useAuthorization": "development-request",
+      "sourcePage": "https://corewecan.org/faq/"
+    },
+    {
+      "id": "school-swainston-photo",
+      "kind": "image",
+      "status": "review",
+      "archiveIndex": 388,
+      "label": "CORE - Student Parent Portal - Site Asset - 0003 SwainstonMS - 1440x900",
+      "filename": "CORE - Student Parent Portal - Site Asset - 0003 SwainstonMS - 1440x900.jpg",
+      "sourceUrl": "https://corewecan.org/wp-content/uploads/2023/09/0003_SwainstonMS.jpg",
+      "ghlUrl": "",
+      "sourceVariants": [
+        {
+          "archiveIndex": 386,
+          "width": 300,
+          "height": 188,
+          "url": "https://corewecan.org/wp-content/uploads/2023/09/0003_SwainstonMS-300x188.jpg"
+        },
+        {
+          "archiveIndex": 387,
+          "width": 768,
+          "height": 480,
+          "url": "https://corewecan.org/wp-content/uploads/2023/09/0003_SwainstonMS-768x480.jpg"
+        },
+        {
+          "archiveIndex": 385,
+          "width": 1024,
+          "height": 640,
+          "url": "https://corewecan.org/wp-content/uploads/2023/09/0003_SwainstonMS-1024x640.jpg"
+        }
+      ],
+      "ghlVariants": [],
+      "width": 1440,
+      "height": 900,
+      "alt": {
+        "en": "The exterior of Swainston Middle School.",
+        "es": "El exterior de la escuela secundaria Swainston."
+      },
+      "sourceSha256": "d11eb9b5a7129d3bc4f555c5a7b0b6985bd4cacc3be7db5cbfb2d7a33e9b1439",
+      "localPath": "",
+      "approvalRef": "",
+      "owner": "unassigned",
+      "useAuthorization": "development-request",
+      "sourcePage": "https://corewecan.org/student-parent-portal/"
+    },
+    {
+      "id": "school-findlay-photo",
+      "kind": "image",
+      "status": "review",
+      "archiveIndex": 402,
+      "label": "CORE - Student Parent Portal - Site Asset - Findlay M S - 1400x896",
+      "filename": "CORE - Student Parent Portal - Site Asset - Findlay M S - 1400x896.jpg",
+      "sourceUrl": "https://corewecan.org/wp-content/uploads/2023/09/Findlay-M.S.jpg",
+      "ghlUrl": "",
+      "sourceVariants": [
+        {
+          "archiveIndex": 400,
+          "width": 300,
+          "height": 192,
+          "url": "https://corewecan.org/wp-content/uploads/2023/09/Findlay-M.S-300x192.jpg"
+        },
+        {
+          "archiveIndex": 401,
+          "width": 768,
+          "height": 492,
+          "url": "https://corewecan.org/wp-content/uploads/2023/09/Findlay-M.S-768x492.jpg"
+        },
+        {
+          "archiveIndex": 399,
+          "width": 1024,
+          "height": 655,
+          "url": "https://corewecan.org/wp-content/uploads/2023/09/Findlay-M.S-1024x655.jpg"
+        }
+      ],
+      "ghlVariants": [],
+      "width": 1400,
+      "height": 896,
+      "alt": {
+        "en": "The exterior of Findlay Middle School.",
+        "es": "El exterior de la escuela secundaria Findlay."
+      },
+      "sourceSha256": "126e612e02d65e04c8383a5c7eb5300765f2c5b4d9ea26104346a76d9fd1cd1e",
+      "localPath": "",
+      "approvalRef": "",
+      "owner": "unassigned",
+      "useAuthorization": "development-request",
+      "sourcePage": "https://corewecan.org/student-parent-portal/"
+    },
+    {
+      "id": "impact-report-cover",
+      "kind": "image",
+      "status": "review",
+      "archiveIndex": 519,
+      "label": "CORE - Resources - Site Asset - 2025 Cover - scaled - 1979x2560",
+      "filename": "CORE - Resources - Site Asset - 2025 Cover - scaled - 1979x2560.jpg",
+      "sourceUrl": "https://corewecan.org/wp-content/uploads/2026/02/2025-Cover-scaled.jpg",
+      "ghlUrl": "",
+      "sourceVariants": [
+        {
+          "archiveIndex": 517,
+          "width": 768,
+          "height": 994,
+          "url": "https://corewecan.org/wp-content/uploads/2026/02/2025-Cover-768x994.jpg"
+        },
+        {
+          "archiveIndex": 518,
+          "width": 792,
+          "height": 1024,
+          "url": "https://corewecan.org/wp-content/uploads/2026/02/2025-Cover-792x1024.jpg"
+        },
+        {
+          "archiveIndex": 514,
+          "width": 1187,
+          "height": 1536,
+          "url": "https://corewecan.org/wp-content/uploads/2026/02/2025-Cover-1187x1536.jpg"
+        }
+      ],
+      "ghlVariants": [],
+      "width": 1979,
+      "height": 2560,
+      "alt": {
+        "en": "Cover of the 2025 CORE Impact Report.",
+        "es": "Portada del Informe de Impacto de CORE de 2025."
+      },
+      "sourceSha256": "67e3e5ad87aff7424ba3f584d936c85471c2e62819ca5416ce50620caedc52ea",
+      "localPath": "",
+      "approvalRef": "",
+      "owner": "unassigned",
+      "useAuthorization": "development-request",
+      "sourcePage": "https://corewecan.org/resources/"
     },
     {
       "id": "financial-literacy-photo",
       "kind": "image",
       "status": "needed",
       "localPath": "",
-      "publishedUrl": "",
       "sourceUrl": "",
       "alt": {
         "en": "",
         "es": ""
       },
       "approvalRef": "",
-      "owner": "unassigned"
+      "owner": "unassigned",
+      "ghlUrl": ""
     },
     {
       "id": "family-resource-guide-en",
       "kind": "document",
       "status": "needed",
       "localPath": "",
-      "publishedUrl": "",
       "sourceUrl": "",
       "alt": {
         "en": "",
         "es": ""
       },
       "approvalRef": "",
-      "owner": "unassigned"
+      "owner": "unassigned",
+      "ghlUrl": ""
     },
     {
       "id": "family-resource-guide-es",
       "kind": "document",
       "status": "needed",
       "localPath": "",
-      "publishedUrl": "",
       "sourceUrl": "",
       "alt": {
         "en": "",
         "es": ""
       },
       "approvalRef": "",
-      "owner": "unassigned"
+      "owner": "unassigned",
+      "ghlUrl": ""
     }
   ]
 }

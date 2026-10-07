@@ -36,3 +36,9 @@ Restore the previously saved GHL embed/page version and any associated host meta
 | Date | Environment | Source commit / tag | Embed hash | GHL page | Reviewer | Result |
 |---|---|---|---|---|---|---|
 | 2026-10-07 | Workspace only | See Git history | Generated locally | Not configured | Pending | Foundation; not deployed |
+
+## Labeled media update
+
+The current `mediaProvider` is `original`. The development embed references existing CORE-hosted assets. Optional `ghlUrl` overrides are reserved in `media/manifest.json`; see `../media/README.md` for partial migration and rollback. **Before repointing corewecan.org, preserve or migrate its /wp-content/uploads/ URLs.** Do not assume WordPress media stays available after a domain move.
+
+Run `npm run media:catalog` to export the original 534-row label catalog and a selected-asset migration CSV. The compressed catalog contains metadata only. Tests and exact limits of this revision are recorded in `MEDIA-QA.md`.

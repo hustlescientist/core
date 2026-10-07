@@ -18,7 +18,7 @@ Open `http://127.0.0.1:4173`. Edit `src/`, then refresh. Open `core.code-workspa
 
 ```sh
 npm run check   # Syntax, bilingual configuration, media, and file-size checks
-npm test        # 13 automated foundation tests
+npm test        # 28 automated foundation/media tests
 npm run build   # Local preview and paste-ready development embed
 ```
 
@@ -41,9 +41,9 @@ Output: `dist/index.html`, `dist/ghl-embed.html`, and `dist/build-manifest.json`
 
 ## What works now
 
-The starter has 11 public views, English/Spanish switching that preserves the current view, responsive navigation, keyboard focus handling, safe fallback behavior for unconfigured integration buttons, and a self-contained development embed. The three program cards have distinct destinations. GHL hydration hooks are included but require testing in the real GHL environment.
+The site has 11 public views, English/Spanish switching that preserves the current view, responsive navigation, keyboard focus handling, honest fallback behavior for unconfigured integrations, and a self-contained development embed. It now uses 16 selected assets from the supplied labeled archive: the full CORE logo, photographs, program icons, illustration, school images, and report cover. The three program cards keep distinct destinations. GHL hydration hooks still require testing in the real GHL environment.
 
-**Not built yet:** final site content, real logo/photo imports, resource search, events, live forms/payments, portal configuration, production routing/SEO, or a full accessibility audit. No font files are bundled. Hash routing is preview-only, and the standalone preview is marked noindex.
+**Not built yet:** final site content, resource search, events, live forms/payments, portal configuration, production routing/SEO, or a full accessibility audit. No font files are bundled. Hash routing is preview-only, and the standalone preview is marked noindex.
 
 ## Work tracking and Git flow
 
@@ -64,6 +64,8 @@ Open a pull request into `main`. Include the linked issue, screenshots, test res
 
 ## Media and privacy
 
-Add optimized, approved public assets to `media/logos`, `media/images`, `media/icons`, or `media/documents`; update `media/manifest.json`. Source originals, videos, credentials, private records, and CRM exports stay outside ordinary Git. No actual logo/photo/document binaries have been imported yet. See [media/README.md](media/README.md).
+Current images load from their original CORE-hosted URLs; they are not republished to GitHub or GHL. `media/manifest.json` retains stable IDs, exact labels/filenames, bilingual alternatives, page bindings, original URLs, and optional future `ghlUrl` overrides. Set `mediaProvider` in `src/config/site.json` to `ghl` only when ready; missing overrides fall back to originals.
+
+All 534 source label records are preserved in a metadata-only archive. Run `npm run media:catalog` to export JSON/CSV, including a migration list for the 16 selected assets. Source image binaries remain in the supplied ZIP; no font files are bundled. See [media/README.md](media/README.md) for migration instructions and [docs/MEDIA-QA.md](docs/MEDIA-QA.md) for tests and limitations. Keep the original media URLs served before any domain migration.
 
 Before any GHL publish, follow [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md). Preserve the previous embed for rollback and record the source commit and build hash.

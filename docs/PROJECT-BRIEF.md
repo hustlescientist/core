@@ -33,7 +33,7 @@ This workspace was informed by the project materials supplied in the CORE conver
 | `Write brand guide.txt` | Sampled colors, identity direction, proposed UI/type rules | Proposed brand standards require approval |
 | CORE conversation: PDD - Product Design & Development Brief | Public/private platform split and feature boundaries | Selected implementation direction; account capabilities still need validation |
 
-These documents are summarized here; their full original handoff ZIPs, binary logo/photo assets, and old sandbox-linked artifacts have not been imported. Get the original WordPress content/media export for an exact migration. Contact details in the starter derive from the supplied inventory and require reconfirmation before launch.
+These documents are summarized here. A later user-supplied labeled media archive now provides the selected logo/images and a lossless 534-record media catalog. The SPA uses the original hosted URLs; binary image files are not duplicated in Git. The remaining original handoff ZIPs and a full WordPress content export are still separate sources. Contact details in the starter derive from the supplied inventory and require reconfirmation before launch.
 
 ## Delivery order
 

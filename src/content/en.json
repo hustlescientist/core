@@ -1,6 +1,6 @@
 {
   "preview": "Development preview. Draft content; forms, donations, and member login are not connected.",
-  "workspace": "Website workspace - logo pending",
+  "workspace": "CORE website preview",
   "menu": "Menu",
   "navLabel": "Main navigation",
   "login": "Member login",
@@ -22,7 +22,7 @@
     "about": "About & impact"
   },
   "home": {
-    "eyebrow": "CORE / Public website foundation",
+    "eyebrow": "Students. Families. Possibility.",
     "title": "Every Student Has Potential.",
     "intro": "CORE helps them discover it.",
     "support": "Together with families and community partners, we help students build confidence, explore possibilities, and develop skills for life.",
@@ -30,8 +30,11 @@
     "secondary": "For students & families",
     "programTitle": "Three pathways. One purpose.",
     "programIntro": "Discover the three program pillars that shape the CORE experience.",
-    "nextTitle": "Built around people.",
-    "nextIntro": "Clear information for families, practical ways to partner, and welcoming opportunities to support students."
+    "nextTitle": "There’s a place for you at CORE.",
+    "nextIntro": "Clear information for families, practical ways to partner, and welcoming opportunities to support students.",
+    "programEyebrow": "The CORE experience",
+    "galleryTitle": "Learning happens everywhere.",
+    "galleryIntro": "A look at community service, creative activities, and career exploration from CORE's photo archive."
   },
   "programs": [
     {
@@ -89,5 +92,32 @@
       "intro": "Have a question about programs, participation, partnerships, or access?",
       "detail": "The contact information below comes from the earlier site inventory and should be reconfirmed before launch. Public GHL inquiry forms have not yet been configured."
     }
+  },
+  "mediaUnavailable": "Image unavailable.",
+  "archiveNote": "Photography from CORE's archive; images are not a claim about a specific current curriculum or event.",
+  "schoolsTitle": "Connected with our schools.",
+  "schoolYearNote": "School partners listed on CORE's website for 2026-2027.",
+  "schoolNames": [
+    "Swainston Middle School",
+    "Findlay Middle School"
+  ],
+  "reportTitle": "Explore CORE’s impact.",
+  "reportIntro": "The archive includes the cover of CORE’s 2025 Impact Report. Visit the current resource library for the published report and other resources.",
+  "currentResources": "Visit the current resource library (English)",
+  "audienceActions": {
+    "families": "Find your next step",
+    "partners": "Explore ways to partner",
+    "get-involved": "Support the possibilities"
+  },
+  "mediaCaptions": {
+    "home-hero-photo": "Growing together. Discovering possibilities.",
+    "community-service-photo": "Community service, hands-on.",
+    "creative-learning-photo": "Making room for creativity.",
+    "career-exploration-photo": "A closer look at future possibilities.",
+    "character-development-photo": "Creating something together.",
+    "family-support-photo": "Connection beyond the classroom.",
+    "partner-visit-photo": "Experiences beyond the classroom.",
+    "core-history-photo": "A moment from CORE’s history.",
+    "impact-report-cover": "2025 CORE Impact Report — cover from the source archive."
   }
 }

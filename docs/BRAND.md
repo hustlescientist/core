@@ -4,7 +4,7 @@ Source: supplied CORE brand guide, October 7, 2026. This is an implementation su
 
 ## Identity
 
-Preserve the full-color orange CORE artwork, gray illustration, and "Powered by The Rogers Foundation" endorsement. Use the original artwork on white, preserve proportions, and obtain approved compact/reversed variants. The starter's plain CORE text is a labeled site-name placeholder, not a recreated logo.
+Preserve the full-color orange CORE artwork, gray illustration, and "Powered by The Rogers Foundation" endorsement. Use the original artwork on white, preserve proportions, and obtain approved compact/reversed variants. The header and footer now use the original 800x242 CORE logo from the supplied archive. The exact archive label and filename are retained in the media register; the illustration, wordmark, and foundation endorsement are not reconstructed.
 
 Existing lead message: **Every Student Has Potential. CORE helps them discover it.** New supporting copy in the locale files is draft content. Frame students as active participants and families as partners; avoid guaranteed outcomes, deficit labels, or invented testimonials.
 
