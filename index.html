@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>CORE Website Demo</title>
+  <link rel="stylesheet" href="./src/css/tokens.css">
+  <link rel="stylesheet" href="./src/css/site.css">
+  <style>body{margin:0}</style>
+</head>
+<body data-core-standalone="true">
+  <div id="core-app" lang="en">
+    <a class="core-skip" href="#core-main">Skip to content / Saltar al contenido</a>
+    <div class="core-preview" data-core-banner></div>
+    <header class="core-header" data-core-header></header>
+    <main id="core-main" tabindex="-1" data-core-view>
+      <section class="core-section core-wrap">
+        <h1>Loading CORE demo…</h1>
+      </section>
+    </main>
+    <div class="core-feedback core-wrap" role="status" aria-live="polite" data-core-status></div>
+    <footer class="core-footer" data-core-footer></footer>
+    <noscript>
+      <p>Please enable JavaScript for this CORE website demo. For help, email <a href="mailto:info@corewecan.org">info@corewecan.org</a> or call <a href="tel:+17026573264">(702) 657-3264</a>.</p>
+      <p lang="es">Active JavaScript para ver esta demostración. Para recibir ayuda, escriba a info@corewecan.org o llame al (702) 657-3264.</p>
+    </noscript>
+    <script type="application/json" data-core-payload>{}</script>
+  </div>
+  <script>
+  (async () => {
+    const readJSON = async path => {
+      const response = await fetch(path, {cache: 'no-store'});
+      if (!response.ok) throw new Error('Could not load ' + path + ' (' + response.status + ')');
+      return response.json();
+    };
+    const [site, en, es, media] = await Promise.all([
+      readJSON('./src/config/site.json'),
+      readJSON('./src/content/en.json'),
+      readJSON('./src/content/es.json'),
+      readJSON('./media/manifest.json')
+    ]);
+    document.querySelector('[data-core-payload]').textContent = JSON.stringify({
+      site,
+      locales: {en, es},
+      media: {bindings: media.bindings, assets: media.assets}
+    });
+    for (const src of ['./src/js/media.js', './src/js/app.js']) {
+      await new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = src;
+        script.onload = resolve;
+        script.onerror = () => reject(new Error('Could not load ' + src));
+        document.body.appendChild(script);
+      });
+    }
+  })().catch(error => {
+    console.error(error);
+    const main = document.querySelector('[data-core-view]');
+    if (main) main.innerHTML = '<section class="core-section core-wrap"><h1>CORE demo unavailable</h1><p>Please refresh the page or contact info@corewecan.org.</p></section>';
+  });
+  </script>
+</body>
+</html>
