@@ -127,5 +127,20 @@
     "partner-visit-photo": "Experiencias más allá del aula.",
     "core-history-photo": "Un momento de la historia de CORE.",
     "impact-report-cover": "Informe de Impacto de CORE de 2025: portada del archivo original."
+  },
+  "actionLabels": {
+    "askJoin": "Preguntar cómo unirse a CORE",
+    "findResources": "Encontrar recursos para familias",
+    "startPartnership": "Iniciar una conversación de colaboración",
+    "hostCareer": "Ofrecer una experiencia profesional",
+    "becomeCareerPartner": "Convertirse en aliado de Career We Can",
+    "volunteer": "Hacer voluntariado con CORE",
+    "volunteerInterest": "Cuéntenos cómo le gustaría ayudar",
+    "exploreInvolvement": "Explorar formas de participar",
+    "donateNow": "Donar a CORE",
+    "waysToGive": "Explorar otras formas de donar",
+    "familySupport": "Explorar apoyo para familias",
+    "getInvolved": "Participar",
+    "explorePrograms": "Explorar programas"
   }
 }

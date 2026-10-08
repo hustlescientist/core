@@ -38,9 +38,10 @@
         </div>
       </section>`).join('')}</div></section>` : '';
   }
-  function related(ids=[],t,route){
+  const statusMarkup=(page,p,stage,cls='core-mini-status') => p?.status && (stage==='development' || page==='jingle-in-july') ? `<span class="${e(cls)}">${e(p.status)}</span>` : '';
+  function related(ids=[],t,route,stage){
     const rows=ids.map(id=>({id,p:t.pages[id]})).filter(x=>x.p);
-    return rows.length?`<section class="core-section core-soft core-related"><div class="core-wrap"><div class="core-section-heading"><div><p class="core-eyebrow">CORE</p><h2>${e(t.exploreMore)}</h2></div></div><div class="core-related-grid">${rows.map(({id,p},index)=>`<article class="core-link-card"><span class="core-card-index" aria-hidden="true">${String(index+1).padStart(2,'0')}</span>${p.status?`<span class="core-mini-status">${e(p.status)}</span>`:''}<h3>${e(p.title)}</h3><p>${e(p.intro)}</p>${route(id,t.audienceActions?.[id]||t.explorePage,'core-text-link core-arrow-link')}</article>`).join('')}</div></div></section>`:'';
+    return rows.length?`<section class="core-section core-soft core-related"><div class="core-wrap"><div class="core-section-heading"><div><p class="core-eyebrow">CORE</p><h2>${e(t.exploreMore)}</h2></div></div><div class="core-related-grid">${rows.map(({id,p},index)=>`<article class="core-link-card"><span class="core-card-index" aria-hidden="true">${String(index+1).padStart(2,'0')}</span>${statusMarkup(id,p,stage)}<h3>${e(p.title)}</h3><p>${e(p.intro)}</p>${route(id,t.audienceActions?.[id]||t.explorePage,'core-text-link core-arrow-link')}</article>`).join('')}</div></div></section>`:'';
   }
   function news(items=[],t,route){
     return `<div class="core-news-grid">${items.map((item,index)=>`<article class="core-news-card"><div class="core-news-thumb core-news-thumb-${index+1}" aria-hidden="true"><span>${String(index+1).padStart(2,'0')}</span></div><div class="core-news-body"><p class="core-meta">${e(item.category)} · ${e(item.date)}</p><h3>${e(item.title)}</h3><p>${e(item.excerpt)}</p>${route(item.id,t.newsRead,'core-text-link core-arrow-link')}</div></article>`).join('')}</div>`;
@@ -75,14 +76,15 @@
     const body=es?'Explore una ruta relacionada o comuníquese con CORE para obtener ayuda.':'Explore a related pathway or contact CORE for help.';
     return `<section class="core-section core-wrap"><div class="core-cta-band core-cta-band-final"><div><p class="core-eyebrow">CORE</p><h2>${e(heading)}</h2><p>${e(body)}</p></div><div class="core-actions">${primaryPage?route(primary,primaryPage.title,'core-button core-button-ink'):''}${route('contact',t.contactLabel,'core-button core-button-secondary')}</div></div></section>`;
   }
-  function page(entry,page,t,{route,language}){
+  function page(entry,page,t,{route,language,extras='',stage='development'}){
     if (!entry || page==='__not-found') return '';
-    let out=sectionNav(entry,t);
-    out+=facts(entry,page,t,route,language);
+    let out=facts(entry,page,t,route,language);
+    out+=sectionNav(entry,t);
     out+=page==='programs'?'':sections(entry.sections,route);
+    out+=extras;
     if(page==='programs'){
       const ids=['leadership-development','community-service','career-we-can','social-emotional-learning','two-generational','sprat','house-of-straus','score'];
-      out+=`<section class="core-section core-soft"><div class="core-wrap"><div class="core-section-heading"><div><p class="core-eyebrow">CORE</p><h2>${e(t.exploreMore)}</h2></div></div><div class="core-related-grid">${ids.map((id,index)=>{const p=t.pages[id];return `<article class="core-link-card"><span class="core-card-index" aria-hidden="true">${String(index+1).padStart(2,'0')}</span>${p.status?`<span class="core-mini-status">${e(p.status)}</span>`:''}<h3>${e(p.title)}</h3><p>${e(p.intro)}</p>${route(id,t.explorePage,'core-text-link core-arrow-link')}</article>`;}).join('')}</div></div></section>`;
+      out+=`<section class="core-section core-soft"><div class="core-wrap"><div class="core-section-heading"><div><p class="core-eyebrow">CORE</p><h2>${e(t.exploreMore)}</h2></div></div><div class="core-related-grid">${ids.map((id,index)=>{const p=t.pages[id];return `<article class="core-link-card"><span class="core-card-index" aria-hidden="true">${String(index+1).padStart(2,'0')}</span>${statusMarkup(id,p,stage)}<h3>${e(p.title)}</h3><p>${e(p.intro)}</p>${route(id,t.explorePage,'core-text-link core-arrow-link')}</article>`;}).join('')}</div></div></section>`;
     }
     if(entry.timeline?.length) out+=`<section id="core-history" class="core-section core-wrap" data-core-section-anchor><p class="core-eyebrow">CORE</p><h2>${e(t.timelineTitle)}</h2><div class="core-timeline">${entry.timeline.map(x=>`<article class="core-timeline-item"><p class="core-timeline-date">${e(x.date)}</p><p>${e(x.text)}</p></article>`).join('')}</div></section>`;
     if(entry.people?.length) out+=`<section id="core-team" class="core-section core-wrap" data-core-section-anchor><p class="core-eyebrow">CORE</p><h2>${e(t.peopleTitle)}</h2><div class="core-people-grid">${entry.people.map(x=>`<article class="core-person-card"><span class="core-avatar" aria-hidden="true">${e(x.name.charAt(0))}</span><h3>${e(x.name)}</h3><p>${e(x.role)}</p></article>`).join('')}</div></section>`;
@@ -90,10 +92,10 @@
     if(entry.resourceGroups?.length) out+=`<section id="core-resource-links" class="core-section core-soft" data-core-section-anchor><div class="core-wrap"><p class="core-eyebrow">CORE</p><h2>${e(t.resourcesLabel)}</h2><div class="core-resource-groups">${entry.resourceGroups.map(g=>`<section class="core-resource-group"><h3>${e(g.title)}</h3><ul>${g.items.map(x=>`<li>${ext(x.label,x.url,'core-arrow-link')}</li>`).join('')}</ul></section>`).join('')}</div></div></section>`;
     if(entry.faqs?.length) out+=`<section id="core-faq-list" class="core-section core-wrap" data-core-section-anchor><p class="core-eyebrow">CORE</p><h2>${e(entry.title)}</h2><div class="core-faq">${entry.faqs.map((x,i)=>`<details${i===0?' open':''}><summary><span>${String(i+1).padStart(2,'0')}</span>${e(x.q)}</summary><div><p>${e(x.a)}</p></div></details>`).join('')}</div></section>`;
     if(page==='news') out+=`<section class="core-section core-wrap">${news(t.news,t,route)}</section>`;
-    if(page!=='news') out+=related(entry.related,t,route);
+    if(page!=='news') out+=related(entry.related,t,route,stage);
     out+=endCta(page,t,route,language);
     const source=safe(entry.sourcePath);
-    if(source) out+=`<div class="core-wrap core-source-link"><span>${e(t.sourceLabel)}</span> ${ext(entry.title,source,'core-text-link')}</div>`;
+    if(source && stage==='development') out+=`<div class="core-wrap core-source-link"><span>${e(t.sourceLabel)}</span> ${ext(entry.title,source,'core-text-link')}</div>`;
     return out;
   }
   function footer(t,route){
