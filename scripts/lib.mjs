@@ -20,8 +20,15 @@ export async function loadCatalog() {
   const bytes = brotliDecompressSync(await readFile(path.join(ROOT,'media/archive/asset-labels.json.br')), {maxOutputLength: 4*1024*1024});
   return {rows:JSON.parse(bytes.toString('utf8')),sha256:createHash('sha256').update(bytes).digest('hex'),bytes};
 }
+export async function loadLocale(language) {
+  const [base, ...pageChunks] = await Promise.all([
+    readJSON(`src/content/${language}.json`),
+    ...Array.from({length:6},(_,index)=>readJSON(`src/content/${language}-pages-${index+1}.json`))
+  ]);
+  return {...base,pages:Object.assign({},...pageChunks.map(chunk=>chunk.pages||{}))};
+}
 export async function loadProject() {
-  return {site:await readJSON('src/config/site.json'),locales:{en:await readJSON('src/content/en.json'),es:await readJSON('src/content/es.json')},media:await readJSON('media/manifest.json')};
+  return {site:await readJSON('src/config/site.json'),locales:{en:await loadLocale('en'),es:await loadLocale('es')},media:await readJSON('media/manifest.json')};
 }
 export async function validate(data, release = false) {
   const {site,locales,media} = data;

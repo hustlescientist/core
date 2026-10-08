@@ -1,0 +1,55 @@
+{
+  "pages": {
+    "jingle-in-july": {
+      "title": "Jingle in July 2026","eyebrow": "Past event","intro": "An Ugly Holiday Sweater Fashion Show Benefiting CORE.",
+      "detail": "The July 8, 2026 event at The Beverly Theater combined Scholar-designed holiday fashion, community celebration, sponsorship, and fundraising for CORE programs.",
+      "heroMedia": "creative-learning-photo","sourcePath": "https://corewecan.org/jingle-in-july-2026/","status": "Past event — July 8, 2026",
+      "sections": [
+        {"heading": "Holiday cheer. Summer style. Student impact.","body": ["The source event page described a retro-inspired summer holiday celebration featuring an ugly sweater runway show designed by Scholars, cocktails and refreshments, music, community supporters, and opportunities to give."],"bullets": [],"quote": "","links": []},
+        {"heading": "Event details","body": ["Wednesday, July 8, 2026 at 6 PM","The Beverly Theater, 515 S. Sixth Street, Las Vegas, NV 89101","Holiday Cool Attire"],"bullets": [],"quote": "","links": []},
+        {"heading": "Why it mattered","body": ["The event was positioned as a fundraiser supporting educational access, mentorship, workforce readiness, and opportunity for students and families throughout Southern Nevada."],"bullets": [],"quote": "","links": []}
+      ],
+      "related": ["events","donate","get-involved"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "news": {
+      "title": "News & stories","eyebrow": "Equity Speaks",
+      "intro": "Read recent source-site stories about access, voice, opportunity, and educational equity.",
+      "detail": "The demo brings the three most recent stories into the SPA so visitors can discover them without leaving the main experience.",
+      "heroMedia": "home-hero-photo","sourcePath": "https://corewecan.org/author/core-outreach/","status": "",
+      "sections": [],"related": ["who-gets-a-microphone","who-gets-access-first","equity-at-the-holidays"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "who-gets-a-microphone": {
+      "title": "Who Gets A Microphone","eyebrow": "Equity Speaks · May 3, 2026",
+      "intro": "A small Las Vegas stage became a reminder that access to expression, encouragement, and an audience is part of equity too.",
+      "detail": "The source story reflects on a karaoke fundraiser and asks who gets encouraged to perform, who gets access to lessons and training, and who learns that their voice matters.",
+      "heroMedia": "creative-learning-photo","sourcePath": "https://corewecan.org/who-gets-a-microphone/","status": "",
+      "sections": [
+        {"heading": "Voice is an opportunity","body": ["The article connects educational equity with less obvious forms of access: music programs, creative outlets, performance opportunities, encouragement, and the confidence to take up space."],"bullets": [],"quote": "","links": []},
+        {"heading": "Why it belongs in the CORE story","body": ["CORE’s broader work is not only about academics; it is also about helping young people see possibility, practice confidence, and connect with people and experiences that broaden what feels available to them."],"bullets": [],"quote": "","links": []}
+      ],
+      "related": ["news","who-gets-access-first","equity-at-the-holidays"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "who-gets-access-first": {
+      "title": "Who Gets Access First?","eyebrow": "Equity Speaks · April 6, 2026",
+      "intro": "Two students can sit in the same classroom and have very different access to opportunity.",
+      "detail": "The source article argues that equity is not only about resources; it is also about access to information, mentorship, real-world experiences, and networks that open doors.",
+      "heroMedia": "career-exploration-photo","sourcePath": "https://corewecan.org/who-gets-access-first/","status": "",
+      "sections": [
+        {"heading": "Access turns potential into direction","body": ["Some students grow up knowing what careers exist, how to pursue them, and people who have done it before. Others may be equally capable but missing that map."],"bullets": [],"quote": "","links": []},
+        {"heading": "How CORE shows up","body": ["The article points to speed mentoring, career exploration, and Parent Academy workshops as ways CORE connects students and families with people and perspectives that help make opportunity visible."],"bullets": [],"quote": "","links": []}
+      ],
+      "related": ["news","career-awareness","career-we-can"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "equity-at-the-holidays": {
+      "title": "Equity at the Holidays","eyebrow": "Equity Speaks · December 31, 2025",
+      "intro": "Holiday breaks can reveal differences in what students can access outside the classroom.",
+      "detail": "The source story focuses on middle-grade students and the uneven access to reliable internet, quiet study spaces, healthy meals, enrichment, and emotional stability during school breaks.",
+      "heroMedia": "family-support-photo","sourcePath": "https://corewecan.org/equity-at-the-holidays-what-it-means-for-middle-grade-students/","status": "",
+      "sections": [
+        {"heading": "Why the break matters","body": ["Middle school is a pivotal time for identity, independence, and academic growth. The article argues that for under-resourced families, a holiday break may be destabilizing rather than restorative."],"bullets": [],"quote": "","links": []},
+        {"heading": "Equity between semesters","body": ["The story uses the holiday period to show why educational equity depends on support beyond classroom instruction alone."],"bullets": [],"quote": "","links": []}
+      ],
+      "related": ["news","families","resources"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    }
+  }
+}

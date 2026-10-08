@@ -1,0 +1,52 @@
+{
+  "pages": {
+    "sprat": {
+      "title": "Sprat","eyebrow": "Aprendizaje creativo intergeneracional",
+      "intro": "Los talleres Sprat crean interacciones intergeneracionales, comunicación y nuevas experiencias mediante la expresión creativa.",
+      "detail": "La página fuente describe a artistas docentes de Las Vegas trabajando con adultos mayores y Scholars en poesía, narración, teatro, movimiento, pintura, retrato, escultura, collage y otras formas de arte.",
+      "heroMedia": "creative-learning-photo","sourcePath": "https://corewecan.org/sprat/","status": "Programa adicional del sitio fuente",
+      "sections": [
+        {"heading": "Conexión, compartir y crear","body": ["Scholars y personal facilitan talleres con adultos mayores, incluidas personas con dificultades de memoria, adaptando las actividades a distintas capacidades."],"bullets": [],"quote": "","links": []},
+        {"heading": "Lo que aprenden los Scholars","body": ["La página destaca interacción respetuosa con adultos mayores, empatía, comprensión del envejecimiento y conexión con objetivos educativos."],"bullets": [],"quote": "","links": []}
+      ],
+      "related": ["house-of-straus","character-development","community-service"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "house-of-straus": {
+      "title": "House of Straus","eyebrow": "Educación artística",
+      "intro": "Los Scholars participan en lecciones de arte de seis semanas mediante la Joyce Straus Foundation for the Arts.",
+      "detail": "La página fuente indica que exploran distintos medios —incluidos arte de solución a la contaminación, sellos, impresión y pintura— y presentan su obra a la comunidad.",
+      "heroMedia": "creative-learning-photo","sourcePath": "https://corewecan.org/house-of-straus/","status": "Programa adicional del sitio fuente",
+      "sections": [{"heading": "Expresión creativa","body": ["El programa ofrece oportunidades estructuradas para experimentar con materiales, crear arte y compartirlo públicamente."],"bullets": [],"quote": "","links": []}],
+      "related": ["sprat","character-development"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "score": {
+      "title": "SCORE","eyebrow": "Programa de verano",
+      "intro": "El inventario del sitio fuente identifica SCORE como una página de programación de verano.",
+      "detail": "El contenido detallado actual no estuvo disponible en el conjunto de fuentes recuperado para esta fase, por lo que la ruta se conserva para revisión en lugar de inventar detalles.",
+      "heroMedia": "home-hero-photo","sourcePath": "https://corewecan.org/score/","status": "Requiere revisión del contenido fuente",
+      "sections": [{"heading": "Retenido para revisión de migración","body": ["Antes del lanzamiento, confirme si SCORE está activo, es histórico o debe redirigirse; luego migre la descripción, elegibilidad, fechas y detalles aprobados."],"bullets": [],"quote": "","links": []}],
+      "related": ["programs","families"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "donate": {
+      "title": "Donar / Apoyar","eyebrow": "Invertir en estudiantes y familias",
+      "intro": "El sitio actual invita a apoyar un modelo holístico y de largo plazo que combina recursos escolares y comunitarios.",
+      "detail": "La página fuente ofrece donación en línea, por correo, legados, abogacía, voluntariado y lista de deseos.",
+      "heroMedia": "community-service-photo","sourcePath": "https://corewecan.org/donate/","status": "",
+      "sections": [
+        {"heading": "Donar por correo","body": ["El sitio actual ofrece un formulario descargable para donaciones por cheque. La reconstrucción final deberá enlazar la versión vigente y verificada."],"bullets": [],"quote": "","links": []},
+        {"heading": "Donaciones planificadas","body": ["La página fuente invita a considerar legados, anualidades benéficas, acciones, planes de retiro y designaciones de beneficiarios de seguros de vida, y dirige preguntas a Jeff Jones, Director Ejecutivo."],"bullets": [],"quote": "","links": []},
+        {"heading": "¿Por qué apoyar a CORE?","body": ["La fuente conecta las donaciones con movilidad económica, aprendizaje socioemocional e impacto colectivo."],"bullets": [],"quote": "","links": []},
+        {"heading": "Voz de un donante","body": ["Un testimonio en la página actual enfatiza poder ver cómo las donaciones apoyan a niños, familias y el modelo integral de CORE."],"bullets": [],"quote": "Stanley Tomchim","links": []}
+      ],
+      "related": ["advocate","volunteer","wish-list","events"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "advocate": {
+      "title": "Abogar","eyebrow": "Compartir la misión",
+      "intro": "La abogacía ayuda a CORE a comunicar su misión, recaudar fondos y ampliar el impacto comunitario.",
+      "detail": "La página actual anima a compartir la misión y publicaciones, asistir a eventos, hacer una visita y hablar con amigos y familiares sobre pobreza, inequidad e injusticia.",
+      "heroMedia": "community-service-photo","sourcePath": "https://corewecan.org/advocate/","status": "",
+      "sections": [{"heading": "Formas de abogar","body": ["Comparta la misión de CORE","Amplifique contenido social","Asista a un evento","Visite CORE","Hable con su red sobre equidad educativa y oportunidades"],"bullets": [],"quote": "","links": []}],
+      "related": ["get-involved","events","donate","volunteer"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    }
+  }
+}

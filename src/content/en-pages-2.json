@@ -1,0 +1,201 @@
+{
+  "pages": {
+    "about": {
+      "title": "About CORE",
+      "eyebrow": "Who we are",
+      "intro": "We believe in setting a great example for others.",
+      "detail": "CORE describes its team as people from different places and backgrounds working toward the same aim: a community that supports Scholars and families with equity, accountability, partnership, and kindness.",
+      "heroMedia": "core-history-photo",
+      "sourcePath": "https://corewecan.org/about-us/",
+      "status": "",
+      "sections": [
+        {
+          "heading": "Work with purpose",
+          "body": [
+            "CORE says every young person deserves the opportunity, support, and experiences needed to build a successful future. Staff work alongside Scholars, families, schools, and community partners across academic support, character development, career exploration, and financial literacy."
+          ],
+          "bullets": [],
+          "quote": "",
+          "links": []
+        },
+        {
+          "heading": "Careers at CORE",
+          "body": [
+            "The current site invites applicants who value collaboration and community and who believe in the potential of every Scholar. CORE states that it is an equal opportunity employer."
+          ],
+          "bullets": [],
+          "quote": "",
+          "links": [
+            {
+              "label": "View current open positions",
+              "route": "",
+              "url": "https://recruiting.paylocity.com/"
+            }
+          ]
+        },
+        {
+          "heading": "Alumni voice",
+          "body": [
+            "“CORE gave me the courage and skills to set higher expectations for myself. I wouldn’t be where I am today if it wasn’t for the program and the people.”"
+          ],
+          "bullets": [],
+          "quote": "Adriana, Class of 2019",
+          "links": []
+        },
+        {
+          "heading": "Financial transparency",
+          "body": [
+            "The current site links financial documents for 2016, 2017, 2018, 2019, 2021, 2024, and 2025 and states that CORE is a tax-exempt public charity in good standing under Section 501(c)(3)."
+          ],
+          "bullets": [],
+          "quote": "",
+          "links": []
+        }
+      ],
+      "related": [
+        "history",
+        "partners",
+        "contact"
+      ],
+      "faqs": [],
+      "people": [
+        {"name": "James Cordon","role": "Scholar Success Coach"},
+        {"name": "Brandon Ervin","role": "Program Director"},
+        {"name": "Fernando Garcia","role": "Operations Supervisor"},
+        {"name": "Aiden Giadamez","role": "Grants & Data Manager"},
+        {"name": "Jamiyah Hughes","role": "Scholar Success Coach — Swainston"},
+        {"name": "Beth Hull","role": "Executive & Development Assistant"},
+        {"name": "Donovan Jackson","role": "Scholar Success Coach"},
+        {"name": "Jeff Jones","role": "Executive Director"},
+        {"name": "Natalie Martin","role": "HR Coordinator & Training Supervisor"},
+        {"name": "Jill Moat","role": "Operations Director"},
+        {"name": "Richard Johnson","role": "Alumni Liaison"},
+        {"name": "Vita Johnson","role": "Director of Innovations"},
+        {"name": "Dr. Melvin King","role": "Associate Executive Director"},
+        {"name": "Chris James","role": "Career We Can Supervisor"}
+      ],
+      "board": [
+        {"name": "Rory Reid","role": "Chair"},
+        {"name": "Janae Downey","role": "Treasurer"},
+        {"name": "Anthony Degado","role": "Trustee"},
+        {"name": "Bo Bernhard","role": "Trustee"},
+        {"name": "Archie Perry","role": "Trustee"},
+        {"name": "Michael Flores","role": "Trustee"},
+        {"name": "Shaundell Newsome","role": "Trustee"},
+        {"name": "Stephanie Saldana","role": "Trustee"}
+      ],
+      "timeline": [],
+      "resourceGroups": []
+    },
+    "contact": {
+      "title": "Contact CORE",
+      "eyebrow": "Questions & next steps",
+      "intro": "Have a question about programs, participation, partnerships, volunteering, or support?",
+      "detail": "The public source site lists CORE at 701 S. 9th Street, Las Vegas, NV 89101, (702) 657-3264, and info@corewecan.org.",
+      "heroMedia": "core-book-illustration",
+      "sourcePath": "https://corewecan.org/about-us/",
+      "status": "",
+      "sections": [
+        {
+          "heading": "General contact",
+          "body": ["Email info@corewecan.org or call (702) 657-3264. Families asking about joining are directed by the current FAQ to family@corewecan.org."],
+          "bullets": [],"quote": "","links": []
+        },
+        {
+          "heading": "Areas of interest",
+          "body": ["The existing involvement form asks whether someone is interested in mentoring, donating, volunteering, fundraising, or taking a tour. The rebuilt site will connect these actions to GHL forms after the final CRM destinations are approved."],
+          "bullets": [],"quote": "","links": []
+        }
+      ],
+      "related": ["families","partners","get-involved","faq"],
+      "faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "character-development": {
+      "title": "Character Development",
+      "eyebrow": "Program pillar",
+      "intro": "We help Scholars build the character, confidence, and life skills they need to thrive in school, their communities, and future careers.",
+      "detail": "CORE combines character curriculum, service learning, collaborative activities, and real-world experiences so Scholars can practice the skills behind strong decisions, relationships, resilience, and citizenship.",
+      "heroMedia": "character-development-photo",
+      "sourcePath": "https://corewecan.org/empower/",
+      "status": "",
+      "sections": [
+        {
+          "heading": "Community Service & Service Learning",
+          "body": ["Giving back is one of the ways CORE helps young people discover their potential. Scholars partner with local nonprofits and community organizations to identify needs, plan service projects, and make a meaningful difference throughout Southern Nevada.","The current source page states that each Scholar completes 50 hours of community service annually."],
+          "bullets": ["Empathy","Teamwork","Communication","Civic responsibility"],
+          "quote": "",
+          "links": [{"label": "Explore community service","route": "community-service","url": ""}]
+        },
+        {
+          "heading": "Character Development curriculum",
+          "body": ["CORE’s after-school curriculum uses interactive lessons, discussions, collaborative activities, and real-world experiences."],
+          "bullets": ["Responsibility","Integrity","Empathy","Self-control","Curiosity","Gratitude","Perseverance","Growth mindset"],
+          "quote": "","links": []
+        },
+        {
+          "heading": "Practice, not just theory",
+          "body": ["CORE describes character as something students build through repeated opportunities to practice communication, problem-solving, collaboration, emotional regulation, and ethical decision-making."],
+          "bullets": [],"quote": "","links": []
+        }
+      ],
+      "related": ["leadership-development","community-service","social-emotional-learning","families"],
+      "faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "career-awareness": {
+      "title": "Career Awareness & Exploration",
+      "eyebrow": "Program pillar",
+      "intro": "Discover possibilities. Explore your future.",
+      "detail": "CORE helps Scholars discover careers that match their interests, strengths, and goals through hands-on experiences, workplace learning, and meaningful connections with professionals.",
+      "heroMedia": "career-exploration-photo",
+      "sourcePath": "https://corewecan.org/enrichment/",
+      "status": "",
+      "sections": [
+        {
+          "heading": "Career We Can",
+          "body": ["Career We Can is CORE’s career awareness and exploration program. Since launching in 2018, the source site says it has connected students with professionals, workplace experiences, internships, and hands-on learning opportunities."],
+          "bullets": [],"quote": "",
+          "links": [{"label": "Explore Career We Can","route": "career-we-can","url": ""}]
+        },
+        {
+          "heading": "Make possibilities visible",
+          "body": ["Career exploration is framed as discovery rather than forcing students to choose a job today."],
+          "bullets": [],
+          "quote": "Students can't aspire to careers they've never seen. Career We Can helps make those possibilities visible.",
+          "links": []
+        }
+      ],
+      "related": ["career-we-can","partners","families"],
+      "faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "financial-literacy": {
+      "title": "Financial Literacy",
+      "eyebrow": "Program pillar",
+      "intro": "Build the knowledge and confidence to make smart financial decisions—for today and tomorrow.",
+      "detail": "CORE presents financial literacy as lifelong habits for making informed decisions, setting goals, and building brighter futures.",
+      "heroMedia": "financial-literacy-icon",
+      "sourcePath": "https://corewecan.org/educate/",
+      "status": "",
+      "sections": [
+        {
+          "heading": "Financial literacy for Scholars",
+          "body": ["Learning good financial habits starts early. CORE’s current page highlights practical topics that prepare Scholars for high school, college, careers, and adulthood."],
+          "bullets": ["Budgeting","Saving","Spending wisely","Goal setting","Earning income","Financial responsibility"],
+          "quote": "","links": []
+        },
+        {
+          "heading": "Supporting the whole family",
+          "body": ["CORE connects families with community organizations, educational institutions, and workforce development agencies that can strengthen financial stability, education, and career advancement. The source page mentions workforce training, GED pathways, higher education, and community resources."],
+          "bullets": [],"quote": "","links": []
+        },
+        {
+          "heading": "Two-generation approach",
+          "body": ["CORE links student success and family success, treating education, career progress, and financial confidence as connected across generations."],
+          "bullets": [],"quote": "",
+          "links": [{"label": "Explore the Two-Generational approach","route": "two-generational","url": ""}]
+        }
+      ],
+      "related": ["two-generational","resources","families"],
+      "faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    }
+  }
+}

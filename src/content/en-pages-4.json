@@ -1,0 +1,52 @@
+{
+  "pages": {
+    "sprat": {
+      "title": "Sprat","eyebrow": "Intergenerational creative learning",
+      "intro": "Sprat workshops create intergenerational interactions, communication, and new experiences through creative expression.",
+      "detail": "The source page describes Las Vegas teaching artists working with seniors and CORE Scholars using poetry, storytelling, theater, movement, painting, portraiture, sculpture, collage, and other art forms.",
+      "heroMedia": "creative-learning-photo","sourcePath": "https://corewecan.org/sprat/","status": "Additional source-site program",
+      "sections": [
+        {"heading": "Connection, Sharing, and Creation","body": ["Scholars and staff facilitate creative workshops with senior citizens, including participants with brain and memory impairments, with activities adapted to individual ability levels."],"bullets": [],"quote": "","links": []},
+        {"heading": "What Scholars learn","body": ["The source page highlights respectful interaction with older adults, empathy, understanding the aging process, and alignment with school and after-school learning goals."],"bullets": [],"quote": "","links": []}
+      ],
+      "related": ["house-of-straus","character-development","community-service"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "house-of-straus": {
+      "title": "House of Straus","eyebrow": "Arts education",
+      "intro": "Scholars attend six-week arts education lessons through the Joyce Straus Foundation for the Arts.",
+      "detail": "The source page says Scholars explore different art mediums—including pollution-solution art, stamp and print making, and painting—and present their work to the community at the end of each session.",
+      "heroMedia": "creative-learning-photo","sourcePath": "https://corewecan.org/house-of-straus/","status": "Additional source-site program",
+      "sections": [{"heading": "Creative expression","body": ["The program gives Scholars structured opportunities to experiment with materials, make art, and share their work publicly."],"bullets": [],"quote": "","links": []}],
+      "related": ["sprat","character-development"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "score": {
+      "title": "SCORE","eyebrow": "Summer program",
+      "intro": "The source-site inventory identifies SCORE as a summer-program page.",
+      "detail": "Detailed current copy was not available in the retrieved source set used for this enrichment pass, so this route is retained as a review placeholder instead of inventing program details.",
+      "heroMedia": "home-hero-photo","sourcePath": "https://corewecan.org/score/","status": "Needs source-content review",
+      "sections": [{"heading": "Retained for migration review","body": ["Before launch, confirm whether SCORE is active, historical, or should redirect elsewhere, then migrate the current approved description, eligibility, dates, and participation details."],"bullets": [],"quote": "","links": []}],
+      "related": ["programs","families"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "donate": {
+      "title": "Donate / Support","eyebrow": "Invest in students & families",
+      "intro": "CORE’s current site asks supporters to invest in a long-term, holistic model that combines school and community resources.",
+      "detail": "The source page offers online giving, mail-in donations, legacy gifts, advocacy, volunteering, and wish-list support.",
+      "heroMedia": "community-service-photo","sourcePath": "https://corewecan.org/donate/","status": "",
+      "sections": [
+        {"heading": "Donate by mail","body": ["The current site offers a downloadable form for gifts by check. The final rebuild should link the verified current version."],"bullets": [],"quote": "","links": []},
+        {"heading": "Legacy gifts","body": ["The source page invites planned gifts including bequests, charitable gift annuities, stock, retirement-plan designations, and life-insurance beneficiary designations, and directs questions to Executive Director Jeff Jones."],"bullets": [],"quote": "","links": []},
+        {"heading": "Why support CORE?","body": ["The source page connects giving to economic mobility, social-emotional learning, and collective impact: helping Scholars and families access the support and opportunities needed for choice-filled lives."],"bullets": [],"quote": "","links": []},
+        {"heading": "Supporter voice","body": ["A donor testimonial on the current page emphasizes being able to see how gifts support children, families, and CORE’s whole-family model."],"bullets": [],"quote": "Stanley Tomchim","links": []}
+      ],
+      "related": ["advocate","volunteer","wish-list","events"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "advocate": {
+      "title": "Advocate","eyebrow": "Share the mission",
+      "intro": "Advocacy helps CORE communicate its mission, raise funding, and broaden community impact.",
+      "detail": "The current page encourages supporters to share CORE’s mission and social posts, attend events, take a tour, and talk with friends and family about poverty, inequity, and injustice.",
+      "heroMedia": "community-service-photo","sourcePath": "https://corewecan.org/advocate/","status": "",
+      "sections": [{"heading": "Ways to advocate","body": ["Share CORE’s mission","Amplify social content","Attend an event","Visit or tour CORE","Talk with your network about educational equity and opportunity"],"bullets": [],"quote": "","links": []}],
+      "related": ["get-involved","events","donate","volunteer"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    }
+  }
+}

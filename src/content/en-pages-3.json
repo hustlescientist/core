@@ -1,0 +1,68 @@
+{
+  "pages": {
+    "leadership-development": {
+      "title": "Leadership Development",
+      "eyebrow": "Additional program detail",
+      "intro": "CORE’s source site describes an age-appropriate leadership curriculum focused on character strengths, emotional intelligence, decision-making, and growth mindset.",
+      "detail": "This legacy page says the after-school curriculum is facilitated two hours each week and also describes an Emerging Leaders Lab offered at West Prep Academy for students identified with leadership potential.",
+      "heroMedia": "character-development-photo",
+      "sourcePath": "https://corewecan.org/character-education-leadership-development/",
+      "status": "Source page retained for review",
+      "sections": [
+        {"heading": "After-school leadership curriculum","body": ["The source page connects self-control, curiosity, gratitude, empathy, decision-making, and emotional intelligence with stronger academic and life outcomes."],"bullets": [],"quote": "","links": []},
+        {"heading": "Emerging Leaders Lab","body": ["The page describes an in-school enrichment class at West Prep Academy where selected students learn from guest speakers, perform community service, and pursue leadership opportunities inside and outside school."],"bullets": [],"quote": "","links": []}
+      ],
+      "related": ["character-development","community-service","social-emotional-learning"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "community-service": {
+      "title": "Community Service & Service Learning","eyebrow": "Character in action",
+      "intro": "Community service gives Scholars a way to connect learning, responsibility, empathy, and real-world impact.",
+      "detail": "CORE Scholars work with nonprofits and community organizations to identify needs, develop service projects, and reflect on how their actions strengthen the community.",
+      "heroMedia": "community-service-photo","sourcePath": "https://corewecan.org/community-service-service-learning/","status": "Source page retained for review",
+      "sections": [
+        {"heading": "Service learning","body": ["CORE frames service as more than volunteer hours. Scholars connect classroom learning to community needs while practicing teamwork, communication, compassion, responsibility, and confidence."],"bullets": [],"quote": "","links": []},
+        {"heading": "Annual service commitment","body": ["The current Character Development page states that each Scholar completes 50 hours of community service annually."],"bullets": [],"quote": "","links": []}
+      ],
+      "related": ["character-development","volunteer","sprat"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "career-we-can": {
+      "title": "Career We Can","eyebrow": "Career pathways program",
+      "intro": "Career We Can is CORE’s exploration and pathways program, launched in 2018.",
+      "detail": "The current site describes internships, workplace exposure, mentoring, guest speakers, and hands-on experiences designed to help Scholars discover career fields and prepare for the future.",
+      "heroMedia": "career-exploration-photo","sourcePath": "https://corewecan.org/career-we-can/","status": "",
+      "sections": [
+        {"heading": "Mentor our Scholars","body": ["Career We Can mentors work with groups of Scholars to explore career pathways, set goals, identify actions, and make decisions that move those goals forward."],"bullets": [],"quote": "","links": []},
+        {"heading": "Inspire our Scholars","body": ["Professionals can share their life and career journey as guest speakers, including the obstacles they have navigated and what helped them succeed."],"bullets": [],"quote": "","links": []},
+        {"heading": "Host our Scholars","body": ["Organizations can open their workplaces to students for guided tours, employee panels, job shadowing, and other career-exploration experiences."],"bullets": ["Company or organization tours","Employee panel discussions","Job-shadowing opportunities","Custom hands-on experiences"],"quote": "","links": []},
+        {"heading": "Partner voice","body": ["“I enjoyed the interaction with the kids. Sharing my stories with them was amazing. I decided to get involved with Career We Can because I want to help inspire our next generation and allow them to see greatness in themselves.”"],"bullets": [],"quote": "Vincent Rotolo, Founder of Good Pie","links": []}
+      ],
+      "related": ["career-awareness","partners","volunteer"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "social-emotional-learning": {
+      "title": "Social Emotional Learning (SEL)","eyebrow": "Supporting the whole student",
+      "intro": "SEL helps young people understand and manage emotions, make responsible decisions, maintain healthy relationships, and show empathy.",
+      "detail": "CORE’s source page presents SEL as a practical toolkit for navigating challenges, strengthening confidence, and improving well-being.",
+      "heroMedia": "creative-learning-photo","sourcePath": "https://corewecan.org/social-emotional-learning-sel/","status": "Source page retained for review",
+      "sections": [
+        {"heading": "Understanding yourself","body": ["SEL can help students recognize what they are feeling, understand why, and choose healthier responses."],"bullets": [],"quote": "","links": []},
+        {"heading": "Building stronger relationships","body": ["Listening, empathy, and effective communication can deepen relationships with friends, family, and community."],"bullets": [],"quote": "","links": []},
+        {"heading": "Navigating challenges","body": ["Problem-solving, persistence, and treating mistakes as learning opportunities help students move through difficulty."],"bullets": [],"quote": "","links": []},
+        {"heading": "Developing empathy","body": ["Seeing situations from different perspectives can strengthen kindness, inclusion, and care for others."],"bullets": [],"quote": "","links": []}
+      ],
+      "related": ["character-development","leadership-development","families"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "two-generational": {
+      "title": "Two-Generational Approach","eyebrow": "Whole-family support",
+      "intro": "CORE’s two-generation approach recognizes that the well-being and success of children and parents are closely connected.",
+      "detail": "The source site describes supporting both generations at the same time: helping parents access education, training, employment, housing, health, and other resources while supporting Scholars’ educational, social, and emotional development.",
+      "heroMedia": "family-support-photo","sourcePath": "https://corewecan.org/two-generational/","status": "",
+      "sections": [
+        {"heading": "Support parents and children together","body": ["Two-generation programs address immediate barriers and long-term opportunity across the household rather than treating student needs in isolation."],"bullets": [],"quote": "","links": []},
+        {"heading": "Pathways for parents","body": ["The current source page names education, job training, housing, healthcare, mental-health support, and other resources as examples of support that can improve employment prospects, stability, and well-being."],"bullets": [],"quote": "","links": []},
+        {"heading": "Development for Scholars","body": ["By investing in educational, emotional, and social development, CORE aims to help students build a stronger foundation for future success."],"bullets": [],"quote": "","links": []},
+        {"heading": "Stronger family connections","body": ["The page emphasizes positive relationships, family bonds, and a ripple effect across generations."],"bullets": [],"quote": "","links": []}
+      ],
+      "related": ["families","financial-literacy","resources","partners"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    }
+  }
+}

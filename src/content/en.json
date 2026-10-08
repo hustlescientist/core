@@ -1,5 +1,5 @@
 {
-  "preview": "Development preview. Draft content; forms, donations, and member login are not connected.",
+  "preview": "Client demo — source content is being migrated and refined; forms, donations, and member login are not yet connected.",
   "workspace": "CORE website preview",
   "menu": "Menu",
   "navLabel": "Main navigation",
@@ -11,8 +11,16 @@
   "notFoundTitle": "Page not found",
   "notFoundIntro": "That preview page does not exist. Return to the homepage or contact CORE.",
   "homeLink": "Return home",
-  "draftNote": "This is a workspace foundation, not the finished website. Program details and Spanish translations require staff review.",
+  "explorePage": "Explore",
+  "draftNote": "This page is part of the source-content migration and remains subject to staff review.",
   "footerNote": "Public resources stay public. Member access will use the native GHL portal.",
+  "exploreMore": "Explore more",
+  "peopleTitle": "Meet Team CORE",
+  "boardTitle": "Board of Trustees",
+  "timelineTitle": "CORE milestones",
+  "sourceLabel": "View current source page",
+  "newsRead": "Read story",
+  "resourcesLabel": "Current resource links",
   "nav": {
     "programs": "Programs",
     "families": "Students & families",
@@ -25,7 +33,7 @@
     "eyebrow": "Students. Families. Possibility.",
     "title": "Every Student Has Potential.",
     "intro": "CORE helps them discover it.",
-    "support": "Together with families and community partners, we help students build confidence, explore possibilities, and develop skills for life.",
+    "support": "Through Character Development, Career Awareness & Exploration, Financial Literacy, and family support, CORE helps students build brighter futures.",
     "primary": "Explore programs",
     "secondary": "For students & families",
     "programTitle": "Three pathways. One purpose.",
@@ -34,76 +42,71 @@
     "nextIntro": "Clear information for families, practical ways to partner, and welcoming opportunities to support students.",
     "programEyebrow": "The CORE experience",
     "galleryTitle": "Learning happens everywhere.",
-    "galleryIntro": "A look at community service, creative activities, and career exploration from CORE's photo archive."
+    "galleryIntro": "A look at community service, creative activities, and career exploration from CORE's photo archive.",
+    "missionTitle": "Our mission",
+    "mission": "CORE partners with students, families, schools, and the community to help every Scholar build character, explore future careers, strengthen financial confidence, and create a pathway to lifelong success.",
+    "aboutTitle": "CORE is more than an after-school program.",
+    "about": "CORE is a partner for students and families as they discover strengths, explore opportunities, and prepare for the future. Through engaging experiences, caring relationships, and practical life skills, CORE helps Scholars build the confidence to succeed in school, careers, and life.",
+    "newsTitle": "Latest news & happenings",
+    "newsIntro": "Recent stories from CORE’s Equity Speaks series."
   },
   "programs": [
     {
       "id": "character-development",
       "title": "Character Development",
-      "intro": "Confidence, relationships, resilience, and personal growth.",
+      "intro": "Confidence, relationships, resilience, empathy, and life skills for school, community, and future careers.",
       "action": "Explore character development"
     },
     {
       "id": "career-awareness",
       "title": "Career Awareness & Exploration",
-      "intro": "Discover interests, explore possibilities, and connect learning with future pathways.",
+      "intro": "Hands-on experiences and professional connections that help Scholars discover future possibilities.",
       "action": "Explore career opportunities"
     },
     {
       "id": "financial-literacy",
       "title": "Financial Literacy",
-      "intro": "Build practical skills and confidence for everyday financial decisions.",
+      "intro": "Practical financial knowledge and habits that help Scholars and families make informed decisions.",
       "action": "Explore financial literacy"
     }
   ],
-  "pages": {
-    "programs": {
-      "title": "Programs",
-      "intro": "Explore character development, career awareness and exploration, and financial literacy.",
-      "detail": "Individual program pages will be completed with approved descriptions, participation details, images, and inquiry actions."
+  "news": [
+    {
+      "id": "who-gets-a-microphone",
+      "title": "Who Gets A Microphone",
+      "date": "May 3, 2026",
+      "category": "Equity Speaks",
+      "excerpt": "A Las Vegas fundraiser became a reminder that equity includes who gets encouraged to use their voice, perform, and be heard.",
+      "sourceUrl": "https://corewecan.org/who-gets-a-microphone/"
     },
-    "families": {
-      "title": "Students & families",
-      "intro": "Find out how CORE can support your student and connect your family with useful resources.",
-      "detail": "Eligibility, enrollment steps, school locations, transportation, schedules, and language assistance are pending staff confirmation. Ask about joining CORE; this preview does not advertise open enrollment."
+    {
+      "id": "who-gets-access-first",
+      "title": "Who Gets Access First?",
+      "date": "April 6, 2026",
+      "category": "Equity Speaks",
+      "excerpt": "Access to information, mentorship, experiences, and networks can shape what students believe is possible and how they find their way forward.",
+      "sourceUrl": "https://corewecan.org/who-gets-access-first/"
     },
-    "partners": {
-      "title": "Schools & partners",
-      "intro": "Connect students with opportunities through school, employer, and community partnerships.",
-      "detail": "Approved referral instructions, partner requirements, and staff-owned inquiry forms will be added here. Do not submit private student records through a public inquiry."
-    },
-    "get-involved": {
-      "title": "Get involved",
-      "intro": "Support opportunities for students to learn, explore, and grow.",
-      "detail": "Volunteer interest, sponsorship, public events, and giving options will be connected after their destinations and staff processes are confirmed."
-    },
-    "resources": {
-      "title": "Resources",
-      "intro": "Find information and practical support without a member login.",
-      "detail": "A searchable bilingual directory is planned. Resource eligibility, contacts, editions, and verification dates must be reviewed before publication."
-    },
-    "about": {
-      "title": "About & impact",
-      "intro": "Get to know CORE and the people behind its work.",
-      "detail": "Approved mission and history, staff and board profiles, partners, financial-document links, and dated impact figures will be added here. No unverified metrics are published in this starter."
-    },
-    "contact": {
-      "title": "Contact CORE",
-      "intro": "Have a question about programs, participation, partnerships, or access?",
-      "detail": "The contact information below comes from the earlier site inventory and should be reconfirmed before launch. Public GHL inquiry forms have not yet been configured."
+    {
+      "id": "equity-at-the-holidays",
+      "title": "Equity at The Holidays: What It Means for Middle Grade Students",
+      "date": "December 31, 2025",
+      "category": "Equity Speaks",
+      "excerpt": "Holiday breaks can expose major differences in access to food, internet, quiet study space, enrichment, and stability for middle-grade students.",
+      "sourceUrl": "https://corewecan.org/equity-at-the-holidays-what-it-means-for-middle-grade-students/"
     }
-  },
+  ],
   "mediaUnavailable": "Image unavailable.",
   "archiveNote": "Photography from CORE's archive; images are not a claim about a specific current curriculum or event.",
   "schoolsTitle": "Connected with our schools.",
-  "schoolYearNote": "School partners listed on CORE's website for 2026-2027.",
+  "schoolYearNote": "School partners listed on CORE's website for the 2026–2027 school year.",
   "schoolNames": [
     "Swainston Middle School",
     "Findlay Middle School"
   ],
   "reportTitle": "Explore CORE’s impact.",
-  "reportIntro": "The archive includes the cover of CORE’s 2025 Impact Report. Visit the current resource library for the published report and other resources.",
-  "currentResources": "Visit the current resource library (English)",
+  "reportIntro": "The archive includes the cover of CORE’s 2025 Impact Report. The current source library links the full report and other family resources.",
+  "currentResources": "Visit the current resource library",
   "audienceActions": {
     "families": "Find your next step",
     "partners": "Explore ways to partner",

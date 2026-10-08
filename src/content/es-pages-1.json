@@ -1,0 +1,70 @@
+{
+  "pages": {
+    "programs": {
+      "title": "Programas","eyebrow": "La experiencia CORE",
+      "intro": "Tres caminos ayudan a los Scholars a fortalecer su confianza, descubrir posibilidades y desarrollar habilidades prácticas para la vida.",
+      "detail": "El sitio público actual organiza CORE alrededor del Desarrollo del Carácter, el Conocimiento y Exploración de Carreras y la Educación Financiera, con páginas adicionales que amplían estos temas.",
+      "heroMedia": "home-hero-photo","sourcePath": "https://corewecan.org/","status": "",
+      "sections": [
+        {"heading": "Desarrollo del carácter","body": ["CORE ayuda a los Scholars a fortalecer carácter, confianza y habilidades para la vida mediante aprendizaje después de clases, servicio comunitario, relaciones y práctica en situaciones reales."],"bullets": ["Responsabilidad e integridad","Empatía y autocontrol","Curiosidad y gratitud","Perseverancia y mentalidad de crecimiento"],"quote": "","links": [{"label": "Explorar Desarrollo del Carácter","route": "character-development","url": ""}]},
+        {"heading": "Conocimiento y exploración de carreras","body": ["Cada Scholar merece oportunidades para conocer carreras que conecten con sus intereses, fortalezas y metas. Career We Can acerca lugares de trabajo, profesionales y trayectorias profesionales."],"bullets": [],"quote": "","links": [{"label": "Explorar carreras","route": "career-awareness","url": ""}]},
+        {"heading": "Educación financiera","body": ["CORE introduce hábitos financieros prácticos y conecta a las familias con educación, empleo y recursos comunitarios que pueden fortalecer sus oportunidades a largo plazo."],"bullets": [],"quote": "","links": [{"label": "Explorar Educación Financiera","route": "financial-literacy","url": ""}]}
+      ],
+      "related": ["leadership-development","community-service","career-we-can","social-emotional-learning","two-generational","sprat","house-of-straus"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "families": {
+      "title": "Estudiantes y familias","eyebrow": "Centro público para familias",
+      "intro": "CORE es un lugar donde los estudiantes descubren quiénes son, de qué son capaces y hacia dónde pueden ir.",
+      "detail": "Mediante actividades, aprendizaje práctico, experiencias comunitarias y relaciones significativas, los Scholars fortalecen su confianza, desarrollan carácter, exploran carreras y adquieren habilidades para la escuela y el futuro.",
+      "heroMedia": "family-support-photo","sourcePath": "https://corewecan.org/student-parent-portal/","status": "",
+      "sections": [
+        {"heading": "Formar carácter. Explorar futuros. Crear oportunidades.","body": ["Las experiencias de CORE incluyen excursiones, servicio comunitario, exploración de carreras, amistades y aprendizaje práctico diseñado para ayudar a los Scholars a crecer. El éxito no se ve igual para todos; CORE busca ayudar a cada estudiante a descubrir un futuro lleno de posibilidades."],"bullets": [],"quote": "","links": []},
+        {"heading": "Apoyo más allá del aula","body": ["CORE también colabora con las familias y las conecta con recursos educativos, sociales, emocionales y comunitarios cuando más los necesitan. El sitio actual menciona útiles escolares, asistencia alimentaria, vivienda y otros apoyos comunitarios."],"bullets": [],"quote": "","links": [{"label": "Explorar recursos para familias","route": "resources","url": ""}]},
+        {"heading": "Cómo preguntar sobre participación","body": ["El FAQ actual dirige a las familias interesadas en CORE a family@corewecan.org. El sitio también indica que la programación de CORE es gratuita para los niños y las familias que atiende."],"bullets": [],"quote": "","links": [{"label": "Ver preguntas frecuentes","route": "faq","url": ""},{"label": "Contactar a CORE","route": "contact","url": ""}]}
+      ],
+      "related": ["character-development","career-awareness","financial-literacy","resources","faq"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "partners": {
+      "title": "Escuelas y aliados","eyebrow": "Para educadores, empleadores y aliados comunitarios",
+      "intro": "CORE trabaja junto con escuelas, familias y aliados comunitarios para ayudar a los estudiantes a desarrollar carácter, explorar carreras, fortalecer la confianza financiera y descubrir su potencial.",
+      "detail": "La página actual para educadores presenta a CORE como un modelo de largo plazo y de dos generaciones, con énfasis en relaciones, oportunidades, apoyo familiar, equidad y mejora basada en datos.",
+      "heroMedia": "partner-visit-photo","sourcePath": "https://corewecan.org/teacher-admin-portal/","status": "",
+      "sections": [
+        {"heading": "Lo que CORE ha aprendido","body": ["Las relaciones significativas, las experiencias de aprendizaje atractivas y el apoyo familiar generan un impacto duradero. CORE describe su trabajo como una inversión tanto en los Scholars como en sus familias."],"bullets": [],"quote": "","links": []},
+        {"heading": "Datos e impacto","body": ["El sitio actual indica que CORE utiliza Salesforce para recopilar, organizar y reportar áreas de impacto. Los contadores animados se extrajeron como ceros, por lo que esta demo no los publica como resultados verificados.","Para preguntas sobre datos, la página fuente dirige a info@corewecan.org."],"bullets": [],"quote": "","links": []},
+        {"heading": "Programación de dos generaciones","body": ["CORE apoya a Scholars y familias porque el éxito estudiantil rara vez ocurre de manera aislada. El modelo conecta la educación y oportunidades laborales de los padres con el desarrollo de los estudiantes."],"bullets": [],"quote": "","links": []},
+        {"heading": "Equidad para todos","body": ["CORE define la equidad alrededor del acceso a oportunidades, redes, recursos y apoyo de acuerdo con el punto de partida y las metas de cada persona. La página fuente se compromete a afirmar identidades, fortalecer la voz y centrar la justicia social y la equidad."],"bullets": [],"quote": "","links": []}
+      ],
+      "related": ["families","career-we-can","two-generational","volunteer","contact"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "get-involved": {
+      "title": "Participar","eyebrow": "Apoye a CORE",
+      "intro": "Hay muchas maneras de apoyar a los Scholars y a sus familias: donar, hacer voluntariado, abogar, compartir experiencia profesional, aportar artículos necesarios o participar en eventos.",
+      "detail": "El sitio fuente presenta la participación comunitaria como parte del modelo de impacto colectivo de CORE.",
+      "heroMedia": "community-service-photo","sourcePath": "https://corewecan.org/donate/","status": "",
+      "sections": [
+        {"heading": "Donar","body": ["El apoyo financiero ayuda a sostener programas y apoyo familiar. El sitio fuente también describe donaciones por correo y donaciones planificadas."],"bullets": [],"quote": "","links": [{"label": "Explorar formas de donar","route": "donate","url": ""}]},
+        {"heading": "Voluntariado","body": ["El sitio actual menciona mentores, conferencistas invitados, acompañantes de proyectos comunitarios y apoyo a campañas de ropa y alimentos."],"bullets": [],"quote": "","links": [{"label": "Hacer voluntariado","route": "volunteer","url": ""}]},
+        {"heading": "Abogar","body": ["Comparta la misión de CORE, asista a eventos, visite el programa y ayude a otras personas a comprender cómo la pobreza, la inequidad y la injusticia afectan a estudiantes y comunidades."],"bullets": [],"quote": "","links": [{"label": "Abogar por CORE","route": "advocate","url": ""}]},
+        {"heading": "Alianzas profesionales","body": ["Los aliados de Career We Can pueden orientar a Scholars, compartir sus trayectorias profesionales o recibir estudiantes para visitas, paneles y experiencias de observación laboral."],"bullets": [],"quote": "","links": [{"label": "Explorar Career We Can","route": "career-we-can","url": ""}]}
+      ],
+      "related": ["donate","volunteer","advocate","wish-list","events","career-we-can"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "resources": {
+      "title": "Recursos","eyebrow": "Apoyo práctico",
+      "intro": "CORE trabaja con aliados y programas comunitarios para apoyar a Scholars y familias.",
+      "detail": "La biblioteca actual incluye un informe anual, guías familiares en inglés y español, enlaces de becas y ahorro universitario, una declaración sobre equidad educativa y materiales de aprendizaje.",
+      "heroMedia": "core-book-illustration","sourcePath": "https://corewecan.org/resources/","status": "",
+      "sections": [
+        {"heading": "Una biblioteca viva","body": ["El sitio actual presenta a CORE como un conector hacia apoyo comunitario. Las guías familiares incluyen alimentos, educación, vivienda, salud y otros apoyos. La información debe volver a verificarse antes del lanzamiento final porque las ediciones y datos externos pueden cambiar."],"bullets": [],"quote": "","links": []},
+        {"heading": "Informe Anual 2025","body": ["La biblioteca fuente enlaza al Informe Anual 2025 de CORE, con información sobre Parent Academy, eventos y reportes de la organización."],"bullets": [],"quote": "","links": [{"label": "Abrir Informe Anual 2025","route": "","url": "https://corewecan.org/wp-content/uploads/2026/02/2025-Annual-Review-DIGITAL.pdf"}]}
+      ],
+      "related": ["families","two-generational","faq"],"faqs": [],"people": [],"board": [],"timeline": [],
+      "resourceGroups": [
+        {"title": "Guías de recursos","items": [{"label": "Guía familiar (inglés)","url": "https://corewecan.org/wp-content/uploads/2024/02/Eng.-CORE-Family-Resource-Guide-DEC-2023.pdf"},{"label": "Guía de recursos familiares","url": "https://corewecan.org/resources/"}]},
+        {"title": "Educación y becas","items": [{"label": "Beca de The Rogers Foundation","url": "https://corewecan.org/resources/"},{"label": "Recursos de ahorro universitario de Nevada","url": "https://corewecan.org/resources/"}]},
+        {"title": "Aprendizaje y abogacía","items": [{"label": "Declaración de la coalición educativa de CORE","url": "https://corewecan.org/resources/"},{"label": "Lista de lectura del Mes de la Herencia Hispana","url": "https://corewecan.org/resources/"}]}
+      ]
+    }
+  }
+}
