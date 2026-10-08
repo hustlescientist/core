@@ -7,7 +7,7 @@ import {ROOT, read, loadProject, validate, jsonForHTML, bindingIds} from './lib.
 export async function build({release = false} = {}) {
   const data = await validate(await loadProject(),release);
   const css = `${await read('src/css/tokens.css')}\n${await read('src/css/site.css')}`;
-  const app = `${await read('src/js/media.js')}\n${await read('src/js/rich.js')}\n${await read('src/js/app.js')}`;
+  const app = `${await read('src/js/media.js')}\n${await read('src/js/rich.js')}\n${await read('src/js/motion.js')}\n${await read('src/js/app.js')}`;
   const used = new Set(bindingIds(data.media.bindings));
   const runtimeMedia = {bindings:data.media.bindings,assets:data.media.assets.filter(a=>used.has(a.id)).map(a=>({id:a.id,label:a.label,kind:a.kind,status:a.status,sourceUrl:a.sourceUrl,ghlUrl:a.ghlUrl,sourceVariants:(a.sourceVariants||[]).map(v=>({url:v.url,width:v.width})),ghlVariants:a.ghlVariants||[],width:a.width,height:a.height,alt:a.alt}))};
   if (/<\/script/i.test(app) || /<\/style/i.test(css)) throw new Error('Unsafe closing tag in inline source.');
