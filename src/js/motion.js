@@ -45,6 +45,29 @@
       revealTargets.forEach(element => element.classList.add('is-visible'));
     }
 
+    const counters = [...view.querySelectorAll('.core-fact-grid strong')].filter(node => /^\d+$/.test(node.textContent.trim()));
+    if (!reduce && 'IntersectionObserver' in globalThis && counters.length) {
+      const countObserver = new IntersectionObserver(entries => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting || entry.target.dataset.coreCounted) continue;
+          entry.target.dataset.coreCounted = 'true';
+          const target = Number(entry.target.textContent.trim());
+          const start = performance.now();
+          const duration = 850;
+          const tick = now => {
+            const progress = Math.min(1, (now - start) / duration);
+            const eased = 1 - Math.pow(1 - progress, 3);
+            entry.target.textContent = String(Math.round(target * eased));
+            if (progress < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+          countObserver.unobserve(entry.target);
+        }
+      }, {threshold:.4});
+      counters.forEach(node => countObserver.observe(node));
+      signal.addEventListener('abort', () => countObserver.disconnect(), {once:true});
+    }
+
     const sectionTargets = [...view.querySelectorAll('[data-core-section-anchor]')];
     if ('IntersectionObserver' in globalThis && sectionTargets.length) {
       const sectionObserver = new IntersectionObserver(entries => {
