@@ -43,7 +43,7 @@
     return rows.length?`<section class="core-section core-soft core-related"><div class="core-wrap"><div class="core-section-heading"><div><p class="core-eyebrow">CORE</p><h2>${e(t.exploreMore)}</h2></div></div><div class="core-related-grid">${rows.map(({id,p},index)=>`<article class="core-link-card"><span class="core-card-index" aria-hidden="true">${String(index+1).padStart(2,'0')}</span>${p.status?`<span class="core-mini-status">${e(p.status)}</span>`:''}<h3>${e(p.title)}</h3><p>${e(p.intro)}</p>${route(id,t.audienceActions?.[id]||t.explorePage,'core-text-link core-arrow-link')}</article>`).join('')}</div></div></section>`:'';
   }
   function news(items=[],t,route){
-    return `<div class="core-news-grid">${items.map((item,index)=>`<article class="core-news-card"><span class="core-card-index" aria-hidden="true">${String(index+1).padStart(2,'0')}</span><p class="core-meta">${e(item.category)} · ${e(item.date)}</p><h3>${e(item.title)}</h3><p>${e(item.excerpt)}</p>${route(item.id,t.newsRead,'core-text-link core-arrow-link')}</article>`).join('')}</div>`;
+    return `<div class="core-news-grid">${items.map((item,index)=>`<article class="core-news-card"><div class="core-news-thumb core-news-thumb-${index+1}" aria-hidden="true"><span>${String(index+1).padStart(2,'0')}</span></div><div class="core-news-body"><p class="core-meta">${e(item.category)} · ${e(item.date)}</p><h3>${e(item.title)}</h3><p>${e(item.excerpt)}</p>${route(item.id,t.newsRead,'core-text-link core-arrow-link')}</div></article>`).join('')}</div>`;
   }
   function journey(t,route){
     const ids=['character-development','career-awareness','financial-literacy'];
@@ -52,7 +52,8 @@
   function home(t,route,figure){
     return `${journey(t,route)}
     <section class="core-section core-soft"><div class="core-wrap core-split core-mission-split"><div><p class="core-eyebrow">CORE</p><h2>${e(t.home.missionTitle)}</h2><p class="core-lead">${e(t.home.mission)}</p><h3>${e(t.home.aboutTitle)}</h3><p>${e(t.home.about)}</p>${route('about',t.nav.about,'core-text-link core-arrow-link')}</div>${figure('family-support-photo','core-page-photo')}</div></section>
-    <section class="core-section core-wrap"><div class="core-section-heading"><div><p class="core-eyebrow">CORE</p><h2>${e(t.home.newsTitle)}</h2><p>${e(t.home.newsIntro)}</p></div>${route('news',t.pages.news.title,'core-button core-button-secondary')}</div>${news(t.news,t,route)}</section>
+    <section class="core-section core-news-stage"><div class="core-wrap"><div class="core-section-heading"><div><p class="core-eyebrow">CORE</p><h2>${e(t.home.newsTitle)}</h2><p>${e(t.home.newsIntro)}</p></div>${route('news',t.pages.news.title,'core-button core-button-light')}</div>${news(t.news,t,route)}</div></section>
+    <section class="core-champion-band"><div class="core-wrap core-champion-grid"><div><p class="core-eyebrow">${e(t.home.championEyebrow)}</p><h2>${e(t.home.championTitle)}</h2><p>${e(t.home.championIntro)}</p></div><div class="core-champion-actions">${route('news',t.home.championPrimary,'core-button core-button-light')}${route('get-involved',t.home.championSecondary,'core-button core-button-outline-light')}</div></div></section>
     <section class="core-section core-wrap"><div class="core-cta-band"><div><p class="core-eyebrow">CORE</p><h2>${e(t.home.nextTitle)}</h2><p>${e(t.home.nextIntro)}</p></div><div class="core-actions">${route('families',t.nav.families,'core-button core-button-ink')}${route('get-involved',t.nav['get-involved'],'core-button core-button-secondary')}</div></div></section>`;
   }
   function facts(entry,page,t,route,language){
