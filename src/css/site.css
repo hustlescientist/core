@@ -740,8 +740,8 @@
 
 /* Legacy-inspired visual system — draws from CORE's previous orange/pink/blue/lime site without cloning it. */
 #core-app .core-utility-strip {
-  background: #77797b;
-  color: #fff;
+  background: var(--core-orange);
+  color: var(--core-ink);
   font-size: .78rem;
 }
 #core-app .core-utility-inner {
@@ -752,7 +752,7 @@
   padding-block: .35rem;
 }
 #core-app .core-utility-inner a,
-#core-app .core-utility-inner span { color: #fff; }
+#core-app .core-utility-inner span { color: var(--core-ink); }
 #core-app .core-utility-inner a {
   display: inline-flex;
   align-items: center;
@@ -760,8 +760,8 @@
   text-decoration: none;
 }
 #core-app .core-utility-inner a:hover { text-decoration: underline; }
-#core-app .core-utility-inner a > span:first-child { color: #69b8f1; font-weight: 900; }
-#core-app .core-tax-id > span { color: #69b8f1; margin-right: .4rem; }
+#core-app .core-utility-inner a > span:first-child { color: var(--core-ink); font-weight: 900; }
+#core-app .core-tax-id > span { color: var(--core-ink); margin-right: .4rem; }
 #core-app .core-utility-spacer { flex: 1; }
 
 #core-app .core-header {
@@ -1144,7 +1144,7 @@
 #core-app .core-utility-strip {
   max-height: 44px;
   overflow: hidden;
-  background: #626466;
+  background: var(--core-orange);
   opacity: 1;
   transition: max-height .24s ease, opacity .18s ease;
 }
@@ -1480,4 +1480,15 @@
   #core-app .core-quick-find kbd { display: none; }
   #core-app .core-nav-links { grid-template-columns: 1fr; }
   #core-app .core-utility-strip { border-bottom-width: 2px; }
+}
+
+/* Utility bar lock — keep this surface consistently CORE orange across embeds and cached styles. */
+#core-app .core-header .core-utility-strip {
+  background: var(--core-orange) !important;
+  color: var(--core-ink) !important;
+}
+#core-app .core-header .core-utility-strip .core-utility-inner,
+#core-app .core-header .core-utility-strip .core-utility-inner a,
+#core-app .core-header .core-utility-strip .core-utility-inner span {
+  color: var(--core-ink) !important;
 }
