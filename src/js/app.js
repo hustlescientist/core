@@ -40,6 +40,8 @@
     let language = site.defaultLanguage;
     let page = 'home';
     let searchController = null;
+    let searchOpener = null;
+    let lightboxOpener = null;
     const taxId = site.legal?.taxId || '';
 
     const href = (path, lang = language) => `#/${lang}/${path === 'home' ? '' : path}`;
@@ -86,7 +88,7 @@
       const routes = navRoutes[id].filter(routeId => t.pages[routeId]);
       const active = routes.includes(page);
       const overview = routes.shift();
-      return `<details class="core-nav-group"${active ? ' data-current="true"' : ''}><summary>${escape(label)}<span aria-hidden="true">⌄</span></summary><div class="core-nav-panel"><div class="core-nav-panel-head">${route(overview, pageTitle(t,overview),'core-nav-overview')}</div><div class="core-nav-links">${routes.map(routeId => `<a href="${href(routeId)}"${page===routeId?' aria-current="page"':''}>${escape(pageTitle(t,routeId))}</a>`).join('')}</div></div></details>`;
+      return `<details class="core-nav-group"${active ? ' data-current="true"' : ''}><summary${active ? ' aria-current="true"' : ''}>${escape(label)}<span aria-hidden="true">⌄</span></summary><div class="core-nav-panel"><div class="core-nav-panel-head">${route(overview, pageTitle(t,overview),'core-nav-overview')}</div><div class="core-nav-links">${routes.map(routeId => `<a href="${href(routeId)}"${page===routeId?' aria-current="page"':''}>${escape(pageTitle(t,routeId))}</a>`).join('')}</div></div></details>`;
     }
     function breadcrumbs(t, entry) {
       if (page === 'home') return '';
@@ -128,6 +130,7 @@
       return chunks.join('');
     }
     function openLightbox(button) {
+      lightboxOpener = button;
       const img = button.querySelector('img');
       if (!img) return;
       const close = language === 'es' ? 'Cerrar imagen' : 'Close image';
@@ -158,7 +161,7 @@
       header.innerHTML = `<div class="core-utility-strip"><div class="core-wrap core-utility-inner"><a href="${escape(site.contact.phoneHref)}"><span aria-hidden="true">☎</span>${escape(site.contact.phoneLabel)}</a><a href="mailto:${escape(site.contact.email)}"><span aria-hidden="true">✉</span>${escape(site.contact.email)}</a>${taxId?`<span class="core-tax-id"><span aria-hidden="true">●</span>501(c)(3) Tax ID: ${escape(taxId)}</span>`:''}<span class="core-utility-spacer"></span>${route('news',t.pages.news.title)}${route('contact',t.contactLabel)}</div></div><div class="core-wrap core-header-top" data-core-ready>
         <a class="core-brand" href="${href('home')}" aria-label="CORE">${logo}</a>
         <button type="button" class="core-button core-button-secondary core-menu" aria-controls="core-nav" aria-expanded="false" data-core-menu>${escape(t.menu)}</button>
-        <div class="core-utilities"><button type="button" class="core-quick-find" data-core-search-open><span aria-hidden="true">⌕</span>${escape(ui.search)}</button><a class="core-language" lang="${other}" hreflang="${other}" href="${href(page === '__not-found' ? 'home' : page, other)}">${other === 'es' ? 'Español' : 'English'}</a>${integration(t.login, site.integrations.portalUrl)}${site.integrations.donationUrl ? integration(t.donate, site.integrations.donationUrl) : route('donate',t.donate,'core-button')}</div></div>
+        <div class="core-utilities"><button type="button" class="core-quick-find" data-core-search-open><span aria-hidden="true">⌕</span><span>${escape(ui.search)}</span><kbd aria-hidden="true">/</kbd></button><a class="core-language" lang="${other}" hreflang="${other}" href="${href(page === '__not-found' ? 'home' : page, other)}">${other === 'es' ? 'Español' : 'English'}</a>${integration(t.login, site.integrations.portalUrl)}${site.integrations.donationUrl ? integration(t.donate, site.integrations.donationUrl) : route('donate',t.donate,'core-button')}</div></div>
         <nav id="core-nav" class="core-wrap core-nav" aria-label="${escape(t.navLabel)}">${Object.entries(t.nav).map(([id,label]) => megaGroup(id,label,t)).join('')}</nav>`;
 
       const cards = `<div class="core-grid">${t.programs.map((p,index) => `<article class="core-card" data-program="${p.id}"><span class="core-card-index" aria-hidden="true">0${index+1}</span>${image(bindings.programs[p.id].icon, {className:'core-program-icon', decorative:true, sizes:'72px'})}<h3>${escape(p.title)}</h3><p>${escape(p.intro)}</p>${route(p.id,p.action,'core-arrow-link')}</article>`).join('')}</div>`;
@@ -226,6 +229,7 @@
         root.querySelector('#core-nav').dataset.open = String(open);
       }
       if (target.matches('[data-core-search-open]')) {
+        searchOpener = target;
         root.querySelectorAll('.core-nav-group[open]').forEach(details => details.removeAttribute('open'));
         searchController?.open();
       }
@@ -279,9 +283,11 @@
       const editable=event.target instanceof HTMLElement && (event.target.matches('input,textarea,select') || event.target.isContentEditable);
       if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase()==='k') {
         event.preventDefault();
+        searchOpener = document.activeElement instanceof HTMLElement ? document.activeElement : null;
         searchController?.open();
       } else if (event.key==='/' && !editable && !searchDialog.open) {
         event.preventDefault();
+        searchOpener = document.activeElement instanceof HTMLElement ? document.activeElement : null;
         searchController?.open();
       }
     }, {signal});
@@ -302,8 +308,16 @@
     searchDialog.addEventListener('click', event => {
       if (event.target === searchDialog) searchDialog.close();
     }, {signal});
+    searchDialog.addEventListener('close', () => {
+      if (searchOpener?.isConnected) searchOpener.focus({preventScroll:true});
+      searchOpener = null;
+    }, {signal});
     lightboxDialog.addEventListener('click', event => {
       if (event.target === lightboxDialog) lightboxDialog.close();
+    }, {signal});
+    lightboxDialog.addEventListener('close', () => {
+      if (lightboxOpener?.isConnected) lightboxOpener.focus({preventScroll:true});
+      lightboxOpener = null;
     }, {signal});
 
     window.addEventListener('hashchange', () => render(true), {signal});
