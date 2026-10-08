@@ -39,5 +39,9 @@
       }
     }
   },
-  "mediaProvider": "original"
+  "mediaProvider": "original",
+  "legal": {
+    "organizationName": "CORE",
+    "taxId": "45-4170296"
+  }
 }

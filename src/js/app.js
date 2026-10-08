@@ -12,6 +12,7 @@
   const safeHttps = value => { try { const u = new URL(value); return u.protocol === 'https:' && !u.username && !u.password ? u.href : ''; } catch { return ''; } };
   const rich = window.CORERich;
   const motion = window.COREMotion;
+  const siteSearch = window.CORESiteSearch;
 
   function boot() {
     const root = document.getElementById('core-app');
@@ -38,6 +39,8 @@
     const paths = new Set(['home', ...Object.keys(locales.en.pages), ...locales.en.programs.map(p => p.id)]);
     let language = site.defaultLanguage;
     let page = 'home';
+    let searchController = null;
+    const taxId = site.legal?.taxId || '';
 
     const href = (path, lang = language) => `#/${lang}/${path === 'home' ? '' : path}`;
     const route = (path, label, cls = '') => `<a class="${cls}" href="${href(path)}">${escape(label)}</a>`;
@@ -93,12 +96,36 @@
       return `<nav class="core-breadcrumbs" aria-label="Breadcrumb">${route('home',ui.home)}${middle}<span aria-hidden="true">/</span><span aria-current="page">${escape(entry.title)}</span></nav>`;
     }
     function configureSearch(t) {
-      const ui = language === 'es'
-        ? {title:'Explorar CORE',intro:'Busque programas, recursos, formas de participar e información sobre CORE.',placeholder:'Buscar páginas…',close:'Cerrar',noResults:'No encontramos una página con esa búsqueda.'}
-        : {title:'Explore CORE',intro:'Find programs, resources, ways to participate, and information about CORE.',placeholder:'Search pages…',close:'Close',noResults:'No page matches that search.'};
-      const pages = Object.entries(t.pages).sort((a,b) => a[1].title.localeCompare(b[1].title, language));
-      searchDialog.innerHTML = `<div class="core-dialog-shell"><div class="core-dialog-head"><div><p class="core-eyebrow">CORE</p><h2>${escape(ui.title)}</h2><p>${escape(ui.intro)}</p></div><button type="button" class="core-dialog-close" data-core-dialog-close aria-label="${escape(ui.close)}">×</button></div><label class="core-search-label"><span class="core-sr-only">${escape(ui.placeholder)}</span><input type="search" data-core-search-input placeholder="${escape(ui.placeholder)}" autocomplete="off"></label><div class="core-search-results" data-core-search-results>${pages.map(([id,p]) => `<a href="${href(id)}" data-core-search-item data-search="${escape((p.title+' '+p.intro).toLowerCase())}"><span>${escape(p.title)}</span><small>${escape(p.eyebrow || 'CORE')}</small></a>`).join('')}<p class="core-search-empty" data-core-search-empty hidden>${escape(ui.noResults)}</p></div></div>`;
+      searchController = siteSearch?.mount(searchDialog,{locale:t,language,href,signal}) || null;
       backTop.setAttribute('aria-label', language === 'es' ? 'Volver arriba' : 'Back to top');
+    }
+    function actionLink(label,url,fallbackRoute,cls='core-button') {
+      const safe=safeHttps(url);
+      return safe ? `<a class="${cls}" href="${escape(safe)}">${escape(label)}</a>` : route(fallbackRoute,label,cls);
+    }
+    function heroActions(t,id) {
+      const labels=t.actionLabels || {};
+      const forms=site.integrations.forms || {};
+      const formUrl=key=>forms[key]?.[language] || '';
+      if(id==='families') return `<div class="core-actions">${actionLink(labels.askJoin || t.contactLabel,formUrl('family'),'contact')}${route('resources',labels.findResources || t.nav.resources,'core-button core-button-secondary')}</div>`;
+      if(id==='partners') return `<div class="core-actions">${actionLink(labels.startPartnership || t.contactLabel,formUrl('partner'),'contact')}${route('career-we-can',labels.hostCareer || t.pages['career-we-can'].title,'core-button core-button-secondary')}</div>`;
+      if(id==='career-we-can') return `<div class="core-actions">${actionLink(labels.becomeCareerPartner || t.contactLabel,formUrl('partner'),'contact')}${route('volunteer',labels.volunteer || t.pages.volunteer.title,'core-button core-button-secondary')}</div>`;
+      if(id==='volunteer') return `<div class="core-actions">${actionLink(labels.volunteerInterest || t.contactLabel,formUrl('volunteer'),'contact')}${route('get-involved',labels.exploreInvolvement || t.nav['get-involved'],'core-button core-button-secondary')}</div>`;
+      if(id==='donate') return `<div class="core-actions">${actionLink(labels.donateNow || t.donate,site.integrations.donationUrl,'contact')}${route('get-involved',labels.waysToGive || t.nav['get-involved'],'core-button core-button-secondary')}</div>`;
+      if(id==='resources') return `<div class="core-actions">${route('families',labels.familySupport || t.nav.families,'core-button')}${route('contact',t.contactLabel,'core-button core-button-secondary')}</div>`;
+      if(id==='events') return `<div class="core-actions">${route('get-involved',labels.getInvolved || t.nav['get-involved'],'core-button')}${route('contact',t.contactLabel,'core-button core-button-secondary')}</div>`;
+      if(id==='faq') return `<div class="core-actions">${route('families',labels.familySupport || t.nav.families,'core-button')}${route('contact',t.contactLabel,'core-button core-button-secondary')}</div>`;
+      return `<div class="core-actions">${route('contact',t.contactLabel,'core-button')}${route('programs',labels.explorePrograms || t.nav.programs,'core-button core-button-secondary')}</div>`;
+    }
+    function pageExtras(t,id,program) {
+      const chunks=[];
+      if(id==='families') chunks.push(`<section class="core-section core-wrap"><div class="core-section-heading"><div><p class="core-eyebrow">CORE</p><h2>${escape(t.schoolsTitle)}</h2><p>${escape(t.schoolYearNote)}</p></div></div><div class="core-school-grid">${bindings.schools.map((mediaId,i) => `<article>${figure(mediaId)}<h3>${escape(t.schoolNames[i])}</h3></article>`).join('')}</div></section>`);
+      if(id==='resources') chunks.push(`<section class="core-section core-wrap core-resource-feature">${figure(bindings.reportCover)}<div><p class="core-eyebrow">CORE</p><h2>${escape(t.reportTitle)}</h2><p>${escape(t.reportIntro)}</p><a class="core-button" href="https://corewecan.org/resources/" target="_blank" rel="noopener noreferrer">${escape(t.currentResources)}</a></div></section>`);
+      if(program && id!=='financial-literacy'){
+        const ids=id==='character-development'?['character-development-photo','community-service-photo','creative-learning-photo']:['career-exploration-photo','partner-visit-photo','creative-learning-photo'];
+        chunks.push(`<section class="core-section core-wrap"><div class="core-section-heading"><div><p class="core-eyebrow">CORE</p><h2>${escape(t.home.galleryTitle)}</h2><p>${escape(t.archiveNote)}</p></div></div>${gallery(ids)}</section>`);
+      }
+      return chunks.join('');
     }
     function openLightbox(button) {
       const img = button.querySelector('img');
@@ -122,11 +149,13 @@
       if (document.body.dataset.coreStandalone === 'true') document.documentElement.lang = language;
       try { localStorage.setItem('core-language', language); } catch { /* Optional preference. */ }
 
-      root.querySelector('[data-core-banner]').textContent = t.preview;
+      const banner=root.querySelector('[data-core-banner]');
+      banner.textContent = t.preview;
+      banner.hidden = site.stage !== 'development';
       const other = language === 'en' ? 'es' : 'en';
       const ui = language === 'es' ? {search:'Explorar',closeMenu:'Cerrar menú'} : {search:'Explore',closeMenu:'Close menu'};
       const logo = image(bindings.logo, {className: 'core-logo', eager: true, sizes: '(max-width: 48rem) 240px, 285px'});
-      header.innerHTML = `<div class="core-utility-strip"><div class="core-wrap core-utility-inner"><a href="${escape(site.contact.phoneHref)}"><span aria-hidden="true">☎</span>${escape(site.contact.phoneLabel)}</a><a href="mailto:${escape(site.contact.email)}"><span aria-hidden="true">✉</span>${escape(site.contact.email)}</a><span class="core-tax-id"><span aria-hidden="true">●</span>501(c)(3) Tax ID: 45-4170296</span><span class="core-utility-spacer"></span>${route('news',t.pages.news.title)}${route('contact',t.contactLabel)}</div></div><div class="core-wrap core-header-top" data-core-ready>
+      header.innerHTML = `<div class="core-utility-strip"><div class="core-wrap core-utility-inner"><a href="${escape(site.contact.phoneHref)}"><span aria-hidden="true">☎</span>${escape(site.contact.phoneLabel)}</a><a href="mailto:${escape(site.contact.email)}"><span aria-hidden="true">✉</span>${escape(site.contact.email)}</a>${taxId?`<span class="core-tax-id"><span aria-hidden="true">●</span>501(c)(3) Tax ID: ${escape(taxId)}</span>`:''}<span class="core-utility-spacer"></span>${route('news',t.pages.news.title)}${route('contact',t.contactLabel)}</div></div><div class="core-wrap core-header-top" data-core-ready>
         <a class="core-brand" href="${href('home')}" aria-label="CORE">${logo}</a>
         <button type="button" class="core-button core-button-secondary core-menu" aria-controls="core-nav" aria-expanded="false" data-core-menu>${escape(t.menu)}</button>
         <div class="core-utilities"><button type="button" class="core-quick-find" data-core-search-open><span aria-hidden="true">⌕</span>${escape(ui.search)}</button><a class="core-language" lang="${other}" hreflang="${other}" href="${href(page === '__not-found' ? 'home' : page, other)}">${other === 'es' ? 'Español' : 'English'}</a>${integration(t.login, site.integrations.portalUrl)}${site.integrations.donationUrl ? integration(t.donate, site.integrations.donationUrl) : route('donate',t.donate,'core-button')}</div></div>
@@ -147,24 +176,14 @@
         const entry = t.pages[page] || (program ? {...program, detail:t.draftNote} : {title:t.notFoundTitle,intro:t.notFoundIntro,detail:t.draftNote,eyebrow:'CORE'});
         title = entry.title;
         const heroId = entry.heroMedia || (program ? bindings.programs[page].hero : bindings.pages[page]);
-        const actions = `<div class="core-actions">${route('contact',t.contactLabel,'core-button')}${route('home',t.homeLink,'core-button core-button-secondary')}</div>`;
+        const actions = heroActions(t,page);
         view.innerHTML = `<section class="core-section core-page-top"${program ? ` data-program="${page}"` : ''}><div class="core-wrap">${breadcrumbs(t,entry)}<div class="${heroId ? 'core-split' : ''}"><div class="core-page-copy"><p class="core-eyebrow">${escape(entry.eyebrow || 'CORE')}</p>${entry.status ? `<span class="core-status">${escape(entry.status)}</span>` : ''}<h1 tabindex="-1">${escape(title)}</h1><p class="core-lead">${escape(entry.intro)}</p><p>${escape(entry.detail)}</p>${actions}</div>${heroId ? figure(heroId,'core-page-photo',true) : ''}</div></div></section>${page === 'programs' ? `<section class="core-section core-wrap"><div class="core-section-heading"><div><p class="core-eyebrow">${escape(t.home.programEyebrow)}</p><h2>${escape(t.home.programTitle)}</h2></div></div>${cards}</section>` : ''}`;
 
-        if (page === 'families') {
-          view.insertAdjacentHTML('beforeend', `<section class="core-section core-wrap"><div class="core-section-heading"><div><p class="core-eyebrow">CORE</p><h2>${escape(t.schoolsTitle)}</h2><p>${escape(t.schoolYearNote)}</p></div></div><div class="core-school-grid">${bindings.schools.map((id,i) => `<article>${figure(id)}<h3>${escape(t.schoolNames[i])}</h3></article>`).join('')}</div></section>`);
-        }
-        if (page === 'resources') {
-          view.insertAdjacentHTML('beforeend', `<section class="core-section core-wrap core-resource-feature">${figure(bindings.reportCover)}<div><p class="core-eyebrow">CORE</p><h2>${escape(t.reportTitle)}</h2><p>${escape(t.reportIntro)}</p><a class="core-button" href="https://corewecan.org/resources/" target="_blank" rel="noopener noreferrer">${escape(t.currentResources)}</a></div></section>`);
-        }
-        if (program && page !== 'financial-literacy') {
-          const ids = page === 'character-development' ? ['character-development-photo','community-service-photo','creative-learning-photo'] : ['career-exploration-photo','partner-visit-photo','creative-learning-photo'];
-          view.insertAdjacentHTML('beforeend', `<section class="core-section core-wrap"><div class="core-section-heading"><div><p class="core-eyebrow">CORE</p><h2>${escape(t.home.galleryTitle)}</h2><p>${escape(t.archiveNote)}</p></div></div>${gallery(ids)}</section>`);
-        }
-        view.insertAdjacentHTML('beforeend', rich.page(entry,page,t,{route,figure,gallery,language}));
+        view.insertAdjacentHTML('beforeend', rich.page(entry,page,t,{route,figure,gallery,language,extras:pageExtras(t,page,program),stage:site.stage}));
       }
 
       document.title = `${title} | CORE`;
-      root.querySelector('[data-core-footer]').innerHTML = `<div class="core-wrap core-footer-grid core-footer-grid-rich"><div class="core-footer-brand"><a class="core-brand" href="${href('home')}">${image(bindings.logo,{className:'core-logo core-footer-logo',sizes:'260px'})}</a><p>${escape(site.contact.address)}</p><p><a href="${escape(site.contact.phoneHref)}">${escape(site.contact.phoneLabel)}</a></p><p><a href="mailto:${escape(site.contact.email)}">${escape(site.contact.email)}</a></p><p>501(c)(3) Tax ID: 45-4170296</p></div><div class="core-footer-col core-footer-pink"><h2>${escape(t.nav.families)}</h2>${route('character-development',t.pages['character-development'].title)}${route('career-awareness',t.pages['career-awareness'].title)}${route('financial-literacy',t.pages['financial-literacy'].title)}${route('faq',t.pages.faq.title)}</div><div class="core-footer-col core-footer-blue"><h2>${escape(t.nav.partners)}</h2>${route('partners',t.pages.partners.title)}${route('career-we-can',t.pages['career-we-can'].title)}${route('two-generational',t.pages['two-generational'].title)}${route('resources',t.pages.resources.title)}</div><div class="core-footer-col core-footer-lime"><h2>${escape(t.donate)} / ${escape(t.nav['get-involved'])}</h2>${route('donate',t.pages.donate.title)}${route('advocate',t.pages.advocate.title)}${route('volunteer',t.pages.volunteer.title)}${route('events',t.pages.events.title)}${route('wish-list',t.pages['wish-list'].title)}</div></div><div class="core-wrap core-footer-bottom"><p>${escape(t.footerNote)}</p><div>${route('about',t.nav.about)}${route('history',t.pages.history.title)}${route('news',t.pages.news.title)}${route('contact',t.contactLabel)}</div></div>`;
+      root.querySelector('[data-core-footer]').innerHTML = `<div class="core-wrap core-footer-grid core-footer-grid-rich"><div class="core-footer-brand"><a class="core-brand" href="${href('home')}">${image(bindings.logo,{className:'core-logo core-footer-logo',sizes:'260px'})}</a><p>${escape(site.contact.address)}</p><p><a href="${escape(site.contact.phoneHref)}">${escape(site.contact.phoneLabel)}</a></p><p><a href="mailto:${escape(site.contact.email)}">${escape(site.contact.email)}</a></p>${taxId?`<p>501(c)(3) Tax ID: ${escape(taxId)}</p>`:''}</div><div class="core-footer-col core-footer-pink"><h2>${escape(t.nav.families)}</h2>${route('character-development',t.pages['character-development'].title)}${route('career-awareness',t.pages['career-awareness'].title)}${route('financial-literacy',t.pages['financial-literacy'].title)}${route('faq',t.pages.faq.title)}</div><div class="core-footer-col core-footer-blue"><h2>${escape(t.nav.partners)}</h2>${route('partners',t.pages.partners.title)}${route('career-we-can',t.pages['career-we-can'].title)}${route('two-generational',t.pages['two-generational'].title)}${route('resources',t.pages.resources.title)}</div><div class="core-footer-col core-footer-lime"><h2>${escape(t.donate)} / ${escape(t.nav['get-involved'])}</h2>${route('donate',t.pages.donate.title)}${route('advocate',t.pages.advocate.title)}${route('volunteer',t.pages.volunteer.title)}${route('events',t.pages.events.title)}${route('wish-list',t.pages['wish-list'].title)}</div></div><div class="core-wrap core-footer-bottom"><p>${escape(t.footerNote)}</p><div>${route('about',t.nav.about)}${route('history',t.pages.history.title)}${route('news',t.pages.news.title)}${route('contact',t.contactLabel)}</div></div>`;
 
       configureSearch(t);
       status.textContent = '';
@@ -196,19 +215,6 @@
       }
     }, {capture:true, signal});
 
-    root.addEventListener('input', event => {
-      if (!event.target.matches('[data-core-search-input]')) return;
-      const q = event.target.value.trim().toLowerCase();
-      let visible = 0;
-      searchDialog.querySelectorAll('[data-core-search-item]').forEach(item => {
-        const matches = !q || item.dataset.search.includes(q);
-        item.hidden = !matches;
-        if (matches) visible += 1;
-      });
-      const empty = searchDialog.querySelector('[data-core-search-empty]');
-      if (empty) empty.hidden = visible > 0;
-    }, {signal});
-
     root.addEventListener('click', event => {
       const target = event.target.closest('button, a, summary');
       if (!target || !root.contains(target)) return;
@@ -219,8 +225,8 @@
         root.querySelector('#core-nav').dataset.open = String(open);
       }
       if (target.matches('[data-core-search-open]')) {
-        searchDialog.showModal?.();
-        requestAnimationFrame(() => searchDialog.querySelector('[data-core-search-input]')?.focus());
+        root.querySelectorAll('.core-nav-group[open]').forEach(details => details.removeAttribute('open'));
+        searchController?.open();
       }
       if (target.matches('[data-core-dialog-close]')) {
         target.closest('dialog')?.close();
@@ -266,6 +272,30 @@
         menu.focus();
       }
       root.querySelectorAll('.core-nav-group[open]').forEach(details => details.removeAttribute('open'));
+    }, {signal});
+
+    window.addEventListener('keydown', event => {
+      const editable=event.target instanceof HTMLElement && (event.target.matches('input,textarea,select') || event.target.isContentEditable);
+      if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase()==='k') {
+        event.preventDefault();
+        searchController?.open();
+      } else if (event.key==='/' && !editable && !searchDialog.open) {
+        event.preventDefault();
+        searchController?.open();
+      }
+    }, {signal});
+
+    window.addEventListener('pointerdown', event => {
+      if (!header.contains(event.target)) {
+        root.querySelectorAll('.core-nav-group[open]').forEach(details => details.removeAttribute('open'));
+        const nav=root.querySelector('#core-nav');
+        if (nav?.dataset.open==='true') {
+          nav.dataset.open='false';
+          root.querySelector('[data-core-menu]')?.setAttribute('aria-expanded','false');
+        }
+      } else if (!event.target.closest('.core-nav-group') && !event.target.closest('[data-core-menu]')) {
+        root.querySelectorAll('.core-nav-group[open]').forEach(details => details.removeAttribute('open'));
+      }
     }, {signal});
 
     searchDialog.addEventListener('click', event => {

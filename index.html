@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#ff4c00">
   <title>CORE Website Demo</title>
   <link rel="stylesheet" href="./src/css/tokens.css">
   <link rel="stylesheet" href="./src/css/site.css">
@@ -11,16 +12,18 @@
 </head>
 <body data-core-standalone="true">
   <div id="core-app" lang="en">
-    <a class="core-skip" href="#core-main">Skip to content / Saltar al contenido</a>\n    <div class="core-scroll-progress" aria-hidden="true"><span data-core-scroll-progress></span></div>
+    <a class="core-skip" href="#core-main">Skip to content / Saltar al contenido</a>
+    <div class="core-scroll-progress" aria-hidden="true"><span data-core-scroll-progress></span></div>
     <div class="core-preview" data-core-banner></div>
     <header class="core-header" data-core-header></header>
     <main id="core-main" tabindex="-1" data-core-view>
-      <section class="core-section core-wrap">
-        <h1>Loading CORE demo…</h1>
-      </section>
+      <section class="core-section core-wrap"><h1>Loading CORE demo…</h1></section>
     </main>
     <div class="core-feedback core-wrap" role="status" aria-live="polite" data-core-status></div>
-    <footer class="core-footer" data-core-footer></footer>\n    <dialog class="core-dialog core-search-dialog" data-core-search-dialog aria-label="Explore CORE"></dialog>\n    <dialog class="core-dialog core-lightbox-dialog" data-core-lightbox-dialog aria-label="Image preview"></dialog>\n    <button type="button" class="core-backtop" data-core-backtop hidden aria-label="Back to top"><span aria-hidden="true">↑</span></button>
+    <footer class="core-footer" data-core-footer></footer>
+    <dialog class="core-dialog core-search-dialog" data-core-search-dialog aria-label="Explore CORE"></dialog>
+    <dialog class="core-dialog core-lightbox-dialog" data-core-lightbox-dialog aria-label="Image preview"></dialog>
+    <button type="button" class="core-backtop" data-core-backtop hidden aria-label="Back to top"><span aria-hidden="true">↑</span></button>
     <noscript>
       <p>Please enable JavaScript for this CORE website demo. For help, email <a href="mailto:info@corewecan.org">info@corewecan.org</a> or call <a href="tel:+17026573264">(702) 657-3264</a>.</p>
       <p lang="es">Active JavaScript para ver esta demostración. Para recibir ayuda, escriba a info@corewecan.org o llame al (702) 657-3264.</p>
@@ -52,7 +55,7 @@
       locales: {en, es},
       media: {bindings: media.bindings, assets: media.assets}
     });
-    for (const src of ['./src/js/media.js', './src/js/rich.js', './src/js/motion.js', './src/js/app.js']) {
+    for (const src of ['./src/js/media.js', './src/js/rich.js', './src/js/search.js', './src/js/motion.js', './src/js/app.js']) {
       await new Promise((resolve, reject) => {
         const script = document.createElement('script');
         script.src = src;

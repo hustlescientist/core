@@ -13,6 +13,13 @@
     const header = root.querySelector('[data-core-header]');
     const progress = root.querySelector('[data-core-scroll-progress]');
     const backTop = root.querySelector('[data-core-backtop]');
+    const syncHeaderHeight = () => root.style.setProperty('--core-header-height', `${Math.ceil(header?.getBoundingClientRect().height || 0)}px`);
+    syncHeaderHeight();
+    if (header && 'ResizeObserver' in globalThis) {
+      const headerObserver = new ResizeObserver(syncHeaderHeight);
+      headerObserver.observe(header);
+      signal.addEventListener('abort', () => headerObserver.disconnect(), {once:true});
+    }
 
     if (!reduce && view?.animate) {
       view.animate(
@@ -85,7 +92,8 @@
       signal.addEventListener('abort', () => sectionObserver.disconnect(), {once:true});
     }
 
-    if (finePointer() && !reduce) {
+    const playfulPage = ['home','programs','get-involved','news'].includes(page);
+    if (finePointer() && !reduce && playfulPage) {
       const tiltTargets = [...view.querySelectorAll('.core-card, .core-audience-card, .core-link-card, .core-news-card')];
       for (const card of tiltTargets) {
         card.dataset.coreTilt = 'true';
@@ -115,6 +123,7 @@
       const percent = Math.max(0, Math.min(1, y / height));
       if (progress) progress.style.transform = `scaleX(${percent})`;
       header?.classList.toggle('is-scrolled', y > 30);
+      syncHeaderHeight();
       if (backTop) backTop.hidden = y < 650;
       const hero = view.querySelector('.core-hero-visual, .core-page-photo');
       if (hero && !reduce) {
