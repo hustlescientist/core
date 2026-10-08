@@ -34,10 +34,17 @@
       if (!response.ok) throw new Error('Could not load ' + path + ' (' + response.status + ')');
       return response.json();
     };
+    const loadLocale = async language => {
+      const [base, ...chunks] = await Promise.all([
+        readJSON(`./src/content/${language}.json`),
+        ...Array.from({length: 6}, (_, index) => readJSON(`./src/content/${language}-pages-${index + 1}.json`))
+      ]);
+      return {...base, pages: Object.assign({}, ...chunks.map(chunk => chunk.pages || {}))};
+    };
     const [site, en, es, media] = await Promise.all([
       readJSON('./src/config/site.json'),
-      readJSON('./src/content/en.json'),
-      readJSON('./src/content/es.json'),
+      loadLocale('en'),
+      loadLocale('es'),
       readJSON('./media/manifest.json')
     ]);
     document.querySelector('[data-core-payload]').textContent = JSON.stringify({
@@ -45,7 +52,7 @@
       locales: {en, es},
       media: {bindings: media.bindings, assets: media.assets}
     });
-    for (const src of ['./src/js/media.js', './src/js/app.js']) {
+    for (const src of ['./src/js/media.js', './src/js/rich.js', './src/js/app.js']) {
       await new Promise((resolve, reject) => {
         const script = document.createElement('script');
         script.src = src;

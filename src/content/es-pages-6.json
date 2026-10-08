@@ -1,0 +1,55 @@
+{
+  "pages": {
+    "jingle-in-july": {
+      "title": "Jingle in July 2026","eyebrow": "Evento pasado","intro": "Un desfile de suéteres navideños feos a beneficio de CORE.",
+      "detail": "El evento del 8 de julio de 2026 en The Beverly Theater combinó moda diseñada por Scholars, celebración comunitaria, patrocinios y recaudación de fondos.",
+      "heroMedia": "creative-learning-photo","sourcePath": "https://corewecan.org/jingle-in-july-2026/","status": "Evento pasado — 8 de julio de 2026",
+      "sections": [
+        {"heading": "Alegría navideña. Estilo de verano. Impacto estudiantil.","body": ["La página fuente describió una celebración veraniega con desfile de suéteres diseñados por Scholars, bebidas, música, líderes comunitarios y oportunidades para apoyar a CORE."],"bullets": [],"quote": "","links": []},
+        {"heading": "Detalles del evento","body": ["Miércoles, 8 de julio de 2026 a las 6 PM","The Beverly Theater, 515 S. Sixth Street, Las Vegas, NV 89101","Vestimenta Holiday Cool"],"bullets": [],"quote": "","links": []},
+        {"heading": "Por qué importó","body": ["El evento fue presentado como una recaudación para apoyar acceso educativo, mentoría, preparación laboral y oportunidades para estudiantes y familias del sur de Nevada."],"bullets": [],"quote": "","links": []}
+      ],
+      "related": ["events","donate","get-involved"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "news": {
+      "title": "Noticias e historias","eyebrow": "Equity Speaks",
+      "intro": "Lea historias recientes del sitio fuente sobre acceso, voz, oportunidades y equidad educativa.",
+      "detail": "La demo incorpora las tres historias más recientes dentro del SPA.",
+      "heroMedia": "home-hero-photo","sourcePath": "https://corewecan.org/author/core-outreach/","status": "",
+      "sections": [],"related": ["who-gets-a-microphone","who-gets-access-first","equity-at-the-holidays"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "who-gets-a-microphone": {
+      "title": "¿Quién recibe un micrófono?","eyebrow": "Equity Speaks · 3 de mayo de 2026",
+      "intro": "Un pequeño escenario en Las Vegas se convierte en un recordatorio de que el acceso a expresión, apoyo y audiencia también es parte de la equidad.",
+      "detail": "La historia reflexiona sobre una recaudación de karaoke y pregunta quién recibe ánimo para actuar, acceso a clases y entrenamiento, y el mensaje de que su voz importa.",
+      "heroMedia": "creative-learning-photo","sourcePath": "https://corewecan.org/who-gets-a-microphone/","status": "",
+      "sections": [
+        {"heading": "La voz también es una oportunidad","body": ["El artículo relaciona la equidad educativa con acceso a programas de música, espacios creativos, oportunidades para presentarse y apoyo para desarrollar confianza."],"bullets": [],"quote": "","links": []},
+        {"heading": "Por qué forma parte de la historia de CORE","body": ["El trabajo de CORE no se limita a lo académico; también busca ayudar a jóvenes a ver posibilidades, practicar confianza y conectarse con experiencias que amplían su visión del futuro."],"bullets": [],"quote": "","links": []}
+      ],
+      "related": ["news","who-gets-access-first","equity-at-the-holidays"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "who-gets-access-first": {
+      "title": "¿Quién recibe acceso primero?","eyebrow": "Equity Speaks · 6 de abril de 2026",
+      "intro": "Dos estudiantes pueden estar en el mismo salón y tener un acceso muy distinto a las oportunidades.",
+      "detail": "El artículo fuente sostiene que la equidad no se trata solo de recursos, sino también de información, mentoría, experiencias reales y redes que abren puertas.",
+      "heroMedia": "career-exploration-photo","sourcePath": "https://corewecan.org/who-gets-access-first/","status": "",
+      "sections": [
+        {"heading": "El acceso convierte potencial en dirección","body": ["Algunos estudiantes crecen conociendo qué carreras existen, cómo llegar a ellas y personas que ya lo hicieron. Otros pueden ser igualmente capaces pero no tener ese mapa."],"bullets": [],"quote": "","links": []},
+        {"heading": "Cómo aparece CORE","body": ["El artículo menciona mentoría rápida, exploración profesional y talleres de Parent Academy como maneras de conectar a estudiantes y familias con personas y perspectivas que hacen visibles las oportunidades."],"bullets": [],"quote": "","links": []}
+      ],
+      "related": ["news","career-awareness","career-we-can"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "equity-at-the-holidays": {
+      "title": "Equidad durante las fiestas","eyebrow": "Equity Speaks · 31 de diciembre de 2025",
+      "intro": "Las vacaciones pueden revelar diferencias en lo que los estudiantes pueden acceder fuera del aula.",
+      "detail": "La historia se enfoca en estudiantes de secundaria intermedia y diferencias en internet, espacio de estudio, alimentos, enriquecimiento y estabilidad emocional.",
+      "heroMedia": "family-support-photo","sourcePath": "https://corewecan.org/equity-at-the-holidays-what-it-means-for-middle-grade-students/","status": "",
+      "sections": [
+        {"heading": "Por qué importa el receso","body": ["La secundaria intermedia es una etapa clave para identidad, independencia y crecimiento académico. Para familias con menos recursos, un receso puede ser desestabilizador en lugar de restaurador."],"bullets": [],"quote": "","links": []},
+        {"heading": "Equidad entre semestres","body": ["La historia muestra por qué la equidad educativa depende también de apoyo más allá de la instrucción en el aula."],"bullets": [],"quote": "","links": []}
+      ],
+      "related": ["news","families","resources"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    }
+  }
+}

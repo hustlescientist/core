@@ -1,0 +1,67 @@
+{
+  "pages": {
+    "about": {
+      "title": "Acerca de CORE","eyebrow": "Quiénes somos","intro": "Creemos en dar un gran ejemplo para los demás.",
+      "detail": "CORE describe a su equipo como personas de distintos orígenes que comparten una meta: construir una comunidad que apoye a Scholars y familias con equidad, responsabilidad, colaboración y amabilidad.",
+      "heroMedia": "core-history-photo","sourcePath": "https://corewecan.org/about-us/","status": "",
+      "sections": [
+        {"heading": "Trabajar con propósito","body": ["CORE afirma que cada joven merece las oportunidades, el apoyo y las experiencias necesarias para construir un futuro exitoso. El equipo trabaja junto a Scholars, familias, escuelas y aliados comunitarios."],"bullets": [],"quote": "","links": []},
+        {"heading": "Carreras en CORE","body": ["El sitio actual invita a personas que valoran la colaboración, la comunidad y el potencial de cada Scholar. CORE declara que es un empleador de igualdad de oportunidades."],"bullets": [],"quote": "","links": [{"label": "Ver oportunidades actuales","route": "","url": "https://recruiting.paylocity.com/"}]},
+        {"heading": "Voz de exalumnos","body": ["“CORE me dio el valor y las habilidades para exigirme más. No estaría donde estoy hoy sin el programa y las personas.”"],"bullets": [],"quote": "Adriana, promoción 2019","links": []},
+        {"heading": "Transparencia financiera","body": ["El sitio actual enlaza documentos financieros de 2016, 2017, 2018, 2019, 2021, 2024 y 2025, y declara que CORE es una organización benéfica pública exenta de impuestos bajo la Sección 501(c)(3)."],"bullets": [],"quote": "","links": []}
+      ],
+      "related": ["history","partners","contact"],"faqs": [],
+      "people": [
+        {"name": "James Cordon","role": "Coach de éxito estudiantil"},{"name": "Brandon Ervin","role": "Director de programas"},{"name": "Fernando Garcia","role": "Supervisor de operaciones"},{"name": "Aiden Giadamez","role": "Gerente de subvenciones y datos"},{"name": "Jamiyah Hughes","role": "Coach de éxito estudiantil — Swainston"},{"name": "Beth Hull","role": "Asistente ejecutiva y de desarrollo"},{"name": "Donovan Jackson","role": "Coach de éxito estudiantil"},{"name": "Jeff Jones","role": "Director ejecutivo"},{"name": "Natalie Martin","role": "Coordinadora de RR. HH. y supervisora de capacitación"},{"name": "Jill Moat","role": "Directora de operaciones"},{"name": "Richard Johnson","role": "Enlace de exalumnos"},{"name": "Vita Johnson","role": "Directora de innovación"},{"name": "Dr. Melvin King","role": "Director ejecutivo asociado"},{"name": "Chris James","role": "Supervisor de Career We Can"}
+      ],
+      "board": [{"name": "Rory Reid","role": "Presidente"},{"name": "Janae Downey","role": "Tesorera"},{"name": "Anthony Degado","role": "Fideicomisario"},{"name": "Bo Bernhard","role": "Fideicomisario"},{"name": "Archie Perry","role": "Fideicomisario"},{"name": "Michael Flores","role": "Fideicomisario"},{"name": "Shaundell Newsome","role": "Fideicomisario"},{"name": "Stephanie Saldana","role": "Fideicomisaria"}],
+      "timeline": [],"resourceGroups": []
+    },
+    "contact": {
+      "title": "Contactar a CORE","eyebrow": "Preguntas y próximos pasos",
+      "intro": "¿Tiene preguntas sobre programas, participación, alianzas, voluntariado o apoyo?",
+      "detail": "El sitio público fuente lista a CORE en 701 S. 9th Street, Las Vegas, NV 89101, (702) 657-3264 e info@corewecan.org.",
+      "heroMedia": "core-book-illustration","sourcePath": "https://corewecan.org/about-us/","status": "",
+      "sections": [
+        {"heading": "Contacto general","body": ["Escriba a info@corewecan.org o llame al (702) 657-3264. El FAQ actual dirige a las familias interesadas en unirse a family@corewecan.org."],"bullets": [],"quote": "","links": []},
+        {"heading": "Áreas de interés","body": ["El formulario existente pregunta por mentoría, donaciones, voluntariado, recaudación de fondos o visitas. En la reconstrucción, estas acciones se conectarán a formularios de GHL cuando los destinos y flujos se aprueben."],"bullets": [],"quote": "","links": []}
+      ],
+      "related": ["families","partners","get-involved","faq"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "character-development": {
+      "title": "Desarrollo del carácter","eyebrow": "Pilar del programa",
+      "intro": "Ayudamos a los Scholars a desarrollar el carácter, la confianza y las habilidades para prosperar en la escuela, la comunidad y sus futuras carreras.",
+      "detail": "CORE combina currículo de carácter, aprendizaje mediante servicio, actividades colaborativas y experiencias reales.",
+      "heroMedia": "character-development-photo","sourcePath": "https://corewecan.org/empower/","status": "",
+      "sections": [
+        {"heading": "Servicio comunitario y aprendizaje mediante servicio","body": ["Dar a la comunidad es una forma en que CORE ayuda a los jóvenes a descubrir su potencial. Los Scholars colaboran con organizaciones locales para identificar necesidades y planear proyectos.","La página fuente actual indica que cada Scholar completa 50 horas de servicio comunitario al año."],"bullets": ["Empatía","Trabajo en equipo","Comunicación","Responsabilidad cívica"],"quote": "","links": [{"label": "Explorar servicio comunitario","route": "community-service","url": ""}]},
+        {"heading": "Currículo de desarrollo del carácter","body": ["El currículo después de clases utiliza lecciones interactivas, conversaciones, actividades colaborativas y experiencias reales."],"bullets": ["Responsabilidad","Integridad","Empatía","Autocontrol","Curiosidad","Gratitud","Perseverancia","Mentalidad de crecimiento"],"quote": "","links": []},
+        {"heading": "Práctica, no solo teoría","body": ["CORE describe el carácter como algo que se construye mediante oportunidades repetidas para practicar comunicación, resolución de problemas, colaboración, regulación emocional y decisiones éticas."],"bullets": [],"quote": "","links": []}
+      ],
+      "related": ["leadership-development","community-service","social-emotional-learning","families"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "career-awareness": {
+      "title": "Conocimiento y exploración de carreras","eyebrow": "Pilar del programa",
+      "intro": "Descubrir posibilidades. Explorar el futuro.",
+      "detail": "CORE ayuda a los Scholars a conocer carreras que conecten con sus intereses, fortalezas y metas mediante experiencias prácticas, aprendizaje en lugares de trabajo y conexiones con profesionales.",
+      "heroMedia": "career-exploration-photo","sourcePath": "https://corewecan.org/enrichment/","status": "",
+      "sections": [
+        {"heading": "Career We Can","body": ["Career We Can es el programa de exploración profesional de CORE. Desde 2018, el sitio fuente dice que ha conectado a estudiantes con profesionales, experiencias laborales, pasantías y aprendizaje práctico."],"bullets": [],"quote": "","links": [{"label": "Explorar Career We Can","route": "career-we-can","url": ""}]},
+        {"heading": "Hacer visibles las posibilidades","body": ["La exploración profesional se presenta como un proceso de descubrimiento, no como la obligación de elegir un trabajo hoy."],"bullets": [],"quote": "Los estudiantes no pueden aspirar a carreras que nunca han visto. Career We Can ayuda a hacer visibles esas posibilidades.","links": []}
+      ],
+      "related": ["career-we-can","partners","families"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "financial-literacy": {
+      "title": "Educación financiera","eyebrow": "Pilar del programa",
+      "intro": "Desarrollar conocimientos y confianza para tomar decisiones financieras inteligentes hoy y mañana.",
+      "detail": "CORE presenta la educación financiera como hábitos para tomar decisiones informadas, establecer metas y construir futuros más sólidos.",
+      "heroMedia": "financial-literacy-icon","sourcePath": "https://corewecan.org/educate/","status": "",
+      "sections": [
+        {"heading": "Educación financiera para Scholars","body": ["Los buenos hábitos financieros comienzan temprano. La página actual destaca temas prácticos para preparar a los Scholars para la secundaria, la universidad, las carreras y la adultez."],"bullets": ["Presupuesto","Ahorro","Gasto responsable","Metas","Ingresos","Responsabilidad financiera"],"quote": "","links": []},
+        {"heading": "Apoyar a toda la familia","body": ["CORE conecta a las familias con organizaciones comunitarias, instituciones educativas y agencias de desarrollo laboral. La página fuente menciona capacitación laboral, GED, educación superior y recursos comunitarios."],"bullets": [],"quote": "","links": []},
+        {"heading": "Enfoque de dos generaciones","body": ["CORE relaciona el éxito estudiantil y familiar, conectando educación, avance profesional y confianza financiera entre generaciones."],"bullets": [],"quote": "","links": [{"label": "Explorar el enfoque de dos generaciones","route": "two-generational","url": ""}]}
+      ],
+      "related": ["two-generational","resources","families"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    }
+  }
+}

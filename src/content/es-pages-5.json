@@ -1,0 +1,73 @@
+{
+  "pages": {
+    "volunteer": {
+      "title": "Voluntariado","eyebrow": "#DOGOODTHINGS",
+      "intro": "El modelo de impacto colectivo de CORE parte de la idea de que se necesita una comunidad para criar a un niño.",
+      "detail": "La página actual dice que CORE depende de donantes, voluntarios, líderes comunitarios y personal calificado.",
+      "heroMedia": "partner-visit-photo","sourcePath": "https://corewecan.org/volunteer/","status": "",
+      "sections": [
+        {"heading": "Formas de participar","body": ["Sea mentor o conferencista invitado, acompañe un proyecto de servicio comunitario o apoye campañas de ropa y alimentos."],"bullets": ["Mentoría","Compartir experiencia profesional o de vida","Acompañar proyectos de servicio","Apoyar campañas de ropa y alimentos"],"quote": "","links": []},
+        {"heading": "Formulario de interés","body": ["El formulario público existente pide nombre, correo, teléfono, empresa, áreas de interés y comentarios opcionales. En la reconstrucción se conectará con GHL cuando se aprueben el formulario y el flujo."],"bullets": [],"quote": "","links": []}
+      ],
+      "related": ["career-we-can","community-service","donate","contact"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "wish-list": {
+      "title": "Lista de deseos","eyebrow": "Formas inmediatas de ayudar",
+      "intro": "Durante el año, los Scholars tienen distintas necesidades prácticas.",
+      "detail": "La página actual invita a comprar o donar artículos que pueden llegar a la oficina de CORE y distribuirse directamente a los Scholars.",
+      "heroMedia": "core-book-illustration","sourcePath": "https://corewecan.org/wish-list/","status": "",
+      "sections": [
+        {"heading": "Categorías del sitio actual","body": [],"bullets": ["Refrigerios","Útiles escolares","Tarjetas de regalo","Juegos de ajedrez","Libros de preparación para ACT","Ropa de negocio y casual nueva o en buen estado","Artículos de higiene personal","iPads de Apple","Dulces mensuales de cumpleaños"],"quote": "","links": []},
+        {"heading": "Entrega","body": ["La página fuente dice que los artículos pueden entregarse en la oficina de CORE o enviarse mediante tiendas en línea. El destino de Amazon debe volver a verificarse antes del lanzamiento."],"bullets": [],"quote": "","links": []}
+      ],
+      "related": ["donate","volunteer","get-involved"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "events": {
+      "title": "Eventos","eyebrow": "Qué está pasando en CORE",
+      "intro": "Conozca oportunidades para participar, hacer voluntariado o apoyar a los Scholars.",
+      "detail": "La página fuente usa actualmente un calendario incrustado. La reconstrucción debe acompañarlo con una lista accesible y móvil de eventos.",
+      "heroMedia": "partner-visit-photo","sourcePath": "https://corewecan.org/core-events/","status": "",
+      "sections": [
+        {"heading": "Eventos públicos","body": ["Esta demo conserva un destino de eventos mientras se seleccionan el calendario y los flujos de registro en GHL. Los eventos pasados deben aparecer claramente identificados."],"bullets": [],"quote": "","links": []},
+        {"heading": "Evento pasado: Jingle in July 2026","body": ["La recaudación del 8 de julio de 2026 en The Beverly Theater incluyó un desfile de suéteres navideños diseñados por Scholars, bebidas, música y patrocinios."],"bullets": [],"quote": "","links": [{"label": "Ver evento archivado","route": "jingle-in-july","url": ""}]}
+      ],
+      "related": ["jingle-in-july","volunteer","donate"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "history": {
+      "title": "Nuestra historia","eyebrow": "Cómo CORE se convirtió en CORE",
+      "intro": "La página de historia recorre la evolución de un modelo de apoyo de largo plazo para estudiantes y familias en el sur de Nevada.",
+      "detail": "Los siguientes hitos provienen del sitio fuente actual.",
+      "heroMedia": "core-history-photo","sourcePath": "https://corewecan.org/our-history/","status": "",
+      "sections": [],"related": ["about","programs"],"faqs": [],"people": [],"board": [],
+      "timeline": [
+        {"date": "Modelo inicial","text": "Una cohorte conocida como Dreamers empieza a trabajar con un marco integral y de dos generaciones que incluye liderazgo, servicios sociales, arte, enriquecimiento, salud y bienestar."},
+        {"date": "Marzo de 2015","text": "Beverly Rogers y Rory Reid establecen The Rogers Foundation en memoria de Jim Rogers, y comienza a formarse una alianza con el programa."},
+        {"date": "Agosto de 2015","text": "La organización adopta la identidad CORE, Powered by The Rogers Foundation. La página actual atribuye el nombre al exalumno Frank (promoción 2019)."},
+        {"date": "2016","text": "CORE incorpora la cohorte Tomchin, financiada por el partidario Stanley Tomchin."},
+        {"date": "2019","text": "La primera cohorte Dreamer se gradúa como CORE Scholars; la fuente reporta 100% de graduación de secundaria y 100% de aceptación en universidad o preparación profesional para esa cohorte."},
+        {"date": "2022","text": "La página de historia describe a los Tomchin Scholars preparándose para graduarse y continuar hacia vidas con más opciones."},
+        {"date": "El futuro","text": "CORE describe planes para ampliar su impacto en el sur de Nevada, atender nuevas cohortes y seguir construyendo infraestructura para cambios sostenidos."}
+      ],
+      "resourceGroups": []
+    },
+    "faq": {
+      "title": "Preguntas frecuentes","eyebrow": "FAQ",
+      "intro": "Respuestas a preguntas comunes sobre CORE, participación, costo, escuelas, apoyo universitario y el modelo de dos generaciones.",
+      "detail": "Estas respuestas se adaptan del FAQ público actual y deben volver a verificarse antes del lanzamiento final.",
+      "heroMedia": "core-book-illustration","sourcePath": "https://corewecan.org/faq/","status": "",
+      "sections": [],"related": ["families","resources","contact"],
+      "faqs": [
+        {"q": "¿Qué significa “Powered by The Rogers Foundation”?","a": "El FAQ actual dice que The Rogers Foundation ha comprometido apoyo de largo plazo a CORE, incluido financiamiento operativo, oficinas y otros recursos que cubren costos administrativos y de desarrollo."},
+        {"q": "¿Cómo puede mi hijo o hija formar parte de la comunidad CORE?","a": "El FAQ actual dirige a las familias a family@corewecan.org para que un miembro del equipo dé seguimiento."},
+        {"q": "¿Cuánto tiempo trabaja CORE con estudiantes y familias?","a": "La fuente describe un programa intensivo típico de siete años, de 6.º a 12.º grado, seguido por cuatro años de apoyo mediante la red de exalumnos."},
+        {"q": "¿Trabajan con Clark County School District?","a": "Sí. El FAQ fuente dice que CORE tiene un Memorando de Entendimiento con CCSD que permite compartir datos, buenas prácticas y utilizar instalaciones."},
+        {"q": "¿CORE paga la universidad de los estudiantes?","a": "No. El FAQ dice que CORE no se compromete a pagar los costos universitarios, pero ayuda a Scholars y familias a prepararse para solicitar fondos federales, becas y otros apoyos."},
+        {"q": "¿CORE es una organización sin fines de lucro?","a": "Sí. CORE se identifica como una organización 501(c)(3), Tax ID 45-4170296."},
+        {"q": "¿Dónde está CORE?","a": "El FAQ fuente menciona cohortes en Findlay y Swainston Middle Schools y la oficina administrativa en 701 S. 9th Street, Las Vegas, NV 89101."},
+        {"q": "¿La programación tiene costo para niños y familias?","a": "El FAQ actual dice que CORE es 100% gratuito para los niños y las familias que atiende."},
+        {"q": "¿Qué significa 2Gen?","a": "CORE usa un enfoque para toda la familia porque el éxito de Scholars y familias está conectado. El FAQ menciona Parent Academy como ejemplo de oportunidades para aprender y crecer juntos."}
+      ],
+      "people": [],"board": [],"timeline": [],"resourceGroups": []
+    }
+  }
+}

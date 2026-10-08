@@ -1,0 +1,375 @@
+{
+  "pages": {
+    "programs": {
+      "title": "Programs",
+      "eyebrow": "The CORE experience",
+      "intro": "Three pathways help Scholars build confidence, discover possibilities, and develop practical skills for life.",
+      "detail": "The current public site organizes CORE around Character Development, Career Awareness & Exploration, and Financial Literacy, with additional program pages that deepen those themes.",
+      "heroMedia": "home-hero-photo",
+      "sourcePath": "https://corewecan.org/",
+      "status": "",
+      "sections": [
+        {
+          "heading": "Character Development",
+          "body": [
+            "CORE helps Scholars build character, confidence, and life skills through after-school learning, service, relationships, and real-world practice."
+          ],
+          "bullets": [
+            "Responsibility and integrity",
+            "Empathy and self-control",
+            "Curiosity and gratitude",
+            "Perseverance and a growth mindset"
+          ],
+          "quote": "",
+          "links": [
+            {
+              "label": "Explore Character Development",
+              "route": "character-development",
+              "url": ""
+            }
+          ]
+        },
+        {
+          "heading": "Career Awareness & Exploration",
+          "body": [
+            "Every Scholar deserves opportunities to discover careers that match their interests, strengths, and goals. Career We Can brings workplaces, professionals, and career pathways into view."
+          ],
+          "bullets": [],
+          "quote": "",
+          "links": [
+            {
+              "label": "Explore Career Awareness & Exploration",
+              "route": "career-awareness",
+              "url": ""
+            }
+          ]
+        },
+        {
+          "heading": "Financial Literacy",
+          "body": [
+            "CORE introduces practical financial habits early and connects families with education, workforce, and community pathways that strengthen long-term opportunity."
+          ],
+          "bullets": [],
+          "quote": "",
+          "links": [
+            {
+              "label": "Explore Financial Literacy",
+              "route": "financial-literacy",
+              "url": ""
+            }
+          ]
+        }
+      ],
+      "related": [
+        "leadership-development",
+        "community-service",
+        "career-we-can",
+        "social-emotional-learning",
+        "two-generational",
+        "sprat",
+        "house-of-straus"
+      ],
+      "faqs": [],
+      "people": [],
+      "board": [],
+      "timeline": [],
+      "resourceGroups": []
+    },
+    "families": {
+      "title": "Students & families",
+      "eyebrow": "Public family hub",
+      "intro": "CORE is a place where students discover who they are, what they are capable of, and where they are headed.",
+      "detail": "Through engaging activities, hands-on learning, community experiences, and meaningful relationships, Scholars build confidence, develop character, explore future careers, and gain skills for school and beyond.",
+      "heroMedia": "family-support-photo",
+      "sourcePath": "https://corewecan.org/student-parent-portal/",
+      "status": "",
+      "sections": [
+        {
+          "heading": "Building Character. Exploring Futures. Creating Opportunity.",
+          "body": [
+            "CORE experiences include field trips, community service, career exploration, friendships, and practical learning designed to help Scholars grow. Success is not one-size-fits-all; the program is built around helping each Scholar discover a future filled with possibility."
+          ],
+          "bullets": [],
+          "quote": "",
+          "links": []
+        },
+        {
+          "heading": "Support beyond the classroom",
+          "body": [
+            "CORE also partners with families, connecting them with educational, social, emotional, and community resources when they are needed most. The current site specifically references help finding school supplies, food assistance, housing resources, and other community support."
+          ],
+          "bullets": [],
+          "quote": "",
+          "links": [
+            {
+              "label": "Explore family resources",
+              "route": "resources",
+              "url": ""
+            }
+          ]
+        },
+        {
+          "heading": "How to ask about joining",
+          "body": [
+            "The current FAQ directs families interested in joining CORE to family@corewecan.org. The source site also states that CORE programming is free for the children and families it serves."
+          ],
+          "bullets": [],
+          "quote": "",
+          "links": [
+            {
+              "label": "View frequently asked questions",
+              "route": "faq",
+              "url": ""
+            },
+            {
+              "label": "Contact CORE",
+              "route": "contact",
+              "url": ""
+            }
+          ]
+        }
+      ],
+      "related": [
+        "character-development",
+        "career-awareness",
+        "financial-literacy",
+        "resources",
+        "faq"
+      ],
+      "faqs": [],
+      "people": [],
+      "board": [],
+      "timeline": [],
+      "resourceGroups": []
+    },
+    "partners": {
+      "title": "Schools & partners",
+      "eyebrow": "For educators, employers & community partners",
+      "intro": "CORE works alongside schools, families, and community partners to help students develop character, explore careers, build financial confidence, and discover their potential.",
+      "detail": "The current educator page frames CORE as a long-term, two-generation model and emphasizes relationships, opportunity, family support, equity, and data-informed improvement.",
+      "heroMedia": "partner-visit-photo",
+      "sourcePath": "https://corewecan.org/teacher-admin-portal/",
+      "status": "",
+      "sections": [
+        {
+          "heading": "What CORE has learned",
+          "body": [
+            "Meaningful relationships, engaging learning experiences, and family support create lasting impact. CORE describes its work as investing in both Scholars and their families so young people can build confidence, character, and practical skills."
+          ],
+          "bullets": [],
+          "quote": "",
+          "links": []
+        },
+        {
+          "heading": "Impact data & measurement",
+          "body": [
+            "The current site says CORE uses Salesforce to collect, organize, and report on impact areas. Its animated impact counters were extracted as zero placeholders, so this demo intentionally does not publish those values as verified outcomes.",
+            "For data questions, the source page directs visitors to info@corewecan.org."
+          ],
+          "bullets": [],
+          "quote": "",
+          "links": []
+        },
+        {
+          "heading": "Two-generation programming",
+          "body": [
+            "CORE supports both Scholars and their families because student success rarely happens in isolation. The model connects parent education and career opportunity with Scholar character, career exploration, and financial confidence."
+          ],
+          "bullets": [],
+          "quote": "",
+          "links": []
+        },
+        {
+          "heading": "Equity for all",
+          "body": [
+            "CORE defines equity around access to opportunity, networks, resources, and support based on where people are and where they want to go. The source page commits to affirming identities, empowering voice, honoring values, and centering social justice and equity throughout the organization."
+          ],
+          "bullets": [],
+          "quote": "",
+          "links": []
+        }
+      ],
+      "related": [
+        "families",
+        "career-we-can",
+        "two-generational",
+        "volunteer",
+        "contact"
+      ],
+      "faqs": [],
+      "people": [],
+      "board": [],
+      "timeline": [],
+      "resourceGroups": []
+    },
+    "get-involved": {
+      "title": "Get involved",
+      "eyebrow": "Support CORE",
+      "intro": "There are many ways to help CORE Scholars and families—give, volunteer, advocate, share career experience, provide needed items, or participate in events.",
+      "detail": "The source site treats community participation as part of CORE’s collective-impact model: a strong network of supporters, volunteers, employers, schools, and community partners extends what the organization can offer.",
+      "heroMedia": "community-service-photo",
+      "sourcePath": "https://corewecan.org/donate/",
+      "status": "",
+      "sections": [
+        {
+          "heading": "Give",
+          "body": [
+            "Financial support can help sustain programs and family support. The source site also describes mail-in gifts and planned/legacy giving."
+          ],
+          "bullets": [],
+          "quote": "",
+          "links": [
+            {
+              "label": "Explore ways to give",
+              "route": "donate",
+              "url": ""
+            }
+          ]
+        },
+        {
+          "heading": "Volunteer",
+          "body": [
+            "Mentors, guest speakers, project chaperones, and people who can support clothing or food drives are all named volunteer opportunities on the current site."
+          ],
+          "bullets": [],
+          "quote": "",
+          "links": [
+            {
+              "label": "Volunteer with CORE",
+              "route": "volunteer",
+              "url": ""
+            }
+          ]
+        },
+        {
+          "heading": "Advocate",
+          "body": [
+            "Share CORE’s mission, attend an event, visit the program, and help more people understand how poverty, inequity, and injustice affect students and communities."
+          ],
+          "bullets": [],
+          "quote": "",
+          "links": [
+            {
+              "label": "Advocate for CORE",
+              "route": "advocate",
+              "url": ""
+            }
+          ]
+        },
+        {
+          "heading": "Career partnerships",
+          "body": [
+            "Career We Can partners can mentor Scholars, share career journeys, or host students for workplace visits, panels, and job-shadowing experiences."
+          ],
+          "bullets": [],
+          "quote": "",
+          "links": [
+            {
+              "label": "Explore Career We Can partnerships",
+              "route": "career-we-can",
+              "url": ""
+            }
+          ]
+        }
+      ],
+      "related": [
+        "donate",
+        "volunteer",
+        "advocate",
+        "wish-list",
+        "events",
+        "career-we-can"
+      ],
+      "faqs": [],
+      "people": [],
+      "board": [],
+      "timeline": [],
+      "resourceGroups": []
+    },
+    "resources": {
+      "title": "Resources",
+      "eyebrow": "Practical support",
+      "intro": "CORE works with community partners and programs to help support Scholars and families.",
+      "detail": "The current resource library includes an annual report, English and Spanish family resource guides, scholarship and college-savings links, an education-equity statement, and learning materials.",
+      "heroMedia": "core-book-illustration",
+      "sourcePath": "https://corewecan.org/resources/",
+      "status": "",
+      "sections": [
+        {
+          "heading": "A living resource library",
+          "body": [
+            "The current site describes CORE as a connector to community support. Its family guides include food, education, housing, health, and other assistance. Resource information should be re-verified before the final rebuild because editions and external details can change."
+          ],
+          "bullets": [],
+          "quote": "",
+          "links": []
+        },
+        {
+          "heading": "2025 Annual Report",
+          "body": [
+            "The source library links to CORE’s 2025 Annual Report, which includes Parent Academy program design, events, and organizational reporting."
+          ],
+          "bullets": [],
+          "quote": "",
+          "links": [
+            {
+              "label": "Open current 2025 Annual Report",
+              "route": "",
+              "url": "https://corewecan.org/wp-content/uploads/2026/02/2025-Annual-Review-DIGITAL.pdf"
+            }
+          ]
+        }
+      ],
+      "related": [
+        "families",
+        "two-generational",
+        "faq"
+      ],
+      "faqs": [],
+      "people": [],
+      "board": [],
+      "timeline": [],
+      "resourceGroups": [
+        {
+          "title": "Resource guides",
+          "items": [
+            {
+              "label": "Family Resource Guide (English)",
+              "url": "https://corewecan.org/wp-content/uploads/2024/02/Eng.-CORE-Family-Resource-Guide-DEC-2023.pdf"
+            },
+            {
+              "label": "Guía de recursos familiares",
+              "url": "https://corewecan.org/resources/"
+            }
+          ]
+        },
+        {
+          "title": "Education & scholarships",
+          "items": [
+            {
+              "label": "Rogers Foundation Scholarship",
+              "url": "https://corewecan.org/resources/"
+            },
+            {
+              "label": "Nevada college savings resources",
+              "url": "https://corewecan.org/resources/"
+            }
+          ]
+        },
+        {
+          "title": "Learning & advocacy",
+          "items": [
+            {
+              "label": "CORE education coalition statement",
+              "url": "https://corewecan.org/resources/"
+            },
+            {
+              "label": "Hispanic Heritage Month reading list",
+              "url": "https://corewecan.org/resources/"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "pages": {
+    "volunteer": {
+      "title": "Volunteer","eyebrow": "#DOGOODTHINGS",
+      "intro": "CORE’s collective-impact model is based on the idea that it takes a village to raise a child.",
+      "detail": "The current volunteer page says CORE cannot uplift under-resourced children alone and depends on an ecosystem of donors, volunteers, community leaders, and qualified staff.",
+      "heroMedia": "partner-visit-photo","sourcePath": "https://corewecan.org/volunteer/","status": "",
+      "sections": [
+        {"heading": "Ways to volunteer","body": ["Become a mentor or guest speaker, chaperone a community-service project, or lend a hand with clothing and food drives."],"bullets": ["Mentor Scholars","Share career or life experience","Chaperone service projects","Support clothing and food drives"],"quote": "","links": []},
+        {"heading": "Volunteer interest form","body": ["The existing public form asks for name, email, phone, company, areas of interest, and optional comments. In the rebuild, this will route into the GHL CRM after form and workflow ownership are approved."],"bullets": [],"quote": "","links": []}
+      ],
+      "related": ["career-we-can","community-service","donate","contact"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "wish-list": {
+      "title": "Wish List","eyebrow": "Immediate ways to help",
+      "intro": "Throughout the year, CORE Scholars have a variety of practical needs.",
+      "detail": "The current page invites supporters to purchase or donate items that can be delivered to the CORE office and distributed directly to Scholars.",
+      "heroMedia": "core-book-illustration","sourcePath": "https://corewecan.org/wish-list/","status": "",
+      "sections": [
+        {"heading": "Current source-site categories","body": [],"bullets": ["Snacks","School supplies","Gift cards","Chess sets","ACT prep books","Gently used and new business/casual clothing","Personal hygiene items","Apple iPads","Monthly birthday treats"],"quote": "","links": []},
+        {"heading": "Delivery","body": ["The source page says items can be dropped off at CORE’s office or shipped directly through online retailers. The current Amazon wish-list destination should be re-verified before launch."],"bullets": [],"quote": "","links": []}
+      ],
+      "related": ["donate","volunteer","get-involved"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "events": {
+      "title": "Events","eyebrow": "What’s happening at CORE",
+      "intro": "See opportunities to participate, volunteer, or support CORE Scholars.",
+      "detail": "The source events page currently uses an embedded calendar. The rebuild should pair any calendar with an accessible mobile-friendly event list.",
+      "heroMedia": "partner-visit-photo","sourcePath": "https://corewecan.org/core-events/","status": "",
+      "sections": [
+        {"heading": "Public events","body": ["This demo retains an events destination while the final GHL calendar and registration workflows are selected. Past campaigns should be clearly labeled rather than presented as upcoming."],"bullets": [],"quote": "","links": []},
+        {"heading": "Past event: Jingle in July 2026","body": ["CORE’s July 8, 2026 fundraiser at The Beverly Theater featured a Scholar-designed ugly holiday sweater fashion show, refreshments, music, and sponsorship opportunities."],"bullets": [],"quote": "","links": [{"label": "View the archived event page","route": "jingle-in-july","url": ""}]}
+      ],
+      "related": ["jingle-in-july","volunteer","donate"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "history": {
+      "title": "Our History","eyebrow": "How CORE became CORE",
+      "intro": "CORE’s history page traces the evolution of a long-term student and family support model in Southern Nevada.",
+      "detail": "The milestones below are taken from the current source page.",
+      "heroMedia": "core-history-photo","sourcePath": "https://corewecan.org/our-history/","status": "",
+      "sections": [],"related": ["about","programs"],"faqs": [],"people": [],"board": [],
+      "timeline": [
+        {"date": "Early model","text": "A cohort known as the Dreamers begins working with a whole-child and two-generation framework that includes leadership development, wrap-around social services, arts and enrichment, and health and wellness workshops."},
+        {"date": "March 2015","text": "Beverly Rogers and Rory Reid establish The Rogers Foundation in remembrance of Jim Rogers, and a partnership with the program begins to form."},
+        {"date": "August 2015","text": "The organization rebrands as CORE, Powered by The Rogers Foundation. The current history page credits alumnus Frank (Class of ’19) with suggesting the name because the program gets “to the core” of who students are and what they need."},
+        {"date": "2016","text": "CORE onboards the Tomchin Cohort, funded by longtime supporter Stanley Tomchin."},
+        {"date": "2019","text": "The first Dreamer cohort graduates as CORE Scholars; the source page reports 100% high school graduation and 100% acceptance into college or a professional preparation program for that cohort."},
+        {"date": "2022","text": "The history page describes the Tomchin Scholars preparing for graduation and the next step toward choice-filled lives."},
+        {"date": "The future","text": "CORE describes plans to grow its impact in Southern Nevada, serve new cohorts, and continue building an infrastructure for sustained change for students and families."}
+      ],
+      "resourceGroups": []
+    },
+    "faq": {
+      "title": "Frequently Asked Questions","eyebrow": "FAQ",
+      "intro": "Answers to common questions about CORE, participation, cost, schools, college support, and the two-generation model.",
+      "detail": "These answers are adapted from the current public FAQ and should be re-verified before final launch.",
+      "heroMedia": "core-book-illustration","sourcePath": "https://corewecan.org/faq/","status": "",
+      "sections": [],"related": ["families","resources","contact"],
+      "faqs": [
+        {"q": "What does “Powered by The Rogers Foundation” mean?","a": "The current FAQ says The Rogers Foundation has committed long-term support to CORE, including operational funding, business offices, and other resources that cover CORE’s administrative and development costs, allowing fundraising to go directly toward programming and expansion."},
+        {"q": "How can my child become part of the CORE Community?","a": "The current FAQ directs families to email family@corewecan.org so a team member can follow up."},
+        {"q": "How long does CORE work with students and families?","a": "The source FAQ describes a typical seven-year intensive program from 6th through 12th grade, followed by four years of support through the CORE Alumni Network."},
+        {"q": "Do you work with Clark County School District?","a": "Yes. The source FAQ says CORE has a Memorandum of Understanding with CCSD that supports data sharing, best practices, and facility use."},
+        {"q": "Does CORE pay for students to go to college?","a": "No. The source FAQ says CORE does not commit to paying college costs, but supports Scholars and families in preparing to pursue federal funds, scholarships, and other financial support."},
+        {"q": "Is CORE a nonprofit?","a": "Yes. CORE identifies itself as a 501(c)(3) organization with Tax ID 45-4170296."},
+        {"q": "Where is CORE located?","a": "The source FAQ lists current cohorts at Findlay and Swainston Middle Schools and the business office at 701 S. 9th Street, Las Vegas, NV 89101."},
+        {"q": "Does CORE programming cost anything for children and families?","a": "The current FAQ says CORE is 100% free to the children and families it serves."},
+        {"q": "What does 2Gen mean?","a": "CORE uses a whole-family approach because Scholar and family success are closely linked. The FAQ cites Parent Academy as an example of parents and Scholars having opportunities to learn and grow together."}
+      ],
+      "people": [],"board": [],"timeline": [],"resourceGroups": []
+    }
+  }
+}

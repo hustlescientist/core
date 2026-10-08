@@ -1,0 +1,65 @@
+{
+  "pages": {
+    "leadership-development": {
+      "title": "Desarrollo de liderazgo","eyebrow": "Detalle adicional del programa",
+      "intro": "El sitio fuente describe un currículo de liderazgo apropiado por edad, centrado en fortalezas de carácter, inteligencia emocional, decisiones y mentalidad de crecimiento.",
+      "detail": "Esta página heredada indica que el currículo se facilita dos horas por semana después de clases y también describe un Emerging Leaders Lab en West Prep Academy.",
+      "heroMedia": "character-development-photo","sourcePath": "https://corewecan.org/character-education-leadership-development/","status": "Página fuente retenida para revisión",
+      "sections": [
+        {"heading": "Currículo de liderazgo","body": ["La página relaciona autocontrol, curiosidad, gratitud, empatía, buenas decisiones e inteligencia emocional con mejores resultados académicos y de vida."],"bullets": [],"quote": "","links": []},
+        {"heading": "Emerging Leaders Lab","body": ["La página describe una clase de enriquecimiento dentro de West Prep Academy para estudiantes identificados con potencial de liderazgo, con conferencistas invitados, servicio comunitario y oportunidades de liderazgo."],"bullets": [],"quote": "","links": []}
+      ],
+      "related": ["character-development","community-service","social-emotional-learning"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "community-service": {
+      "title": "Servicio comunitario y aprendizaje mediante servicio","eyebrow": "Carácter en acción",
+      "intro": "El servicio comunitario permite a los Scholars conectar aprendizaje, responsabilidad, empatía e impacto real.",
+      "detail": "Los Scholars trabajan con organizaciones sin fines de lucro para identificar necesidades, desarrollar proyectos y reflexionar sobre cómo sus acciones fortalecen a la comunidad.",
+      "heroMedia": "community-service-photo","sourcePath": "https://corewecan.org/community-service-service-learning/","status": "Página fuente retenida para revisión",
+      "sections": [
+        {"heading": "Aprendizaje mediante servicio","body": ["CORE presenta el servicio como algo más que horas de voluntariado: conecta el aprendizaje con necesidades comunitarias y practica trabajo en equipo, comunicación, compasión, responsabilidad y confianza."],"bullets": [],"quote": "","links": []},
+        {"heading": "Compromiso anual","body": ["La página actual de Desarrollo del Carácter indica que cada Scholar completa 50 horas de servicio comunitario al año."],"bullets": [],"quote": "","links": []}
+      ],
+      "related": ["character-development","volunteer","sprat"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "career-we-can": {
+      "title": "Career We Can","eyebrow": "Programa de trayectorias profesionales",
+      "intro": "Career We Can es el programa de exploración y trayectorias de CORE, lanzado en 2018.",
+      "detail": "El sitio actual describe pasantías, exposición a lugares de trabajo, mentoría, conferencistas y experiencias prácticas.",
+      "heroMedia": "career-exploration-photo","sourcePath": "https://corewecan.org/career-we-can/","status": "",
+      "sections": [
+        {"heading": "Orientar a nuestros Scholars","body": ["Los mentores trabajan con grupos de Scholars para explorar trayectorias, establecer metas, identificar acciones y tomar decisiones que los acerquen a sus objetivos."],"bullets": [],"quote": "","links": []},
+        {"heading": "Inspirar a nuestros Scholars","body": ["Profesionales pueden compartir sus trayectorias de vida y carrera como conferencistas invitados."],"bullets": [],"quote": "","links": []},
+        {"heading": "Recibir a nuestros Scholars","body": ["Las organizaciones pueden abrir sus lugares de trabajo para visitas, paneles, observación laboral y otras experiencias."],"bullets": ["Recorridos por empresas u organizaciones","Paneles con empleados","Observación laboral","Experiencias prácticas personalizadas"],"quote": "","links": []},
+        {"heading": "Voz de un aliado","body": ["“Disfruté la interacción con los jóvenes. Compartir mis historias fue increíble. Me involucré con Career We Can porque quiero inspirar a nuestra próxima generación y ayudarles a ver grandeza en sí mismos.”"],"bullets": [],"quote": "Vincent Rotolo, fundador de Good Pie","links": []}
+      ],
+      "related": ["career-awareness","partners","volunteer"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "social-emotional-learning": {
+      "title": "Aprendizaje socioemocional (SEL)","eyebrow": "Apoyar al estudiante integralmente",
+      "intro": "SEL ayuda a los jóvenes a entender y manejar emociones, tomar decisiones responsables, mantener relaciones saludables y mostrar empatía.",
+      "detail": "La página fuente presenta SEL como un conjunto práctico de herramientas para afrontar retos, fortalecer la confianza y mejorar el bienestar.",
+      "heroMedia": "creative-learning-photo","sourcePath": "https://corewecan.org/social-emotional-learning-sel/","status": "Página fuente retenida para revisión",
+      "sections": [
+        {"heading": "Entenderse a sí mismo","body": ["SEL puede ayudar a reconocer lo que sentimos, comprender por qué y elegir respuestas más saludables."],"bullets": [],"quote": "","links": []},
+        {"heading": "Fortalecer relaciones","body": ["La escucha, la empatía y la comunicación efectiva pueden profundizar relaciones con amigos, familia y comunidad."],"bullets": [],"quote": "","links": []},
+        {"heading": "Navegar retos","body": ["Resolver problemas, persistir y tratar los errores como oportunidades de aprendizaje ayuda a avanzar en momentos difíciles."],"bullets": [],"quote": "","links": []},
+        {"heading": "Desarrollar empatía","body": ["Ver situaciones desde distintas perspectivas puede fortalecer la amabilidad, la inclusión y el cuidado por los demás."],"bullets": [],"quote": "","links": []}
+      ],
+      "related": ["character-development","leadership-development","families"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    },
+    "two-generational": {
+      "title": "Enfoque de dos generaciones","eyebrow": "Apoyo para toda la familia",
+      "intro": "El enfoque de dos generaciones reconoce que el bienestar y el éxito de hijos y padres están estrechamente conectados.",
+      "detail": "El sitio fuente describe apoyar a ambas generaciones al mismo tiempo: educación, capacitación, empleo, vivienda, salud y otros recursos para padres junto con el desarrollo educativo, social y emocional de Scholars.",
+      "heroMedia": "family-support-photo","sourcePath": "https://corewecan.org/two-generational/","status": "",
+      "sections": [
+        {"heading": "Apoyar a padres e hijos juntos","body": ["Los programas de dos generaciones abordan barreras inmediatas y oportunidades a largo plazo en todo el hogar."],"bullets": [],"quote": "","links": []},
+        {"heading": "Caminos para padres","body": ["La página fuente menciona educación, capacitación laboral, vivienda, atención médica, salud mental y otros recursos que pueden mejorar estabilidad y bienestar."],"bullets": [],"quote": "","links": []},
+        {"heading": "Desarrollo para Scholars","body": ["Al invertir en desarrollo educativo, emocional y social, CORE busca crear una base más sólida para el futuro."],"bullets": [],"quote": "","links": []},
+        {"heading": "Conexiones familiares más fuertes","body": ["La página destaca relaciones positivas, vínculos familiares y un efecto que puede extenderse entre generaciones."],"bullets": [],"quote": "","links": []}
+      ],
+      "related": ["families","financial-literacy","resources","partners"],"faqs": [],"people": [],"board": [],"timeline": [],"resourceGroups": []
+    }
+  }
+}
